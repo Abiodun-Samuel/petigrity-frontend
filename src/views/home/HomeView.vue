@@ -35,7 +35,7 @@
           <i class="bx bx-grid-alt"></i>
         </div>
 
-        <a href="#" class="button button__header">Get Started!</a>
+        <a href="#" class="button button__header">Get Started</a>
       </nav>
     </header>
 
