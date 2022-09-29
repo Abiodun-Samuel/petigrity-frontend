@@ -1,30 +1,31 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <router-view />
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<style lang="css">
+:root {
+  --green-5: #2d502d;
+  --green-4: #627b61;
+  --green-3: #79b928;
+  --green-2: #94be42;
+  --green-1: #a1c278;
+  --green-0: #cae4ae;
+  --green: #28c76f;
+  --grey-3: #848c7c;
+  --grey-2: #bfc4bd;
+  --grey-1: #adc1ae;
+  --light-1: #f4f8f1;
+  --light-0: #f6f7ef;
+  --blue-2: #005164;
+  --blue-1: #008490;
+  --shadow-1: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  --shadow-2: 5px 5px 11px #ebebeb, -5px -5px 11px #fff;
+  --shadow-3: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
 }
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+button:disabled,
+button[disabled] {
+  border: 1px solid #d8d8d8 !important;
+  background: #d8d8d8 !important;
+  color: #666666 !important;
 }
 </style>
