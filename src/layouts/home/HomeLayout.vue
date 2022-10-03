@@ -3,14 +3,14 @@
     <LoaderComponent />
   </div> -->
 
-  <!-- <HeaderComponent /> -->
+  <HeaderComponent />
   <!-- <div class="container-fluid"> -->
   <router-view />
   <!-- </div> -->
-  <!-- <FooterComponent /> -->
+  <FooterComponent />
 </template>
 
 <script setup>
-// import HeaderComponent from "@/layouts/home/HeaderComponent.vue";
-// import FooterComponent from "@/layouts/home/FooterComponent.vue";
+import HeaderComponent from "@/layouts/home/HeaderComponent.vue";
+import FooterComponent from "@/layouts/home/FooterComponent.vue";
 </script>

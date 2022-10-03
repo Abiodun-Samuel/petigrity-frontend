@@ -2932,7 +2932,7 @@ summary {
 }
 
 .form-control:focus {
-  border-color: #28c76f;
+  border-color: #193bb5;
   outline: 0;
   box-shadow: 0 3px 10px 0 rgba(34, 41, 47, 0.1);
 }
@@ -9984,7 +9984,8 @@ fieldset:disabled .btn {
 
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  /* color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important; */
+  color: #193bb5;
 }
 
 .text-secondary {

@@ -18,31 +18,31 @@ const HomeLayout = () => [
 ];
 
 const SimpleLayout = () => [
-  {
-    path: "login",
-    name: "login",
-    meta: { title: "Login | Petigrity" },
-    component: () =>
-      import(/* webpackChunkName: "Login" */ "@/views/auth/LoginView.vue"),
-  },
-  {
-    path: "register",
-    name: "register",
-    meta: { title: "Register | Petigrity" },
-    component: () =>
-      import(
-        /* webpackChunkName: "Register" */ "@/views/auth/RegisterView.vue"
-      ),
-  },
-  {
-    path: "verify",
-    name: "verify",
-    meta: { title: "Verification | Petigrity" },
-    component: () =>
-      import(
-        /* webpackChunkName: "Register" */ "@/views/auth/VerificationView.vue"
-      ),
-  },
+  // {
+  //   path: "login",
+  //   name: "login",
+  //   meta: { title: "Login | Petigrity" },
+  //   component: () =>
+  //     import(/* webpackChunkName: "Login" */ "@/views/auth/LoginView.vue"),
+  // },
+  // {
+  //   path: "register",
+  //   name: "register",
+  //   meta: { title: "Register | Petigrity" },
+  //   component: () =>
+  //     import(
+  //       /* webpackChunkName: "Register" */ "@/views/auth/RegisterView.vue"
+  //     ),
+  // },
+  // {
+  //   path: "verify",
+  //   name: "verify",
+  //   meta: { title: "Verification | Petigrity" },
+  //   component: () =>
+  //     import(
+  //       /* webpackChunkName: "Register" */ "@/views/auth/VerificationView.vue"
+  //     ),
+  // },
 ];
 
 const routes = [
@@ -70,7 +70,9 @@ const routes = [
       // ],
     },
     component: () =>
-      import(/* webpackChunkName: "Home Layout" */ "@/layouts/home/HomeLayout.vue"),
+      import(
+        /* webpackChunkName: "Home Layout" */ "@/layouts/home/HomeLayout.vue"
+      ),
     children: HomeLayout(),
   },
   //Simple layout - dashboard
