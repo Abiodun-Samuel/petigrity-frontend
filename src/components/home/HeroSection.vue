@@ -1,9 +1,5 @@
 <template>
   <div class="hero__section">
-    <div class="base one"></div>
-    <div class="base two"></div>
-    <div class="base three"></div>
-
     <div class="container">
       <div class="row">
         <div class="col-lg-6 mb-2">
@@ -11,9 +7,12 @@
             <div class="hero__text">
               <h1 class="fw-bolder">Get the best <span>health</span> plans</h1>
               <p class="my-2">
-                We are dedicated to helping you find the best health plan for
+                Your one stop shop for healthcare plans, Recruitment/staff
+                management and Trainings, either as an individual, a business or
+                an organization, Petigrity has got you covered.
+                <!-- We are dedicated to helping you find the best health plan for
                 your specific needs, either as an individual, a business or an
-                organization, Petigrity has got you covered.
+                organization, Petigrity has got you covered. -->
               </p>
             </div>
             <div class="hero__button mt-2">
@@ -47,13 +46,17 @@ import { Icon } from "@iconify/vue";
 <style lang="css">
 .hero__section {
   position: relative;
-  overflow: hidden;
-  /* background-color: #fff; */
-  /* background-image: radial-gradient(at top left, #fff6fd, transparent),
+  background-color: #fff;
+  /* background-image: linear-gradient(180deg, #e1efff, transparent); */
+  background: radial-gradient(at top left, #fff6fd, transparent),
+    radial-gradient(at top right, #edf0ff, transparent),
+    radial-gradient(at bottom left, #ffecec, transparent);
+  /* background: url("../../assets/images/bg/wave-bg.svg"),
+    radial-gradient(at top left, #fff6fd, transparent),
     radial-gradient(at top right, #edf0ff, transparent),
     radial-gradient(at bottom left, #ffecec, transparent); */
-  background-image: linear-gradient(180deg, #e1efff, transparent);
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: bottom bottom;
   background-repeat: no-repeat;
 }
 

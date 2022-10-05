@@ -73,10 +73,24 @@
                 />
               </div>
             </div>
-            <div class="form-row my-2">
+            <div class="row my-2">
+              <div class="col-6">
+                <label for="" class="label-control">Phone</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  placeholder="Enter your phone number"
+                />
+              </div>
+              <div class="col-6">
+                <label for="" class="label-control">Subject</label>
+                <input type="text" class="form-control" placeholder="Subject" />
+              </div>
+            </div>
+            <!-- <div class="form-row my-2">
               <label for="" class="label-control">Subject</label>
               <input type="text" class="form-control" placeholder="Subject" />
-            </div>
+            </div> -->
             <div class="form-row my-2">
               <label for="" class="label-control">Message</label>
               <textarea rows="5" class="form-control"></textarea>

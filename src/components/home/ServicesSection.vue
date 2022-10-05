@@ -4,11 +4,11 @@
       <SubHeader sub__header="Services" />
 
       <div class="row">
-        <div class="col-lg-4 mb-2">
+        <div class="col-lg-4 mb-2 d-flex align-items-stretch">
           <div class="service__box p-2 shadow rounded text-center">
-            <h2 class="fw-bolder text-primary">Training</h2>
+            <h2 class="fw-bolder text-primary">Health Insurance</h2>
             <img
-              src="../../assets/images/img/training.svg"
+              src="../../assets/images/img/health-plan.svg"
               alt="training icon"
               class="img-fluid my-1"
               width="150"
@@ -24,9 +24,11 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 mb-2">
+        <div class="col-lg-4 mb-2 d-flex align-items-stretch">
           <div class="service__box p-2 shadow rounded text-center">
-            <h2 class="fw-bolder text-primary">Recruitment</h2>
+            <h2 class="fw-bolder text-primary">
+              Recruitment & staff management
+            </h2>
             <img
               src="../../assets/images/img/recruitment.svg"
               alt="training icon"
@@ -44,11 +46,11 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 mb-2">
+        <div class="col-lg-4 mb-2 d-flex align-items-stretch">
           <div class="service__box p-2 shadow rounded text-center">
-            <h2 class="fw-bolder text-primary">Health Insurance</h2>
+            <h2 class="fw-bolder text-primary">Training</h2>
             <img
-              src="../../assets/images/img/health-plan.svg"
+              src="../../assets/images/img/training.svg"
               alt="training icon"
               class="img-fluid my-1"
               width="150"

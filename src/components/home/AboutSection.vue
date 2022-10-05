@@ -2,24 +2,23 @@
   <div id="about">
     <div class="container">
       <div class="row">
-        <div class="col-lg-7">
+        <div class="col-lg-6">
           <div class="about__img text-center">
             <img
               src="../../assets/images/img/about.svg"
               alt="about us page"
               class="img-fluid w-75"
             />
-            <img
-              class="about__logo bg-white shadow-lg p-1 rounded"
-              src="../../assets/images/logo/logo-sm.png"
-              alt="about image two"
-              width="230"
-            />
           </div>
         </div>
-        <div class="col-lg-5">
+        <div class="col-lg-6">
           <div class="about__desc p-3">
-            <h2 class="fw-bolder text-primary mb-2">About Us</h2>
+            <!-- <h2 class="fw-bolder text-primary mb-2">About Us</h2> -->
+            <img
+              class="bg-white shadow p-1 rounded"
+              src="../../assets/images/logo/logo-sm.png"
+              alt="about image two"
+            />
             <p class="my-2">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem
               praesentium suscipit eveniet, illo fugiat nemo pariatur
@@ -28,7 +27,7 @@
               voluptatibus quasi fugit illo. Neque consequatur quibusdam quas
               odit nobis autem harum iusto inventore praesentium!
             </p>
-            <router-link class="section__btn rounded" :to="{}"
+            <router-link class="section__btn rounded my-2" :to="{}"
               >Read More</router-link
             >
           </div>
