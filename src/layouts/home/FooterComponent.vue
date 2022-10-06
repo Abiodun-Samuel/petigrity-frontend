@@ -7,7 +7,7 @@
             <img
               src="../../assets/images/logo/logo-sm.png"
               alt="company logo"
-              class="img-fluid"
+              class="img-fluid bg-white rounded p-1 shadow-lg"
             />
             <p class="mt-2">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -50,10 +50,11 @@
         </div>
       </div>
 
-      <hr class="text-dark" />
+      <hr class="text-light" />
+
       <div class="row">
-        <div class="col-lg-12 text-center text-dark">
-          Copyright &copy; {{ year }} Petigrity All rights reserved.
+        <div class="col-lg-12 text-center text-light">
+          Copyright &copy; {{ year }} Petigrity, All rights reserved.
         </div>
       </div>
     </div>
@@ -62,13 +63,12 @@
 
 <script setup>
 import { Icon } from "@iconify/vue";
-
 const year = new Date().getFullYear();
 </script>
 
 <style lang="css">
 #footer {
-  background: var(--black-1);
+  background: var(--blue-1);
   padding: 3rem 0;
   margin-top: 2rem;
 }

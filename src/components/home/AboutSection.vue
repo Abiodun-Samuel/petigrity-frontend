@@ -7,18 +7,18 @@
             <img
               src="../../assets/images/img/about.svg"
               alt="about us page"
-              class="img-fluid w-75"
+              class="img-fluid w-75 shadow rounded"
             />
           </div>
         </div>
         <div class="col-lg-6">
           <div class="about__desc p-3">
-            <!-- <h2 class="fw-bolder text-primary mb-2">About Us</h2> -->
-            <img
+            <h2 class="fw-bolder text-primary mb-2">About Us</h2>
+            <!-- <img
               class="bg-white shadow p-1 rounded"
               src="../../assets/images/logo/logo-sm.png"
               alt="about image two"
-            />
+            /> -->
             <p class="my-2">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem
               praesentium suscipit eveniet, illo fugiat nemo pariatur
@@ -53,9 +53,6 @@ import SubHeader from "@/components/home/SubHeader.vue";
   position: absolute;
   bottom: 0;
   right: 0;
-}
-.about__desc p {
-  font-size: 1.1rem;
 }
 .section__btn {
   background: var(--blue-0);
