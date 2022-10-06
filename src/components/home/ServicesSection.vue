@@ -1,24 +1,83 @@
 <template>
   <section id="services" ref="services">
     <div class="container">
-      <!-- <SubHeader sub__header="Services" /> -->
       <div class="row">
         <div class="col-lg-6 my-2">
-          <h2 class="fw-bolder text-primary mb-2">Our Service</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti,
-            cupiditate et dolore dolores deleniti modi magnam! Facilis id
-            consequatur, hic iure, maxime assumenda nemo dolores ipsa doloribus,
-            dolorum consequuntur harum?
-          </p>
-          <div class="mb-1 mt-2">
-            <router-link :to="{ name: '' }" class="section__btn rounded">
-              Learn more
-            </router-link>
+          <div class="service__box px-2 py-1">
+            <h2 data-aos="fade-right" class="fw-bolder text-primary mb-2">
+              Our Service
+            </h2>
+            <div
+              data-aos="fade-right"
+              data-aos-delay="50"
+              class="d-flex align-items-baseline gap-1 mb-1"
+            >
+              <div>
+                <Icon
+                  class="about__pointer"
+                  icon="codicon:debug-breakpoint-function"
+                  height="30"
+                />
+              </div>
+              <div>
+                <p class="m-0 p-0">
+                  At Petigrity Konsult, our responsibility is to provide clients
+                  with the most appropriate health insurance policy. Authorized
+                  by specific insurance companies to act on their behalf.
+                </p>
+              </div>
+            </div>
+            <div
+              data-aos="fade-right"
+              data-aos-delay="100"
+              class="d-flex align-items-baseline gap-1 mb-1"
+            >
+              <div>
+                <Icon
+                  class="about__pointer"
+                  icon="codicon:debug-breakpoint-function"
+                  height="30"
+                />
+              </div>
+              <div>
+                <p class="m-0 p-0">
+                  As a health insurance broker, we act in the best interest of
+                  our clients, helping them to compare and secure coverage based
+                  on their needs and budgets.
+                </p>
+              </div>
+            </div>
+            <div
+              data-aos="fade-right"
+              data-aos-delay="150"
+              class="d-flex align-items-baseline gap-1 mb-1"
+            >
+              <div>
+                <Icon
+                  class="about__pointer"
+                  icon="codicon:debug-breakpoint-function"
+                  height="30"
+                />
+              </div>
+              <div>
+                <p class="m-0 p-0">
+                  Whatever the size of your business, Petigrity can help you
+                  secure a plan which will provide valuable and high quality
+                  cover to your employees. This will mean less work days lost to
+                  sickness and overall a more productive workforce.
+                </p>
+              </div>
+            </div>
+
+            <div data-aos="fade-right" data-aos-delay="200" class="mt-2">
+              <router-link class="btn btn-primary" :to="{}"
+                >Read More</router-link
+              >
+            </div>
           </div>
         </div>
         <div class="col-lg-6 my-2">
-          <div class="service__img text-center">
+          <div data-aos="fade-left" class="service__img text-center">
             <img
               src="../../assets/images/img/service.svg"
               alt="service image"
@@ -27,91 +86,32 @@
           </div>
         </div>
       </div>
-
-      <!-- <div class="row">
-        <div class="col-lg-4 mb-2 d-flex align-items-stretch">
-          <div class="service__box p-2 shadow rounded text-center">
-            <h2 class="fw-bolder text-primary">Health Insurance</h2>
-            <img
-              src="../../assets/images/img/health-plan.svg"
-              alt="training icon"
-              class="img-fluid my-1"
-              width="150"
-            />
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Reprehenderit, autem!
-            </p>
-            <div class="mb-1 mt-2">
-              <router-link :to="{ name: '' }" class="section__btn rounded">
-                Learn more
-              </router-link>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 mb-2 d-flex align-items-stretch">
-          <div class="service__box p-2 shadow rounded text-center">
-            <h2 class="fw-bolder text-primary">
-              Recruitment & Staff Management
-            </h2>
-            <img
-              src="../../assets/images/img/recruitment.svg"
-              alt="training icon"
-              class="img-fluid my-1"
-              width="150"
-            />
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Reprehenderit, autem!
-            </p>
-            <div class="mb-1 mt-2">
-              <router-link :to="{ name: '' }" class="section__btn rounded">
-                Learn more
-              </router-link>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 mb-2 d-flex align-items-stretch">
-          <div class="service__box p-2 shadow rounded text-center">
-            <h2 class="fw-bolder text-primary">Training</h2>
-            <img
-              src="../../assets/images/img/training.svg"
-              alt="training icon"
-              class="img-fluid my-1"
-              width="150"
-            />
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Reprehenderit, autem!
-            </p>
-            <div class="mb-1 mt-2">
-              <router-link :to="{ name: '' }" class="section__btn rounded">
-                Learn more
-              </router-link>
-            </div>
-          </div>
-        </div>
-      </div> -->
     </div>
   </section>
 </template>
 
 <script setup>
-// import SubHeader from "@/components/home/SubHeader.vue";
+import { Icon } from "@iconify/vue";
+import AOS from "aos";
+AOS.init({ duration: 1000 });
 </script>
 
 <style lang="css">
 #services {
   position: relative;
-  padding: 3.5rem 0;
-  /* background-image: radial-gradient(at top left, #fff9fe, transparent),
-    radial-gradient(at top right, #edf0ff, transparent),
-    radial-gradient(at bottom left, #fff7f7, transparent); */
+  padding: 3rem 0;
 }
 .service__box {
-  background-image: radial-gradient(at top left, #fff9fe, transparent),
-    radial-gradient(at top right, #edf0ff, transparent),
-    radial-gradient(at bottom left, #fff7f7, transparent);
+  position: relative;
+}
+
+.service__box h2 {
+  position: relative;
+  font-size: 3.5rem;
+  -webkit-text-size-adjust: auto;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--blue-1);
 }
 
 .section__btn {

@@ -2,7 +2,7 @@
   <div id="about">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6" data-aos="fade-right">
+        <div class="col-lg-6 my-2" data-aos="fade-right">
           <div class="about__img text-center">
             <img
               src="../../assets/images/img/about.svg"
@@ -12,8 +12,8 @@
           </div>
         </div>
 
-        <div class="col-lg-6">
-          <div class="about__desc px-3 py-1">
+        <div class="col-lg-6 my-2">
+          <div class="about__desc px-2 py-1">
             <h2 data-aos="fade-left" class="fw-bolder text-primary mb-2">
               About Us
             </h2>
@@ -26,7 +26,7 @@
               <div>
                 <Icon
                   class="about__pointer"
-                  icon="carbon:condition-wait-point"
+                  icon="codicon:debug-breakpoint-log"
                   height="30"
                 />
               </div>
@@ -46,7 +46,7 @@
               <div>
                 <Icon
                   class="about__pointer"
-                  icon="carbon:condition-wait-point"
+                  icon="codicon:debug-breakpoint-log"
                   height="30"
                 />
               </div>
@@ -66,7 +66,7 @@
               <div>
                 <Icon
                   class="about__pointer"
-                  icon="carbon:condition-wait-point"
+                  icon="codicon:debug-breakpoint-log"
                   height="30"
                 />
               </div>
@@ -102,7 +102,7 @@ AOS.init({ duration: 1000 });
 <style lang="css">
 #about {
   position: relative;
-  padding: 4rem 0;
+  padding: 3rem 0;
 }
 .about__desc h2 {
   position: relative;
@@ -118,7 +118,7 @@ AOS.init({ duration: 1000 });
 .about__pointer {
   background: var(--blue-0);
   border-radius: 50%;
-  padding: 2px;
+  padding: 1px;
   color: var(--blue-1);
 }
 /* .section__btn {
