@@ -13,7 +13,21 @@ const HomeLayout = () => [
     name: "about",
     meta: {},
     component: () =>
-      import(/* webpackChunkName: "About" */ "@/views/home/AboutView.vue"),
+      import(/* webpackChunkName: "About" */ "@/views/page/AboutView.vue"),
+  },
+  {
+    path: "/service",
+    name: "service",
+    meta: {},
+    component: () =>
+      import(/* webpackChunkName: "About" */ "@/views/page/ServiceView.vue"),
+  },
+  {
+    path: "/contact",
+    name: "contact",
+    meta: {},
+    component: () =>
+      import(/* webpackChunkName: "About" */ "@/views/page/ContactView.vue"),
   },
 ];
 

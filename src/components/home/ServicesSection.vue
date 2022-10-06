@@ -92,8 +92,6 @@
 
 <script setup>
 import { Icon } from "@iconify/vue";
-import AOS from "aos";
-AOS.init({ duration: 1000 });
 </script>
 
 <style lang="css">
@@ -114,7 +112,7 @@ AOS.init({ duration: 1000 });
   -webkit-text-stroke-color: var(--blue-1);
 }
 
-.section__btn {
+/* .section__btn {
   background: var(--blue-0);
   color: var(--blue-1);
   padding: 0.6rem 1rem;
@@ -123,5 +121,5 @@ AOS.init({ duration: 1000 });
 .section__btn:hover {
   background: var(--blue-1);
   color: var(--light-0);
-}
+} */
 </style>

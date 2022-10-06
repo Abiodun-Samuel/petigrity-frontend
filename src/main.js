@@ -3,6 +3,7 @@ import App from "./App.vue";
 import router from "./router";
 import { store } from "./store";
 import Toast from "vue-toastification";
+import AOS from "aos";
 
 // import assets
 import "vue-toastification/dist/index.css";
@@ -10,6 +11,8 @@ import "./assets/css/nprogress.css";
 import "aos/dist/aos.css";
 
 import "bootstrap/dist/js/bootstrap.js";
+
+AOS.init({ duration: 1000, mirror: true });
 
 const app = createApp(App)
   .use(store)

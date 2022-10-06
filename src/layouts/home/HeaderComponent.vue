@@ -31,12 +31,14 @@
             >
           </li>
           <li class="nav-item mx-lg-3 my-lg-1">
-            <a @click="GoToView" class="nav-link" href="javascript.void(0)"
-              >Services</a
+            <router-link class="nav-link" :to="{ name: 'service' }"
+              >Service</router-link
             >
           </li>
           <li class="nav-item mx-lg-3 my-lg-1">
-            <router-link class="nav-link" to="#contact">Contact</router-link>
+            <router-link class="nav-link" :to="{ name: 'contact' }"
+              >Contact</router-link
+            >
           </li>
         </ul>
         <ul class="navbar-nav m-auto">

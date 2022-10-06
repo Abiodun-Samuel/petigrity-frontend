@@ -93,10 +93,7 @@
 </template>
 
 <script setup>
-import SubHeader from "@/components/home/SubHeader.vue";
 import { Icon } from "@iconify/vue";
-import AOS from "aos";
-AOS.init({ duration: 1000 });
 </script>
 
 <style lang="css">
