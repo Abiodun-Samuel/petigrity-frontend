@@ -7,6 +7,7 @@ import Toast from "vue-toastification";
 // import assets
 import "vue-toastification/dist/index.css";
 import "./assets/css/nprogress.css";
+import "aos/dist/aos.css";
 
 import "bootstrap/dist/js/bootstrap.js";
 

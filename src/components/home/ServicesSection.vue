@@ -24,7 +24,6 @@
               alt="service image"
               class="rounded w-75 shadow"
             />
-            <!-- <div class></div> -->
           </div>
         </div>
       </div>
