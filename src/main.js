@@ -12,7 +12,7 @@ import "aos/dist/aos.css";
 
 import "bootstrap/dist/js/bootstrap.js";
 
-AOS.init({ duration: 1000, mirror: true });
+AOS.init({ duration: 500, mirror: true });
 
 const app = createApp(App)
   .use(store)

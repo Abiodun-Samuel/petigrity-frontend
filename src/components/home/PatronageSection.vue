@@ -33,10 +33,7 @@
                 <p class="m-0 p-0">
                   At Petigrity Konsult, we have partnered with various health
                   insurers to provide solutions that are specifically tailored
-                  to every client's specific need. We identify the challenges
-                  and create strategies that turn every problem into an
-                  opportunity. We make sure that the strategies we make are
-                  secure and without interruption to our client's business.
+                  to every client's specific need.
                 </p>
               </div>
             </div>
@@ -56,10 +53,7 @@
                 <p class="m-0 p-0">
                   Petigrity Konsult is powered by the expertise of our managing
                   partners who have health insurance management experience of at
-                  least 10 years. Starting with just a handful of insurers a few
-                  years back, we now have the top Health Insurance companies
-                  across Nigeria who we work with to give our clients a tailored
-                  experience.
+                  least 10 years.
                 </p>
               </div>
             </div>
@@ -100,10 +94,7 @@
                 <p class="m-0 p-0">
                   We have a pool of experts and consultants with advanced
                   knowledge in their field. We apply a systematic and analytic
-                  approach that works. With a data-driven analysis and
-                  community-based research, we make sure that we have a working
-                  solution that is not just business centric, but also
-                  acceptable to community & professional standards.
+                  approach that works.
                 </p>
               </div>
             </div>

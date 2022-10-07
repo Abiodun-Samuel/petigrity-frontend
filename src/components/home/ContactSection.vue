@@ -119,4 +119,7 @@ import { Icon } from "@iconify/vue";
   background: var(--blue-1);
   border-radius: 5px;
 }
+.contact__details span {
+  color: var(--yellow-1) !important;
+}
 </style>
