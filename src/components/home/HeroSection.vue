@@ -16,7 +16,12 @@
             </div>
             <div class="hero__button mt-2">
               <button
-                class="btn btn-primary rounded-pill d-flex align-items-center"
+                class="
+                  btn btn-primary
+                  rounded-pill
+                  d-flex
+                  align-items-center
+                "
               >
                 <Icon icon="codicon:debug-start" /> <span>Get Started</span>
               </button>

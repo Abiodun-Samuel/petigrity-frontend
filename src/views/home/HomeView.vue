@@ -1,5 +1,6 @@
 <template>
   <HeroSection />
+  <BrandsSection />
   <AboutSection />
   <ServicesSection />
   <PatronageSection />
@@ -13,5 +14,6 @@ import AboutSection from "@/components/home/AboutSection.vue";
 import ContactSection from "@/components/home/ContactSection.vue";
 import ServicesSection from "@/components/home/ServicesSection.vue";
 import PatronageSection from "@/components/home/PatronageSection.vue";
+import BrandsSection from "@/components/home/BrandsSection.vue";
 // import NewsletterSection from "@/components/home/NewletterSection.vue";
 </script>
