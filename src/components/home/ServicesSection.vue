@@ -3,21 +3,22 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 my-2 order-lg-2">
-          <div data-aos="fade-left" class="service__img">
+          <div data-aos="fade-up" class="text-lg-end">
             <img
               src="../../assets/images/img/service.svg"
               alt="service image"
-              class="rounded w-75 shadow"
+              class="img-fluid w-75 shadow rounded"
             />
           </div>
         </div>
         <div class="col-lg-6 my-2 order-lg-1">
-          <div class="service__box px-2 py-1">
-            <h2 data-aos="fade-right" class="fw-bolder text-primary mb-2">
-              Our Service
+          <div class="service__box">
+            <h2 data-aos="fade-up" class="fw-bolder mb-2">
+              Our <span>Service</span>
             </h2>
+
             <div
-              data-aos="fade-right"
+              data-aos="fade-up"
               data-aos-delay="50"
               class="d-flex align-items-baseline gap-1 mb-1"
             >
@@ -38,7 +39,7 @@
               </div>
             </div>
             <div
-              data-aos="fade-right"
+              data-aos="fade-up"
               data-aos-delay="50"
               class="d-flex align-items-baseline gap-1 mb-1"
             >
@@ -60,7 +61,7 @@
             </div>
 
             <div
-              data-aos="fade-right"
+              data-aos="fade-up"
               data-aos-delay="50"
               class="d-flex align-items-baseline gap-1 mb-1"
             >
@@ -80,7 +81,7 @@
               </div>
             </div>
 
-            <div data-aos="fade-right" data-aos-delay="200" class="mt-2">
+            <div data-aos="fade-up" data-aos-delay="200" class="mt-2">
               <router-link class="btn btn-primary" :to="{}"
                 >Read More</router-link
               >
@@ -99,19 +100,14 @@ import { Icon } from "@iconify/vue";
 <style lang="css">
 #services {
   position: relative;
-  padding: 3rem 0;
+  padding-top: 4rem;
 }
 .service__box {
   position: relative;
 }
-
-.service__box h2 {
+.service__box h2 span {
   position: relative;
-  font-size: 3.5rem;
-  -webkit-text-size-adjust: auto;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: var(--blue-1);
+  color: var(--yellow-1);
 }
 
 /* .section__btn {

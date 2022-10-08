@@ -3,7 +3,9 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <h1 class="fw-bold text-center">Our <span>Trusted</span> Clients</h1>
+          <h2 class="fw-bolder text-center">
+            Our <span>Trusted</span> Clients
+          </h2>
           <div
             class="
               brand__box
@@ -34,13 +36,13 @@ export default {};
 <style lang="css">
 .brands {
   position: relative;
-  padding: 3rem 0;
+  padding-top: 4rem;
 }
-.brands h1 span {
+.brands h2 span {
   position: relative;
   color: var(--yellow-1);
 }
-.brands h1 span::before {
+/* .brands h2 span::before {
   content: "";
   background: var(--yellow-1);
   height: 2.5px;
@@ -48,5 +50,5 @@ export default {};
   bottom: 2px;
   left: 0;
   right: 0;
-}
+} */
 </style>

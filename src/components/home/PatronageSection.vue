@@ -2,7 +2,7 @@
   <div class="patronage">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-6 my-2">
           <div data-aos="fade-right" class="patronage_img">
             <img
               src="../../assets/images/img/choose.svg"
@@ -11,8 +11,8 @@
             />
           </div>
         </div>
-        <div class="col-lg-6">
-          <div class="patronage__details px-2 py-1">
+        <div class="col-lg-6 my-2">
+          <div class="patronage__details">
             <h2 data-aos="fade-left" class="fw-bolder text-primary mb-2">
               Why Choose Us
             </h2>

@@ -2,24 +2,24 @@
   <div id="about">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 my-2" data-aos="fade-right">
-          <div class="about__img text-center">
+        <div class="col-lg-6 my-2" data-aos="fade-up">
+          <div class="about__img">
             <img
-              src="../../assets/images/img/about.svg"
+              src="../../assets/images/about.svg"
               alt="about us page"
-              class="img-fluid shadow rounded"
+              class="img-fluid w-75 shadow rounded"
             />
           </div>
         </div>
 
         <div class="col-lg-6 my-2">
-          <div class="about__desc px-2 py-1">
-            <h2 data-aos="fade-left" class="fw-bolder text-primary mb-2">
-              About Us
+          <div class="about__desc">
+            <h2 data-aos="fade-up" class="fw-bolder mb-2">
+              <span>About</span> Us
             </h2>
 
             <div
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-delay="50"
               class="d-flex align-items-baseline gap-1 mb-1"
             >
@@ -39,7 +39,7 @@
               </div>
             </div>
             <div
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-delay="100"
               class="d-flex align-items-baseline gap-1 mb-1"
             >
@@ -59,7 +59,7 @@
               </div>
             </div>
             <div
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-delay="150"
               class="d-flex align-items-baseline gap-1 mb-1"
             >
@@ -80,7 +80,7 @@
               </div>
             </div>
 
-            <div data-aos="fade-left" data-aos-delay="200" class="mt-2">
+            <div data-aos="fade-up" data-aos-delay="200" class="mt-2">
               <router-link class="btn btn-primary" :to="{ name: 'about' }"
                 >Read More</router-link
               >
@@ -99,16 +99,24 @@ import { Icon } from "@iconify/vue";
 <style lang="css">
 #about {
   position: relative;
-  padding: 3rem 0;
+  padding-top: 4rem;
 }
 .about__desc h2 {
   position: relative;
-  font-size: 3.5rem;
-  -webkit-text-size-adjust: auto;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: var(--blue-1);
 }
+.about__desc h2 span {
+  position: relative;
+  color: var(--yellow-1);
+}
+/* .about__desc h2 span::before {
+  content: "";
+  background: var(--yellow-1);
+  height: 2.5px;
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+} */
 .about__img {
   position: relative;
 }
