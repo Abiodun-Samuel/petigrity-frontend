@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
-          <div data-aos="fade-right" class="patronage_img text-center">
+          <div data-aos="fade-right" class="patronage_img">
             <img
               src="../../assets/images/img/choose.svg"
               alt="patronage image"

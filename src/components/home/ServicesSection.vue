@@ -2,7 +2,16 @@
   <section id="services" ref="services">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 my-2">
+        <div class="col-lg-6 my-2 order-lg-2">
+          <div data-aos="fade-left" class="service__img">
+            <img
+              src="../../assets/images/img/service.svg"
+              alt="service image"
+              class="rounded w-75 shadow"
+            />
+          </div>
+        </div>
+        <div class="col-lg-6 my-2 order-lg-1">
           <div class="service__box px-2 py-1">
             <h2 data-aos="fade-right" class="fw-bolder text-primary mb-2">
               Our Service
@@ -20,16 +29,39 @@
                 />
               </div>
               <div>
+                <h4 class="fw-bolder">Professional Impartial Advice</h4>
                 <p class="m-0 p-0">
-                  At Petigrity Konsult, our responsibility is to provide clients
-                  with the most appropriate health insurance policy. Authorized
-                  by specific insurance companies to act on their behalf.
+                  We make impartial recommendations based on you, or your
+                  business’s health insurance needs, and leverage our strong
+                  partnerships with insurers to negotiate the best premiums.
                 </p>
               </div>
             </div>
             <div
               data-aos="fade-right"
-              data-aos-delay="100"
+              data-aos-delay="50"
+              class="d-flex align-items-baseline gap-1 mb-1"
+            >
+              <div>
+                <Icon
+                  class="about__pointer"
+                  icon="codicon:debug-breakpoint-function"
+                  height="30"
+                />
+              </div>
+              <div>
+                <h4 class="fw-bolder">Additional Client Support</h4>
+                <p class="m-0 p-0">
+                  Improved customer service and additional customer support,
+                  smooth policy buying and transitioning process from one HMO to
+                  another.
+                </p>
+              </div>
+            </div>
+
+            <div
+              data-aos="fade-right"
+              data-aos-delay="50"
               class="d-flex align-items-baseline gap-1 mb-1"
             >
               <div>
@@ -41,30 +73,9 @@
               </div>
               <div>
                 <p class="m-0 p-0">
-                  As a health insurance broker, we act in the best interest of
-                  our clients, helping them to compare and secure coverage based
-                  on their needs and budgets.
-                </p>
-              </div>
-            </div>
-            <div
-              data-aos="fade-right"
-              data-aos-delay="150"
-              class="d-flex align-items-baseline gap-1 mb-1"
-            >
-              <div>
-                <Icon
-                  class="about__pointer"
-                  icon="codicon:debug-breakpoint-function"
-                  height="30"
-                />
-              </div>
-              <div>
-                <p class="m-0 p-0">
-                  Whatever the size of your business, Petigrity can help you
-                  secure a plan which will provide valuable and high quality
-                  cover to your employees. This will mean less work days lost to
-                  sickness and overall a more productive workforce.
+                  We also offer a wide range of additional, complementary
+                  services such as claims processing assistance, current plan
+                  review, renewal, and many more, all at no additional cost.
                 </p>
               </div>
             </div>
@@ -74,15 +85,6 @@
                 >Read More</router-link
               >
             </div>
-          </div>
-        </div>
-        <div class="col-lg-6 my-2">
-          <div data-aos="fade-left" class="service__img text-center">
-            <img
-              src="../../assets/images/img/service.svg"
-              alt="service image"
-              class="rounded w-75 shadow"
-            />
           </div>
         </div>
       </div>
