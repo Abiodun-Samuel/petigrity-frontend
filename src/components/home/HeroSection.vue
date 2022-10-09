@@ -19,11 +19,13 @@
                 class="
                   btn btn-primary
                   rounded-pill
+                  btn-lg
                   d-flex
                   align-items-center
                 "
               >
-                <Icon icon="codicon:debug-start" /> <span>Get Started</span>
+                <Icon icon="codicon:debug-start" class="me-1" />
+                <span>Get Started</span>
               </button>
             </div>
           </div>

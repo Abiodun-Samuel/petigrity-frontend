@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 my-2">
-          <div data-aos="fade-right" class="patronage_img">
+          <div data-aos="fade-up" class="patronage_img">
             <img
               src="../../assets/images/img/choose.svg"
               alt="patronage image"
@@ -13,12 +13,12 @@
         </div>
         <div class="col-lg-6 my-2">
           <div class="patronage__details">
-            <h2 data-aos="fade-left" class="fw-bolder text-primary mb-2">
+            <h2 data-aos="fade-up" class="fw-bolder text-primary mb-2">
               Why Choose Us
             </h2>
 
             <div
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-delay="50"
               class="d-flex align-items-baseline gap-1 mb-1"
             >
@@ -38,7 +38,7 @@
               </div>
             </div>
             <div
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-delay="100"
               class="d-flex align-items-baseline gap-1 mb-1"
             >
@@ -58,7 +58,7 @@
               </div>
             </div>
             <div
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-delay="150"
               class="d-flex align-items-baseline gap-1 mb-1"
             >
@@ -79,7 +79,7 @@
               </div>
             </div>
             <div
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-delay="150"
               class="d-flex align-items-baseline gap-1 mb-1"
             >
