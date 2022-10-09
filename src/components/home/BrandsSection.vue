@@ -3,9 +3,16 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <h2 class="fw-bolder text-center">
-            Our <span>Trusted</span> Clients
-          </h2>
+          <div class="sub__header text-center">
+            <h2 data-aos="fade-up" class="fw-bolder mb-2">
+              Our <span>Trusted</span> Clients
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
           <div
             class="
               brand__box
@@ -36,19 +43,13 @@ export default {};
 <style lang="css">
 .brands {
   position: relative;
-  padding-top: 4rem;
+  padding-top: 5rem;
 }
-.brands h2 span {
+.sub__header h2 {
+  position: relative;
+}
+.sub__header h2 span {
   position: relative;
   color: var(--yellow-1);
 }
-/* .brands h2 span::before {
-  content: "";
-  background: var(--yellow-1);
-  height: 2.5px;
-  position: absolute;
-  bottom: 2px;
-  left: 0;
-  right: 0;
-} */
 </style>
