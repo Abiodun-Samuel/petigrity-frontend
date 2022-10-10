@@ -2,13 +2,13 @@
   <div class="container">
     <div class="row d-flex justify-content-center">
       <div class="col-lg-7">
-        <div class="newsletter rounded-pill shadow-lg p-lg-5 p-2 text-center">
+        <div class="newsletter rounded-pill shadow-lg p-lg-5 p-3 text-center">
           <h3 class="fw-bolder text-light">Subscribe to our newsletter</h3>
           <div class="form-row">
             <div class="newsletter__input">
               <input
                 type="email"
-                placeholder="Enter your email address"
+                placeholder="Enter your email"
                 class="form-control"
               />
               <button class="btn btn-primary rounded">Subscribe</button>

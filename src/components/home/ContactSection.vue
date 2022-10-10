@@ -69,57 +69,59 @@
           </div>
         </div>
         <div class="col-lg-6 mb-2">
-          <h4 class="fw-bold">
-            Fill the form and we will get back to you shortly
-          </h4>
+          <div class="contact__form p-2 shadow rounded bg-white">
+            <h4 class="fw-bold">
+              Fill the form and we will get back to you shortly
+            </h4>
 
-          <div class="mt-3">
-            <div class="row my-2">
-              <div class="col-6">
-                <label for="" class="label-control">Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Enter your name"
-                />
+            <div class="mt-3">
+              <div class="row my-2">
+                <div class="col-6">
+                  <label for="" class="label-control">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter your name"
+                  />
+                </div>
+                <div class="col-6">
+                  <label for="" class="label-control">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Enter your email"
+                  />
+                </div>
               </div>
-              <div class="col-6">
-                <label for="" class="label-control">Email</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="Enter your email"
-                />
+              <div class="row my-2">
+                <div class="col-6">
+                  <label for="" class="label-control">Phone</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    placeholder="Enter your phone number"
+                  />
+                </div>
+                <div class="col-6">
+                  <label for="" class="label-control">Subject</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Subject"
+                  />
+                </div>
               </div>
-            </div>
-            <div class="row my-2">
-              <div class="col-6">
-                <label for="" class="label-control">Phone</label>
-                <input
-                  type="tel"
-                  class="form-control"
-                  placeholder="Enter your phone number"
-                />
+              <div class="form-row my-2">
+                <label for="" class="label-control">Message</label>
+                <textarea rows="5" class="form-control"></textarea>
               </div>
-              <div class="col-6">
-                <label for="" class="label-control">Subject</label>
-                <input type="text" class="form-control" placeholder="Subject" />
+              <div class="form-row my-2">
+                <button
+                  class="btn btn-outline-primary btn-lg shadow-lg rounded-pill"
+                >
+                  Send
+                </button>
               </div>
-            </div>
-            <!-- <div class="form-row my-2">
-              <label for="" class="label-control">Subject</label>
-              <input type="text" class="form-control" placeholder="Subject" />
-            </div> -->
-            <div class="form-row my-2">
-              <label for="" class="label-control">Message</label>
-              <textarea rows="5" class="form-control"></textarea>
-            </div>
-            <div class="form-row my-2">
-              <button
-                class="btn btn-outline-primary btn-lg shadow-lg rounded-pill"
-              >
-                Send
-              </button>
             </div>
           </div>
         </div>
