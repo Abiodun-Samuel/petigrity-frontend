@@ -1,18 +1,12 @@
 <template>
   <div id="about">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="sub__header text-center">
-            <h2 data-aos="fade-up" class="fw-bolder mb-2">
-              <span>About</span> Us
-            </h2>
-          </div>
-        </div>
-      </div>
+      <SubHeader data-aos="fade-up">
+        <h2 class="fw-bolder mb-2"><span>About</span> Us</h2>
+      </SubHeader>
 
       <div class="row">
-        <div class="col-lg-6 my-2" data-aos="fade-up">
+        <div class="col-lg-6 my-2" data-aos="fade-up" data-aos-delay="50">
           <div class="about__img">
             <img
               src="../../assets/images/about.svg"
@@ -26,7 +20,7 @@
           <div class="about__desc">
             <div
               data-aos="fade-up"
-              data-aos-delay="50"
+              data-aos-delay="100"
               class="d-flex align-items-baseline gap-1 mb-2 p-1 rounded shadow"
             >
               <div>
@@ -46,7 +40,7 @@
             </div>
             <div
               data-aos="fade-up"
-              data-aos-delay="100"
+              data-aos-delay="150"
               class="d-flex align-items-baseline gap-1 mb-2 p-1 rounded shadow"
             >
               <div>
@@ -66,7 +60,7 @@
             </div>
             <div
               data-aos="fade-up"
-              data-aos-delay="150"
+              data-aos-delay="200"
               class="d-flex align-items-baseline gap-1 mb-2 p-1 rounded shadow"
             >
               <div>
@@ -86,7 +80,7 @@
               </div>
             </div>
 
-            <div data-aos="fade-up" data-aos-delay="200" class="mt-2">
+            <div data-aos="fade-up" data-aos-delay="250" class="mt-2">
               <router-link
                 class="btn btn-lg btn-outline-primary rounded-pill shadow-lg"
                 :to="{ name: 'about' }"
@@ -102,19 +96,13 @@
 
 <script setup>
 import { Icon } from "@iconify/vue";
+import SubHeader from "@/components/home/SubHeader.vue";
 </script>
 
 <style lang="css">
 #about {
   position: relative;
   padding-top: 5rem;
-}
-.sub__header h2 {
-  position: relative;
-}
-.sub__header h2 span {
-  position: relative;
-  color: var(--yellow-1);
 }
 .about__img {
   position: relative;
@@ -124,6 +112,11 @@ import { Icon } from "@iconify/vue";
   border-radius: 50%;
   padding: 1px;
   color: var(--blue-1);
+}
+@media screen and (max-width: 768px) {
+  .about__img img {
+    width: 100% !important;
+  }
 }
 /* .section__btn {
   color: var(--blue-1);

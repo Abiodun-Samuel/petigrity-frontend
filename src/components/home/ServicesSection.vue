@@ -1,17 +1,16 @@
 <template>
   <section id="services">
     <div class="container">
+      <SubHeader data-aos="fade-up">
+        <h2 class="fw-bolder mb-2"><span>Our</span> Services</h2>
+      </SubHeader>
+
       <div class="row">
-        <div class="col-lg-12">
-          <div class="sub__header text-center">
-            <h2 data-aos="fade-up" class="fw-bolder mb-2">
-              Our <span>Services</span>
-            </h2>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-6 col-md-6 my-2 d-flex align-items-stretch">
+        <div
+          data-aos-delay="50"
+          data-aos="fade-up"
+          class="col-lg-6 col-md-6 my-2 d-flex align-items-stretch"
+        >
           <div class="service__details text-center p-1 shadow rounded">
             <img
               src="../../assets/images/icons/advice.png"
@@ -29,7 +28,11 @@
             </p>
           </div>
         </div>
-        <div class="col-lg-6 col-md-6 my-2 d-flex align-items-stretch">
+        <div
+          data-aos-delay="100"
+          data-aos="fade-up"
+          class="col-lg-6 col-md-6 my-2 d-flex align-items-stretch"
+        >
           <div class="service__details text-center p-1 shadow rounded">
             <img
               src="../../assets/images/icons/support.png"
@@ -46,7 +49,11 @@
             </p>
           </div>
         </div>
-        <div class="col-lg-6 col-md-6 my-2 d-flex align-items-stretch">
+        <div
+          data-aos-delay="150"
+          data-aos="fade-up"
+          class="col-lg-6 col-md-6 my-2 d-flex align-items-stretch"
+        >
           <div class="service__details text-center p-1 shadow rounded">
             <img
               src="../../assets/images/icons/hospital.png"
@@ -61,33 +68,24 @@
             </p>
           </div>
         </div>
-        <div class="col-lg-6 col-md-6 my-2 d-flex align-items-stretch">
-          <div
-            data-aos="fade-up"
-            data-aos-delay="200"
-            class="service__btn rounded shadow w-100 p-2"
-          >
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          class="col-lg-6 col-md-6 my-2 d-flex align-items-stretch"
+        >
+          <div class="service__btn rounded shadow w-100 p-2">
             <router-link class="btn btn-lg btn-primary rounded-pill" :to="{}"
               >Read More</router-link
             >
           </div>
         </div>
-        <!-- <div class="col-lg-6 my-2 order-lg-2">
-          <div data-aos="fade-up" class="text-lg-end">
-            <img
-              src="../../assets/images/img/service.svg"
-              alt="service image"
-              class="img-fluid shadow rounded"
-            />
-          </div>
-        </div> -->
       </div>
     </div>
   </section>
 </template>
 
 <script setup>
-import { Icon } from "@iconify/vue";
+import SubHeader from "@/components/home/SubHeader.vue";
 </script>
 
 <style lang="css">
@@ -97,13 +95,6 @@ import { Icon } from "@iconify/vue";
 }
 .service__box {
   position: relative;
-}
-.sub__header h2 {
-  position: relative;
-}
-.sub__header h2 span {
-  position: relative;
-  color: var(--yellow-1);
 }
 .service__btn {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),

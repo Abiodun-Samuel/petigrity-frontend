@@ -1,15 +1,9 @@
 <template>
   <div class="brands">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="sub__header text-center">
-            <h2 data-aos="fade-up" class="fw-bolder mb-2">
-              Our <span>Trusted</span> Clients
-            </h2>
-          </div>
-        </div>
-      </div>
+      <SubHeader data-aos="fade-up">
+        <h2 class="fw-bolder mb-2">Our <span>Trusted</span> Clients</h2>
+      </SubHeader>
 
       <div class="row">
         <div class="col-lg-12">
@@ -24,7 +18,13 @@
               flex-wrap
             "
           >
-            <div v-for="value in 4" :key="value" class="shadow rounded">
+            <div
+              v-for="(value, index) in 5"
+              :key="value"
+              class="shadow rounded"
+              data-aos="fade-up"
+              :data-aos-delay="index * 50"
+            >
               <img
                 src="../../assets/images/img/doctor.svg"
                 width="100"
@@ -37,19 +37,14 @@
     </div>
   </div>
 </template>
-<script>
-export default {};
+
+<script setup>
+import SubHeader from "@/components/home/SubHeader.vue";
 </script>
+
 <style lang="css">
 .brands {
   position: relative;
   padding-top: 5rem;
-}
-.sub__header h2 {
-  position: relative;
-}
-.sub__header h2 span {
-  position: relative;
-  color: var(--yellow-1);
 }
 </style>
