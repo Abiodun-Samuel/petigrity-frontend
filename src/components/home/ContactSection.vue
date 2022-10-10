@@ -1,17 +1,17 @@
 <template>
   <div id="contact">
     <div class="container">
-      <SubHeader>
+      <SubHeader data-aos="fade-up">
         <h2 class="fw-bolder mb-2"><span>Contact</span> Us</h2>
       </SubHeader>
 
       <div class="row">
-        <div class="col-lg-6 mb-5">
+        <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="50">
           <div class="contact__details px-2 pt-2">
             <h3 class="h2 text-primary fw-bolder">Contact Information</h3>
 
             <div class="row mt-2">
-              <div class="col-6">
+              <div class="col-12 my-1">
                 <div
                   class="
                     shadow
@@ -34,7 +34,7 @@
                   <p class="fw-bold mb-0 mt-1">+234 812 461 4434</p>
                 </div>
               </div>
-              <div class="col-6">
+              <div class="col-12 my-1">
                 <div
                   class="
                     shadow
@@ -68,7 +68,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 mb-2">
+        <div class="col-lg-6 mb-2" data-aos="fade-up" data-aos-delay="100">
           <div class="contact__form p-2 shadow rounded bg-white">
             <h4 class="fw-bold">
               Fill the form and we will get back to you shortly

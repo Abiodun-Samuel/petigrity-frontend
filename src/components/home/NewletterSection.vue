@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row d-flex justify-content-center">
       <div class="col-lg-7">
-        <div class="newsletter rounded-pill shadow-lg p-lg-5 p-3 text-center">
+        <div class="newsletter rounded-pill  p-lg-5 p-3 text-center">
           <h3 class="fw-bolder text-light">Subscribe to our newsletter</h3>
           <div class="form-row">
             <div class="newsletter__input">

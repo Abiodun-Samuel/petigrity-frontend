@@ -1,10 +1,7 @@
 <template>
   <div class="row">
     <div class="col-lg-12">
-      <div
-        data-aos="fade-up"
-        class="sub__header d-flex justify-content-center align-items-center"
-      >
+      <div class="sub__header d-flex justify-content-center align-items-center">
         <slot />
         <!-- <h2 class="fw-bolder mb-2">Our <span>Trusted</span> Clients</h2> -->
       </div>

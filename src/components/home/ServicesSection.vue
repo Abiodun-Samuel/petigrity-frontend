@@ -9,16 +9,16 @@
         <div
           data-aos-delay="50"
           data-aos="fade-up"
-          class="col-lg-6 col-md-6 my-2 d-flex align-items-stretch"
+          class="col-lg-4 col-md-6 my-2 d-flex align-items-stretch"
         >
-          <div class="service__details text-center p-1 shadow rounded">
+          <div class="service__details text-center p-2 shadow rounded">
             <img
-              src="../../assets/images/icons/advice.png"
-              width="50"
+              src="../../assets/images/icons/svg/advice.svg"
+              width="120"
               alt="service section icon"
-              class="my-1 shadow rounded-circle"
+              class=""
             />
-            <h4 class="fw-bolder text-primary my-1">
+            <h4 class="fw-bolder text-primary">
               Professional Impartial Advice
             </h4>
             <p>
@@ -26,59 +26,72 @@
               health insurance needs, and leverage our strong partnerships with
               insurers to negotiate the best premiums.
             </p>
+             <div class="">
+              <router-link class="btn btn-outline-primary rounded-pill" :to="{}"
+                >Read More</router-link
+              >
+            </div>
           </div>
         </div>
         <div
           data-aos-delay="100"
           data-aos="fade-up"
-          class="col-lg-6 col-md-6 my-2 d-flex align-items-stretch"
+          class="col-lg-4 col-md-6 my-2 d-flex align-items-stretch"
         >
-          <div class="service__details text-center p-1 shadow rounded">
+          <div class="service__details text-center p-2 shadow rounded">
             <img
-              src="../../assets/images/icons/support.png"
-              width="50"
+              src="../../assets/images/icons/svg/support.svg"
+              width="120"
               alt="service section icon"
-              class="my-1 shadow rounded-circle"
+              class=""
             />
-            <h4 class="fw-bolder text-primary my-1">
-              Additional Client Support
-            </h4>
+            <h4 class="fw-bolder text-primary">Additional Client Support</h4>
             <p>
               Improved customer service and additional customer support, smooth
               policy buying and transitioning process from one HMO to another.
             </p>
+             <div class="">
+              <router-link class="btn btn-outline-primary rounded-pill" :to="{}"
+                >Read More</router-link
+              >
+            </div>
           </div>
         </div>
         <div
           data-aos-delay="150"
           data-aos="fade-up"
-          class="col-lg-6 col-md-6 my-2 d-flex align-items-stretch"
+          class="col-lg-4 col-md-6 my-2 d-flex align-items-stretch"
         >
-          <div class="service__details text-center p-1 shadow rounded">
+          <div class="service__details text-center p-2 shadow rounded">
             <img
-              src="../../assets/images/icons/hospital.png"
-              width="50"
+              src="../../assets/images/icons/svg/general.svg"
+              width="120"
               alt="service section icon"
-              class="my-1 shadow rounded-circle"
+              class=""
             />
             <p class="my-1">
               We also offer a wide range of additional, complementary services
               such as claims processing assistance, current plan review,
               renewal, and many more, all at no additional cost.
             </p>
+            <div class="">
+              <router-link class="btn btn-outline-primary rounded-pill" :to="{}"
+                >Read More</router-link
+              >
+            </div>
           </div>
         </div>
-        <div
+        <!-- <div
           data-aos="fade-up"
           data-aos-delay="200"
-          class="col-lg-6 col-md-6 my-2 d-flex align-items-stretch"
+          class="col-lg-4 col-md-6 my-2 d-flex align-items-stretch"
         >
           <div class="service__btn rounded shadow w-100 p-2">
             <router-link class="btn btn-lg btn-primary rounded-pill" :to="{}"
               >Read More</router-link
             >
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
