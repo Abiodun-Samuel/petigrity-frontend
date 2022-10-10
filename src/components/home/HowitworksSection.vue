@@ -9,7 +9,7 @@
         <div class="col-lg-12">
           <div class="main">
             <ul class="timeline">
-              <li class="timeline-item">
+              <li data-aos="fade-up" data-aos-delay="50" class="timeline-item">
                 <div class="timeline-content rounded shadow text-center">
                   <img
                     src="../../assets/images/icons/svg/phonecall.svg"
@@ -24,7 +24,7 @@
                   </p>
                 </div>
               </li>
-              <li class="timeline-item">
+              <li data-aos="fade-up" data-aos-delay="100" class="timeline-item">
                 <div class="timeline-content rounded shadow text-center">
                   <img
                     src="../../assets/images/icons/svg/research.svg"
@@ -38,7 +38,7 @@
                   </p>
                 </div>
               </li>
-              <li class="timeline-item">
+              <li data-aos="fade-up" data-aos-delay="150" class="timeline-item">
                 <div class="timeline-content rounded shadow text-center">
                   <img
                     src="../../assets/images/icons/svg/result.svg"
@@ -53,8 +53,13 @@
                   </p>
                 </div>
               </li>
-              <li class="timeline-item">
+              <li data-aos="fade-up" data-aos-delay="200" class="timeline-item">
                 <div class="timeline-content rounded shadow text-center">
+                  <img
+                    src="../../assets/images/icons/svg/start.svg"
+                    alt="phone call"
+                    width="120"
+                  />
                   <p>
                     We'll give you access to the best plans on the market and
                     make the onboarding/switch process simple for you. We pay

@@ -8,11 +8,12 @@
       <div class="row">
         <div class="col-lg-6 my-2" data-aos="fade-up" data-aos-delay="50">
           <div class="about__img">
-            <div></div>
+            <div class="one"></div>
+            <div class="two"></div>
             <img
               src="../../assets/images/about.svg"
               alt="about us page"
-              class="img-fluid rounded"
+              class="img-fluid w-75 shadow-sm rounded"
             />
           </div>
         </div>
@@ -115,7 +116,7 @@ import SubHeader from "@/components/home/SubHeader.vue";
   border-radius: 50%;
   background: var(--blue-0); */
 }
-.about__img div {
+.about__img .one {
   position: absolute;
   top: 0;
   left: 0;
@@ -123,6 +124,16 @@ import SubHeader from "@/components/home/SubHeader.vue";
   width: 80px;
   border-radius: 50%;
   background: var(--blue-0);
+  z-index: -10;
+}
+.about__img .two {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background: var(--yellow-0);
   z-index: -10;
 }
 
