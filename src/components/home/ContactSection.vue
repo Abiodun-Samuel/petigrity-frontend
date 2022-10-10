@@ -25,7 +25,7 @@
                     p-1
                   "
                 >
-                  <img
+                  <img loading='lazy'
                     src="../../assets/images/icons/telephone.png"
                     alt="phone icon"
                     width="24"
@@ -48,7 +48,7 @@
                     p-1
                   "
                 >
-                  <img
+                  <img loading='lazy'
                     src="../../assets/images/icons/message.png"
                     alt="phone icon"
                     width="24"
@@ -60,7 +60,7 @@
             </div>
 
             <div class="text-center">
-              <img
+              <img loading='lazy'
                 src="../../assets/images/img/contact.svg"
                 alt=""
                 class="w-50 contact__img img-fluid"

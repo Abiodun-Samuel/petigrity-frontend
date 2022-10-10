@@ -33,17 +33,17 @@
 
         <div class="col-lg-6 my-2">
           <div class="hero__img text-center">
-            <img
+            <img loading='lazy'
               src="../../assets/images/hero-img-one.svg"
               alt="hero-image"
               class="hero_img_one shadow"
             />
-            <img
+            <img loading='lazy'
               src="../../assets/images/ins.svg"
               alt="hero image"
               class="hero_img_two shadow"
             />
-            <img
+            <img loading='lazy'
               src="../../assets/images/Insurance-amic.svg"
               alt="hero image"
               class="hero_img_three shadow"

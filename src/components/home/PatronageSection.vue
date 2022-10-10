@@ -5,64 +5,120 @@
         <h2 class="fw-bolder mb-2">Why <span>Choose</span> Us</h2>
       </SubHeader>
 
-      <div class="row">
-        <div data-aos="fade-up" data-aos-delay="50" class="col-lg-5 my-2">
-          <div class="patronage_img">
-            <img
-              src="../../assets/images/img/choose.svg"
-              alt="patronage image"
-              class="img-fluid w-75 rounded shadow"
-            />
-          </div>
-        </div>
-
-        <div class="col-lg-7 my-2">
-          <div class="row">
-            <div data-aos="fade-up" data-aos-delay="100" class="col-6 my-2">
-              <Icon
-                class="about__pointer"
-                icon="codicon:debug-breakpoint-data"
-                height="30"
+      <div class="row mt-5">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="50"
+          class="
+            col-lg-3 col-md-4 col-sm-6
+            mb-4
+            mt-1
+            d-flex
+            align-items-stretch
+          "
+        >
+          <div class="patronage_box shadow rounded p-2 text-center">
+            <div>
+              <h3>1</h3>
+              <img
+                loading="lazy"
+                src="../../assets/images/hero-img-one.svg"
+                alt="patronage image"
+                class="bg-white shadow"
+                width="120"
+                height="120"
               />
-              <p class="">
+              <p class="mt-1">
                 At Petigrity Konsult, we have partnered with various health
                 insurers to provide solutions that are specifically tailored to
                 every client's specific need.
               </p>
             </div>
-            <div data-aos="fade-up" data-aos-delay="150" class="col-6 my-2">
-              <Icon
-                class="about__pointer"
-                icon="codicon:debug-breakpoint-data"
-                height="30"
+          </div>
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="100"
+          class="
+            col-lg-3 col-md-4 col-sm-6
+            mb-4
+            mt-1
+            d-flex
+            align-items-stretch
+          "
+        >
+          <div class="patronage_box shadow rounded p-2 text-center">
+            <div>
+              <h3>2</h3>
+              <img
+                loading="lazy"
+                src="../../assets/images/icons/svg/expert.svg"
+                alt="patronage image"
+                class="bg-white shadow"
+                width="120"
+                height="120"
               />
-              <p class="">
+              <p class="mt-1">
                 Petigrity Konsult is powered by the expertise of our managing
                 partners who have health insurance management experience of at
                 least 10 years.
               </p>
             </div>
-
-            <div data-aos="fade-up" data-aos-delay="200" class="col-6 my-2">
-              <Icon
-                class="about__pointer"
-                icon="codicon:debug-breakpoint-data"
-                height="30"
+          </div>
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="150"
+          class="
+            col-lg-3 col-md-4 col-sm-6
+            mb-4
+            mt-1
+            d-flex
+            align-items-stretch
+          "
+        >
+          <div class="patronage_box shadow rounded p-2 text-center">
+            <div>
+              <h3>3</h3>
+              <img
+                loading="lazy"
+                src="../../assets/images/icons/svg/market.svg"
+                alt="patronage image"
+                class="bg-white shadow"
+                width="120"
+                height="120"
               />
-              <p class="">
+              <p class="mt-1">
                 We make sure to understand the market and our client's business
                 industry. With our years of experience, we have acquired a vast
                 pool of resources and information from which we draw our ideas.
               </p>
             </div>
-
-            <div data-aos="fade-up" data-aos-delay="250" class="col-6 my-2">
-              <Icon
-                class="about__pointer"
-                icon="codicon:debug-breakpoint-data"
-                height="30"
+          </div>
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          class="
+            col-lg-3 col-md-4 col-sm-6
+            mb-4
+            mt-1
+            d-flex
+            align-items-stretch
+          "
+        >
+          <div class="patronage_box shadow rounded p-2 text-center">
+            <div>
+              <h3>4</h3>
+              <img
+                loading="lazy"
+                src="../../assets/images/icons/svg/research_two.svg"
+                alt="patronage image"
+                class="bg-white shadow"
+                width="120"
+                height="120"
               />
-              <p class="">
+              <p class="mt-1">
                 We have a pool of experts and consultants with advanced
                 knowledge in their field. We apply a systematic and analytic
                 approach that works.
@@ -85,9 +141,27 @@ import { Icon } from "@iconify/vue";
   position: relative;
   padding-top: 5rem;
 }
-@media screen and (max-width: 768px) {
+.patronage_box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.patronage_box img {
+  margin-top: -70px;
+  border-radius: 50%;
+  border: 2px solid var(--blue-1);
+  padding: 4px;
+}
+.patronage_box h3 {
+  position: absolute;
+  font-size: 10rem;
+  z-index: -5;
+  color: var(--blue-0);
+}
+/* @media screen and (max-width: 768px) {
   .patronage_img img {
     width: 100% !important;
   }
-}
+} */
 </style>

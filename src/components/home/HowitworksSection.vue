@@ -12,6 +12,7 @@
               <li data-aos="fade-up" data-aos-delay="50" class="timeline-item">
                 <div class="timeline-content rounded shadow text-center">
                   <img
+                    loading="lazy"
                     src="../../assets/images/icons/svg/phonecall.svg"
                     alt="phone call"
                     width="120"
@@ -27,6 +28,7 @@
               <li data-aos="fade-up" data-aos-delay="100" class="timeline-item">
                 <div class="timeline-content rounded shadow text-center">
                   <img
+                    loading="lazy"
                     src="../../assets/images/icons/svg/research.svg"
                     alt="research"
                     width="120"
@@ -41,6 +43,7 @@
               <li data-aos="fade-up" data-aos-delay="150" class="timeline-item">
                 <div class="timeline-content rounded shadow text-center">
                   <img
+                    loading="lazy"
                     src="../../assets/images/icons/svg/result.svg"
                     alt="research"
                     width="120"
@@ -56,6 +59,7 @@
               <li data-aos="fade-up" data-aos-delay="200" class="timeline-item">
                 <div class="timeline-content rounded shadow text-center">
                   <img
+                    loading="lazy"
                     src="../../assets/images/icons/svg/start.svg"
                     alt="phone call"
                     width="120"

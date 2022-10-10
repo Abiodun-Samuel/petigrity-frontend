@@ -12,7 +12,7 @@
           class="col-lg-4 col-md-6 my-2 d-flex align-items-stretch"
         >
           <div class="service__details text-center p-2 rounded">
-            <img
+            <img loading='lazy'
               src="../../assets/images/icons/svg/advice.svg"
               width="120"
               alt="service section icon"
@@ -41,7 +41,7 @@
           class="col-lg-4 col-md-6 my-2 d-flex align-items-stretch"
         >
           <div class="service__details text-center p-2 rounded">
-            <img
+            <img loading='lazy'
               src="../../assets/images/icons/svg/support.svg"
               width="120"
               alt="service section icon"
@@ -67,7 +67,7 @@
           class="col-lg-4 col-md-6 my-2 d-flex align-items-stretch"
         >
           <div class="service__details text-center p-2 rounded">
-            <img
+            <img loading='lazy'
               src="../../assets/images/icons/svg/general.svg"
               width="120"
               alt="service section icon"

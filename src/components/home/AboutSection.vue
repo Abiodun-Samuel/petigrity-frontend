@@ -11,9 +11,10 @@
             <div class="one"></div>
             <div class="two"></div>
             <img
+              loading="lazy"
               src="../../assets/images/about.svg"
               alt="about us page"
-              class="img-fluid w-75 shadow-sm rounded"
+              class="img-fluid w-75 shadow-sm rounded-bottom"
             />
           </div>
         </div>

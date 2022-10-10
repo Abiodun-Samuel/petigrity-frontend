@@ -25,7 +25,7 @@
               data-aos="fade-up"
               :data-aos-delay="index * 50"
             >
-              <img
+              <img loading='lazy'
                 src="../../assets/images/img/doctor.svg"
                 width="100"
                 alt=""
