@@ -69,53 +69,6 @@
               </p>
             </div>
           </div>
-
-          <!-- <div class="patronage__details d-flex flex-wrap gap-1">
-        
-            </div>
-            <div data-aos="fade-up" data-aos-delay="100" class="gap-1 mb-1">
-              <div>
-                <Icon
-                  class="about__pointer"
-                  icon="codicon:debug-breakpoint-data"
-                  height="30"
-                />
-              </div>
-              <div>
-                <p class="">
-                 
-                </p>
-              </div>
-            </div>
-            <div data-aos="fade-up" data-aos-delay="150" class="gap-1 mb-1">
-              <div>
-                <Icon
-                  class="about__pointer"
-                  icon="codicon:debug-breakpoint-data"
-                  height="30"
-                />
-              </div>
-              <div>
-                <p class="">
-                 
-                </p>
-              </div>
-            </div>
-            <div data-aos="fade-up" data-aos-delay="150" class="gap-1 mb-1">
-              <div>
-                <Icon
-                  class="about__pointer"
-                  icon="codicon:debug-breakpoint-data"
-                  height="30"
-                />
-              </div>
-              <div>
-                <p class="">
-                 
-                </p>
-              </div>
-            </div>
-          </div> -->
         </div>
       </div>
     </div>

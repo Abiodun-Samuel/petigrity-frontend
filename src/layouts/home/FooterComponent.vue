@@ -1,51 +1,31 @@
 <template>
+  <NewsletterSection />
+
   <div id="footer">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-4 mb-2">
-          <div class="company__info">
-            <img
-              src="../../assets/images/logo/logo-sm.png"
-              alt="company logo"
-              class="img-fluid bg-white rounded p-1 shadow-lg"
-            />
-            <p class="mt-2">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Voluptatibus odio nam quidem minus fugiat sequi ipsam tenetur quos
-              ratione veniam!
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-4 mb-2">
-          <div class="quick__links">
-            <h3 class="fw-bolder mb-2 text-primary">Quick Links</h3>
-            <p class="my-1 mx-0 text-primary">
-              <Icon icon="iconoir:3d-select-point" class="me-1" />
-              <router-link to>Home</router-link>
-            </p>
-            <p class="my-1 mx-0 text-primary">
-              <Icon icon="iconoir:3d-select-point" class="me-1" />
-              <router-link to>About</router-link>
-            </p>
-            <p class="my-1 mx-0 text-primary">
-              <Icon icon="iconoir:3d-select-point" class="me-1" />
-              <router-link to>Services</router-link>
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-4 mb-2">
-          <div class="quick__links">
-            <h3 class="fw-bolder mb-2 text-primary">
-              Subscribe to our newsletter
-            </h3>
-            <div class="form-group my-2">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                class="form-control"
-              />
-              <button class="btn btn-primary my-1">Subscribe</button>
-            </div>
+      <!-- <hr class="text-light" /> -->
+
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-5">
+          <div
+            class="
+              quick__links
+              d-flex
+              align-items-center
+              justify-content-evenly
+            "
+          >
+            <!-- <Icon icon="iconoir:3d-select-point" class="me-1" /> -->
+            <router-link to>Home</router-link>
+
+            <!-- <Icon icon="iconoir:3d-select-point" class="me-1" /> -->
+            <router-link to>About</router-link>
+
+            <!-- <Icon icon="iconoir:3d-select-point" class="me-1" /> -->
+            <router-link to>Services</router-link>
+
+            <!-- <Icon icon="iconoir:3d-select-point" class="me-1" /> -->
+            <router-link to>Contact</router-link>
           </div>
         </div>
       </div>
@@ -62,33 +42,24 @@
 </template>
 
 <script setup>
-import { Icon } from "@iconify/vue";
+import NewsletterSection from "@/components/home/NewletterSection.vue";
 const year = new Date().getFullYear();
 </script>
 
 <style lang="css">
 #footer {
-  background: var(--blue-1);
-  padding: 3rem 0;
-  margin-top: 2rem;
-}
-.company__info p {
-  color: rgb(143, 143, 143);
+  background: url("../../assets/images/bg/footer-bg.svg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 5rem 0 2rem 0;
 }
 .quick__links {
-  padding: 0 1rem;
   position: relative;
 }
-.quick__links h3 {
+.quick__links a {
   position: relative;
-}
-.quick__links h3::before {
-  content: "";
-  position: absolute;
-  background: var(--blue-1);
-  bottom: -5px;
-  right: 0;
-  height: 4px;
-  width: 100%;
+  padding: 0 0.5rem;
+  /* border-right: 1.5px solid var(--blue-0); */
+  color: rgb(208, 208, 208);
 }
 </style>

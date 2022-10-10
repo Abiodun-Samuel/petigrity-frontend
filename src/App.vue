@@ -8,6 +8,7 @@
   --light-0: #fefefe;
 
   --yellow-1: #ffcc29;
+  --yellow-0: #fdf0c6;
 
   --black-1: #201e1e;
 
