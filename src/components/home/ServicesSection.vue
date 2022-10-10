@@ -11,7 +11,7 @@
           data-aos="fade-up"
           class="col-lg-4 col-md-6 my-2 d-flex align-items-stretch"
         >
-          <div class="service__details text-center p-2 shadow rounded">
+          <div class="service__details text-center p-2 rounded">
             <img
               src="../../assets/images/icons/svg/advice.svg"
               width="120"
@@ -26,8 +26,10 @@
               health insurance needs, and leverage our strong partnerships with
               insurers to negotiate the best premiums.
             </p>
-             <div class="">
-              <router-link class="btn btn-outline-primary rounded-pill" :to="{}"
+            <div class="">
+              <router-link
+                class="btn btn-outline-primary rounded-pill"
+                :to="{ name: 'service' }"
                 >Read More</router-link
               >
             </div>
@@ -38,7 +40,7 @@
           data-aos="fade-up"
           class="col-lg-4 col-md-6 my-2 d-flex align-items-stretch"
         >
-          <div class="service__details text-center p-2 shadow rounded">
+          <div class="service__details text-center p-2 rounded">
             <img
               src="../../assets/images/icons/svg/support.svg"
               width="120"
@@ -50,8 +52,10 @@
               Improved customer service and additional customer support, smooth
               policy buying and transitioning process from one HMO to another.
             </p>
-             <div class="">
-              <router-link class="btn btn-outline-primary rounded-pill" :to="{}"
+            <div class="">
+              <router-link
+                class="btn btn-outline-primary rounded-pill"
+                :to="{ name: 'service' }"
                 >Read More</router-link
               >
             </div>
@@ -62,7 +66,7 @@
           data-aos="fade-up"
           class="col-lg-4 col-md-6 my-2 d-flex align-items-stretch"
         >
-          <div class="service__details text-center p-2 shadow rounded">
+          <div class="service__details text-center p-2 rounded">
             <img
               src="../../assets/images/icons/svg/general.svg"
               width="120"
@@ -75,7 +79,9 @@
               renewal, and many more, all at no additional cost.
             </p>
             <div class="">
-              <router-link class="btn btn-outline-primary rounded-pill" :to="{}"
+              <router-link
+                class="btn btn-outline-primary rounded-pill"
+                :to="{ name: 'service' }"
                 >Read More</router-link
               >
             </div>
@@ -86,7 +92,7 @@
           data-aos-delay="200"
           class="col-lg-4 col-md-6 my-2 d-flex align-items-stretch"
         >
-          <div class="service__btn rounded shadow w-100 p-2">
+          <div class="service__btn rounded  w-100 p-2">
             <router-link class="btn btn-lg btn-primary rounded-pill" :to="{}"
               >Read More</router-link
             >
@@ -108,14 +114,5 @@ import SubHeader from "@/components/home/SubHeader.vue";
 }
 .service__box {
   position: relative;
-}
-.service__btn {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../../assets/images/img/service.svg");
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 </style>

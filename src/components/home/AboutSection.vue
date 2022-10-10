@@ -83,7 +83,7 @@
 
             <div data-aos="fade-up" data-aos-delay="250" class="mt-2">
               <router-link
-                class="btn btn-lg btn-outline-primary rounded-pill shadow-lg"
+                class="btn btn-lg btn-outline-primary rounded-pill shadow"
                 :to="{ name: 'about' }"
                 >Read More</router-link
               >

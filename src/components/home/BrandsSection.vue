@@ -21,7 +21,7 @@
             <div
               v-for="(value, index) in 5"
               :key="value"
-              class="shadow rounded"
+              class="rounded"
               data-aos="fade-up"
               :data-aos-delay="index * 50"
             >

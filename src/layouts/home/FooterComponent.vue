@@ -15,17 +15,10 @@
               justify-content-evenly
             "
           >
-            <!-- <Icon icon="iconoir:3d-select-point" class="me-1" /> -->
-            <router-link to>Home</router-link>
-
-            <!-- <Icon icon="iconoir:3d-select-point" class="me-1" /> -->
-            <router-link to>About</router-link>
-
-            <!-- <Icon icon="iconoir:3d-select-point" class="me-1" /> -->
-            <router-link to>Services</router-link>
-
-            <!-- <Icon icon="iconoir:3d-select-point" class="me-1" /> -->
-            <router-link to>Contact</router-link>
+            <router-link :to="{ name: 'home' }">Home</router-link>
+            <router-link :to="{ name: 'about' }">About</router-link>
+            <router-link :to="{ name: 'service' }">Services</router-link>
+            <router-link :to="{ name: 'contact' }">Contact</router-link>
           </div>
         </div>
       </div>
@@ -34,7 +27,9 @@
 
       <div class="row">
         <div class="col-lg-12 text-center text-light">
-          Copyright &copy; {{ year }} Petigrity, All rights reserved.
+          <span class="small">
+            Copyright &copy; {{ year }} Petigrity, All Rights Reserved.</span
+          >
         </div>
       </div>
     </div>
