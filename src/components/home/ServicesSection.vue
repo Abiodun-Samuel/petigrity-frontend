@@ -107,7 +107,7 @@
 import SubHeader from "@/components/home/SubHeader.vue";
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
 #services {
   position: relative;
   padding-top: 5rem;

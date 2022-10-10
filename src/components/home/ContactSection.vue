@@ -135,7 +135,7 @@ import { Icon } from "@iconify/vue";
 import SubHeader from "@/components/home/SubHeader.vue";
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
 #contact {
   padding-top: 5rem;
   position: relative;

@@ -12,7 +12,7 @@
             <img
               src="../../assets/images/about.svg"
               alt="about us page"
-              class="img-fluid w-75 rounded"
+              class="img-fluid rounded"
             />
           </div>
         </div>
@@ -100,7 +100,7 @@ import { Icon } from "@iconify/vue";
 import SubHeader from "@/components/home/SubHeader.vue";
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
 #about {
   position: relative;
   padding-top: 5rem;
@@ -115,6 +115,17 @@ import SubHeader from "@/components/home/SubHeader.vue";
   border-radius: 50%;
   background: var(--blue-0); */
 }
+.about__img div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background: var(--blue-0);
+  z-index: -10;
+}
+
 .about__pointer {
   background: var(--blue-0);
   border-radius: 50%;

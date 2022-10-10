@@ -59,7 +59,7 @@
 import { Icon } from "@iconify/vue";
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
 .hero__section {
   position: relative;
   /* background-image: linear-gradient(180deg, #e1efff, #ffffff); */

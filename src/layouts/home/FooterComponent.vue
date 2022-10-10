@@ -41,7 +41,7 @@ import NewsletterSection from "@/components/home/NewletterSection.vue";
 const year = new Date().getFullYear();
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
 #footer {
   background: url("../../assets/images/bg/footer-bg.svg") no-repeat;
   background-position: center;

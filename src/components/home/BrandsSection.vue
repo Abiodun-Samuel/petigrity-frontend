@@ -42,7 +42,7 @@
 import SubHeader from "@/components/home/SubHeader.vue";
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
 .brands {
   position: relative;
   padding-top: 5rem;

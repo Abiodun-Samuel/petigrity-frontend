@@ -80,7 +80,7 @@ import SubHeader from "@/components/home/SubHeader.vue";
 import { Icon } from "@iconify/vue";
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
 .patronage {
   position: relative;
   padding-top: 5rem;

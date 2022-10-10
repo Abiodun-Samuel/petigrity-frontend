@@ -3,9 +3,9 @@
   <BrandsSection />
   <AboutSection />
   <ServicesSection />
+  <HowitworksSection />
   <PatronageSection />
   <ContactSection />
-  <!-- <NewsletterSection /> -->
 </template>
 
 <script setup>
@@ -15,5 +15,5 @@ import ContactSection from "@/components/home/ContactSection.vue";
 import ServicesSection from "@/components/home/ServicesSection.vue";
 import PatronageSection from "@/components/home/PatronageSection.vue";
 import BrandsSection from "@/components/home/BrandsSection.vue";
-// import NewsletterSection from "@/components/home/NewletterSection.vue";
+import HowitworksSection from "@/components/home/HowitworksSection.vue";
 </script>
