@@ -16,7 +16,7 @@
 .sub__header h2 {
   position: relative;
 }
-.sub__header h2::before {
+/* .sub__header h2::before {
   content: "";
   position: absolute;
   background: var(--yellow-1);
@@ -33,7 +33,7 @@
   top: 50%;
   right: -100px;
   height: 2.5px;
-}
+} */
 .sub__header h2 span {
   position: relative;
   color: var(--yellow-1);
