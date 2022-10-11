@@ -66,7 +66,7 @@
                   />
                   <p>
                     We put a lot of time and effort into making sure that the
-                    strategy we offer for you will be the best fit for your
+                    strategy we offer you will be the best fit for your
                     financial situation and requirements.
                   </p>
                   <button class="btn btn-outline-primary">Get Started</button>

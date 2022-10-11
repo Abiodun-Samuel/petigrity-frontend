@@ -76,6 +76,7 @@
               alt="service section icon"
               class=""
             />
+            <h4 class="fw-bolder text-primary">Complementary Services</h4>
             <p class="my-1">
               We also offer a wide range of additional, complementary services
               such as claims processing assistance, current plan review,
@@ -90,17 +91,6 @@
             </div>
           </div>
         </div>
-        <!-- <div
-          data-aos="fade-up"
-          data-aos-delay="200"
-          class="col-lg-4 col-md-6 my-2 d-flex align-items-stretch"
-        >
-          <div class="service__btn rounded  w-100 p-2">
-            <router-link class="btn btn-lg btn-primary rounded-pill" :to="{}"
-              >Read More</router-link
-            >
-          </div>
-        </div> -->
       </div>
     </div>
   </section>
@@ -117,5 +107,14 @@ import SubHeader from "@/components/home/SubHeader.vue";
 }
 .service__box {
   position: relative;
+}
+.service__details {
+  transition: 500ms;
+}
+.service__details:hover {
+  box-shadow: var(--shadow-1);
+  background: radial-gradient(at top left, #fff6fd, transparent),
+    radial-gradient(at top right, #edf0ff, transparent),
+    radial-gradient(at bottom left, #ffecec, transparent);
 }
 </style>

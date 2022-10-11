@@ -60,8 +60,8 @@
               />
               <p class="mt-1">
                 Petigrity Konsult is powered by the expertise of our managing
-                partners who have health insurance management experience of at
-                least 10 years.
+                partners who have over 10 years of experience in healthcare
+                management.
               </p>
             </div>
           </div>

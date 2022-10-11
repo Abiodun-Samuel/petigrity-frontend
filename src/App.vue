@@ -17,7 +17,6 @@
 
   --shadow-1: 0px 2px 15px rgba(0, 0, 0, 0.1);
   --shadow-2: 5px 5px 11px #ebebeb, -5px -5px 11px #fff;
-  --shadow-3: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
 }
 
 button:disabled,
