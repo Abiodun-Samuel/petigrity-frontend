@@ -2,7 +2,7 @@
   <section id="services">
     <div class="container">
       <SubHeader data-aos="fade-up">
-        <h2 class="fw-bolder mb-2"><span>Our</span> Services</h2>
+        <h2 class="fw-bolder mb-2">Our <span>Services</span></h2>
       </SubHeader>
 
       <div class="row">
@@ -12,7 +12,8 @@
           class="col-lg-4 col-md-6 my-2 d-flex align-items-stretch"
         >
           <div class="service__details text-center p-2 rounded">
-            <img loading='lazy'
+            <img
+              loading="lazy"
               src="../../assets/images/icons/svg/advice.svg"
               width="120"
               alt="service section icon"
@@ -41,7 +42,8 @@
           class="col-lg-4 col-md-6 my-2 d-flex align-items-stretch"
         >
           <div class="service__details text-center p-2 rounded">
-            <img loading='lazy'
+            <img
+              loading="lazy"
               src="../../assets/images/icons/svg/support.svg"
               width="120"
               alt="service section icon"
@@ -67,7 +69,8 @@
           class="col-lg-4 col-md-6 my-2 d-flex align-items-stretch"
         >
           <div class="service__details text-center p-2 rounded">
-            <img loading='lazy'
+            <img
+              loading="lazy"
               src="../../assets/images/icons/svg/general.svg"
               width="120"
               alt="service section icon"

@@ -16,24 +16,26 @@
 .sub__header h2 {
   position: relative;
 }
-/* .sub__header h2::before {
+.sub__header h2::before {
   content: "";
   position: absolute;
-  background: var(--yellow-1);
-  width: 80px;
-  top: 50%;
-  left: -100px;
-  height: 2.5px;
+  background: rgb(222, 222, 222);
+  width: 100%;
+  bottom: -6.5px;
+  left: 0;
+  height: 1.5px;
+  border-radius: 4px;
 }
 .sub__header h2::after {
   position: absolute;
   content: "";
   background: var(--yellow-1);
-  width: 80px;
-  top: 50%;
-  right: -100px;
-  height: 2.5px;
-} */
+  width: 40px;
+  bottom: -6.5px;
+  left: 40%;
+  height: 3px;
+  border-radius: 4px;
+}
 .sub__header h2 span {
   position: relative;
   color: var(--yellow-1);
