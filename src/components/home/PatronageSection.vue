@@ -31,7 +31,7 @@
               <p class="mt-1">
                 At Petigrity Konsult, we have partnered with various health
                 insurers to provide solutions that are specifically tailored to
-                every client's specific need.
+                every client's specific needs.
               </p>
             </div>
           </div>
@@ -89,9 +89,10 @@
                 height="120"
               />
               <p class="mt-1">
-                We make sure to understand the market and our client's business
-                industry. With our years of experience, we have acquired a vast
-                pool of resources and information from which we draw our ideas.
+                <!-- We make sure to understand the market and .  -->
+                With our years of experience, we have acquired a vast pool of
+                resources and information from which we draw our ideas to suit
+                our client's business industry.
               </p>
             </div>
           </div>

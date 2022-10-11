@@ -32,7 +32,7 @@
   background: var(--yellow-1);
   width: 40px;
   bottom: -6.5px;
-  left: 40%;
+  left: 35%;
   height: 3px;
   border-radius: 4px;
 }
