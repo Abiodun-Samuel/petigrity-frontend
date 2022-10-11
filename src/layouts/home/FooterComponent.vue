@@ -46,7 +46,7 @@ const year = new Date().getFullYear();
   background: url("../../assets/images/bg/footer-bg.svg") no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 5rem 0 2rem 0;
+  padding: 5.5rem 0 2rem 0;
 }
 .quick__links {
   position: relative;

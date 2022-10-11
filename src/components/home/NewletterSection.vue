@@ -2,8 +2,15 @@
   <div class="container">
     <div class="row d-flex justify-content-center">
       <div class="col-lg-7">
-        <div class="newsletter rounded-pill  p-lg-5 p-3 text-center">
-          <h3 class="fw-bolder text-light">Subscribe to our newsletter</h3>
+        <div class="newsletter rounded shadow p-2 text-center">
+          <img
+            loading="lazy"
+            src="../../assets/images/img/newsletter-img.jpg"
+            alt="newsletter image"
+            class="img-fluid"
+            width="150"
+          />
+          <h3 class="fw-bolder text-primary">Subscribe to our newsletter</h3>
           <div class="form-row">
             <div class="newsletter__input">
               <input
@@ -30,7 +37,8 @@
   /* background: url("../../assets/images/bg/newsletter-bg.jpg"),
   rgba(0, 0, 0, 0.5);
   background-blend-mode: overlay; */
-  background: url("../../assets/images/bg/footer-bg.svg") no-repeat;
+  /* background: url("../../assets/images/bg/footer-bg.svg") no-repeat; */
+  background: white;
   margin-bottom: -4rem;
   z-index: 2;
 }

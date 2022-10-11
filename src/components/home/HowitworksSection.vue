@@ -65,10 +65,9 @@
                     width="120"
                   />
                   <p>
-                    We'll give you access to the best plans on the market and
-                    make the onboarding/switch process simple for you. We pay
-                    close attention to each plan's specifics and how well it
-                    accords with your situation.
+                    We put a lot of time and effort into making sure that the
+                    strategy we offer for you will be the best fit for your
+                    financial situation and requirements.
                   </p>
                   <button class="btn btn-outline-primary">Get Started</button>
                 </div>
