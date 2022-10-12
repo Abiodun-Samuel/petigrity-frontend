@@ -48,10 +48,19 @@
       <hr class="text-light" />
 
       <div class="row">
-        <div class="col-lg-12 text-center text-light">
-          <span class="small">
-            Copyright &copy; {{ year }} Petigrity, All Rights Reserved.</span
-          >
+        <div class="col-lg-12 text-center text-light footer__bottom">
+          <p class="small my-0 py-0">
+            Copyright &copy; {{ year }} Petigrity Konsult. All rights reserved.
+          </p>
+          <small class="small">
+            Designed and Developed by
+            <a
+              class="fw-bolder"
+              target="_blank"
+              href="https://abiodunsamuel.com/"
+              >Abiodun Digital Hub</a
+            >
+          </small>
         </div>
       </div>
     </div>
@@ -78,7 +87,7 @@ const year = new Date().getFullYear();
   position: relative;
   color: rgb(208, 208, 208);
   transition: 400ms;
-  padding: 3px 10px;
+  padding: 2px 5px;
   border-radius: 5px;
 }
 .quick__links a:hover {
@@ -90,11 +99,17 @@ const year = new Date().getFullYear();
   position: relative;
   color: rgb(208, 208, 208);
   transition: 400ms;
-  padding: 3px 10px;
+  padding: 2px 5px;
   border-radius: 5px;
 }
 .quick__icons a:hover {
   background: var(--blue-0);
   color: var(--blue-1);
+}
+.footer__bottom small {
+  color: #818fc1;
+}
+.footer__bottom small a {
+  color: #677abd;
 }
 </style>

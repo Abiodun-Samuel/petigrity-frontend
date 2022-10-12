@@ -24,5 +24,6 @@ button[disabled] {
   border: 1px solid #d8d8d8 !important;
   background: #d8d8d8 !important;
   color: #666666 !important;
+  cursor: not-allowed !important;
 }
 </style>

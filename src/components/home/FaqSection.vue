@@ -8,7 +8,7 @@
       <div class="row justify-content-center">
         <div class="col-lg-8 col-md-10">
           <div class="accordion shadow" id="accordionExample">
-            <div class="accordion-item">
+            <div data-aos="fade-up" data-aos-delay="50" class="accordion-item">
               <h2 class="accordion-header fw-bolder" id="headingOne">
                 <button
                   class="accordion-button collapsed"
@@ -28,14 +28,13 @@
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body">
-                 
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Officia ab maxime voluptas autem dicta recusandae maiores
                   possimus ut ad qui! overflow.
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
+            <div data-aos="fade-up" data-aos-delay="100" class="accordion-item">
               <h2 class="accordion-header fw-bolder" id="headingTwo">
                 <button
                   class="accordion-button collapsed"
@@ -61,7 +60,7 @@
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
+            <div data-aos="fade-up" data-aos-delay="150" class="accordion-item">
               <h2 class="accordion-header fw-bolder" id="headingThree">
                 <button
                   class="accordion-button collapsed"

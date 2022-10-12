@@ -31,13 +31,18 @@
             >
           </li>
           <li class="nav-item mx-lg-3 my-lg-1">
+            <router-link class="nav-link" :to="{ name: 'about' }"
+              >About Us</router-link
+            >
+          </li>
+          <li class="nav-item mx-lg-3 my-lg-1">
             <router-link class="nav-link" :to="{ name: 'service' }"
-              >Service</router-link
+              >Services</router-link
             >
           </li>
           <li class="nav-item mx-lg-3 my-lg-1">
             <router-link class="nav-link" :to="{ name: 'contact' }"
-              >Contact</router-link
+              >Contact Us</router-link
             >
           </li>
         </ul>

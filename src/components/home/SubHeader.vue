@@ -3,11 +3,13 @@
     <div class="col-lg-12">
       <div class="sub__header d-flex justify-content-center align-items-center">
         <slot />
-        <!-- <h2 class="fw-bolder mb-2">Our <span>Trusted</span> Clients</h2> -->
       </div>
     </div>
   </div>
 </template>
+
+<script setup>
+</script>
 
 <style lang="css">
 .sub__header {
