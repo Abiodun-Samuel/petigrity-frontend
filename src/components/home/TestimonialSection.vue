@@ -1,8 +1,8 @@
 <template>
   <div class="testimonials">
     <div class="container">
-      <div class="text-center">
-        <SubHeader data-aos="fade-up">
+      <div data-aos="fade-up" class="text-center">
+        <SubHeader>
           <h2 class="fw-bolder mb-2"><span>Testimonials</span></h2>
         </SubHeader>
         <p>What our clients have to say about us</p>

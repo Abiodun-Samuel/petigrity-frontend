@@ -128,6 +128,7 @@
           </div>
         </div>
       </div>
+      <!-- <div id="target"></div> -->
     </div>
   </div>
 </template>
@@ -135,6 +136,13 @@
 <script setup>
 import SubHeader from "@/components/home/SubHeader.vue";
 import { Icon } from "@iconify/vue";
+import { onMounted } from "vue";
+import { CountUp } from "countup.js";
+
+onMounted(() => {
+  var countUp = new CountUp("target", 3000, { enableScrollSpy: true });
+  countUp.start();
+});
 </script>
 
 <style lang="css" scoped>

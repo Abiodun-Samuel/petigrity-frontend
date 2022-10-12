@@ -33,21 +33,61 @@
 
         <div class="col-lg-6 my-2">
           <div class="hero__img text-center">
-            <img loading='lazy'
+            <img
+              loading="lazy"
               src="../../assets/images/hero-img-one.svg"
               alt="hero-image"
               class="hero_img_one shadow"
             />
-            <img loading='lazy'
-              src="../../assets/images/ins.svg"
-              alt="hero image"
-              class="hero_img_two shadow"
-            />
-            <img loading='lazy'
-              src="../../assets/images/Insurance-amic.svg"
-              alt="hero image"
-              class="hero_img_three shadow"
-            />
+            <div
+              class="hero_img_two shadow-lg rounded d-flex align-items-center"
+            >
+              <div>
+                <img
+                  loading="lazy"
+                  src="../../assets/images/ins.svg"
+                  alt="hero image"
+                  width="60"
+                  height="60"
+                  class="rounded-circle shadow"
+                />
+              </div>
+              <div>
+                <p class="text-warning fw-bolder h4 p-1 my-0">
+                  + <span id="target"></span>
+                </p>
+              </div>
+            </div>
+            <div
+              class="hero_img_three shadow-lg rounded d-flex align-items-center"
+            >
+              <div>
+                <img
+                  loading="lazy"
+                  src="../../assets/images/Insurance-amic.svg"
+                  alt="hero image"
+                  width="60"
+                  height="60"
+                  class="rounded-circle shadow"
+                />
+              </div>
+              <div>
+                <p class="text-warning fw-bolder h4 p-1 my-0">
+                  + <span id="target_three"></span>
+                </p>
+              </div>
+            </div>
+
+            <!-- <div class="hero_img_three shadow-lg rounded">
+              <img
+                loading="lazy"
+                src="../../assets/images/Insurance-amic.svg"
+                alt="hero image"
+                width="50"
+                height="50"
+                class="rounded-circle shadow"
+              />
+            </div> -->
           </div>
         </div>
       </div>
@@ -57,6 +97,17 @@
 
 <script setup>
 import { Icon } from "@iconify/vue";
+import { onMounted } from "vue";
+import { CountUp } from "countup.js";
+
+onMounted(() => {
+  var countUp = new CountUp("target", 3000, { enableScrollSpy: true });
+  var countUp_three = new CountUp("target_three", 1000, {
+    enableScrollSpy: true,
+  });
+  countUp.start();
+  countUp_three.start();
+});
 </script>
 
 <style lang="css" scoped>
@@ -113,8 +164,10 @@ import { Icon } from "@iconify/vue";
   object-fit: contain;
   border-radius: 50%;
   position: relative;
-  /* padding: 9px; */
-  background-image: linear-gradient(180deg, #e1efff, #ffffff);
+  background: radial-gradient(at top left, #fffdf2, transparent),
+    radial-gradient(at top right, #edf0ff, transparent),
+    radial-gradient(at bottom left, #ffecec, transparent);
+  /* background-image: linear-gradient(180deg, #e1efff, #ffffff); */
   border: 5px solid rgb(255, 255, 255);
 }
 .hero_img_two {
@@ -122,20 +175,40 @@ import { Icon } from "@iconify/vue";
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 100px;
+  width: 170px;
   height: auto;
+  padding: 5px;
   border-radius: 5px;
   background-color: #fff;
+}
+.hero_img_two p {
+  background: #fffae6;
+  border-radius: 5px;
+  margin-left: 4px;
+}
+.hero_img_two img {
+  padding: 2px;
+  border: 2px solid var(--yellow-1);
 }
 .hero_img_three {
   object-fit: contain;
   position: absolute;
   bottom: 0px;
   right: 0px;
-  width: 100px;
+  width: 170px;
   height: auto;
+  padding: 5px;
   border-radius: 5px;
   background-color: #fff;
+}
+.hero_img_three p {
+  background: #fffae6;
+  border-radius: 5px;
+  margin-left: 4px;
+}
+.hero_img_three img {
+  padding: 2px;
+  border: 2px solid var(--yellow-1);
 }
 
 @media screen and (max-width: 768px) {
