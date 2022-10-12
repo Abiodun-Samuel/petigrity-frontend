@@ -9,7 +9,11 @@
       </div>
 
       <div class="row mt-3">
-        <div class="d-flex justify-content-end align-items-center gap-1 my-1">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="50"
+          class="d-flex justify-content-end align-items-center gap-1 my-1"
+        >
           <button
             :disabled="Number(currentSlide) == 0"
             class="btn btn-sm btn-primary"
@@ -28,7 +32,11 @@
         <carousel :breakpoints="breakpoints" ref="myCarousel" snapAlign="start">
           <slide v-for="(testimonial, index) in testimonials" :key="index">
             <!-- {{ slide }} -->
-            <div class="testimonial__box rounded shadow me-2">
+            <div
+              data-aos="fade-up"
+              :data-aos-delay="(index + 1) * 50"
+              class="testimonial__box rounded shadow me-2"
+            >
               <div class="header px-2 pt-2">
                 <Icon
                   icon="fa:quote-left"
