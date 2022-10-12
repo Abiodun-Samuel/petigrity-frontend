@@ -6134,6 +6134,7 @@ fieldset:disabled .btn {
 .breadcrumb {
   display: -ms-flexbox;
   font-size: 1.1rem;
+  font-weight: bolder;
 }
 
 .accordion-button {
@@ -6185,7 +6186,7 @@ fieldset:disabled .btn {
   -ms-transform: rotate(-180deg);
   transform: rotate(-180deg);
 }
-/* 6e6b7b */
+
 .accordion-button::after {
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;

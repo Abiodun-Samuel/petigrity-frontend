@@ -9,6 +9,25 @@
         <div class="col-lg-5">
           <div
             class="
+              quick__icons
+              d-flex
+              align-items-center
+              justify-content-evenly
+              my-2
+            "
+          >
+            <router-link :to="{}">
+              <Icon icon="brandico:facebook-rect" />
+            </router-link>
+            <router-link :to="{}">
+              <Icon icon="fa6-brands:square-twitter" />
+            </router-link>
+            <router-link :to="{}">
+              <Icon icon="akar-icons:instagram-fill" />
+            </router-link>
+          </div>
+          <div
+            class="
               quick__links
               d-flex
               align-items-center
@@ -16,9 +35,9 @@
             "
           >
             <router-link :to="{ name: 'home' }">Home</router-link>
-            <router-link :to="{ name: 'about' }">About</router-link>
+            <router-link :to="{ name: 'about' }">About Us</router-link>
             <router-link :to="{ name: 'service' }">Services</router-link>
-            <router-link :to="{ name: 'contact' }">Contact</router-link>
+            <router-link :to="{ name: 'contact' }">Contact Us</router-link>
           </div>
         </div>
       </div>
@@ -38,6 +57,7 @@
 
 <script setup>
 import NewsletterSection from "@/components/home/NewletterSection.vue";
+import { Icon } from "@iconify/vue";
 const year = new Date().getFullYear();
 </script>
 
@@ -53,8 +73,25 @@ const year = new Date().getFullYear();
 }
 .quick__links a {
   position: relative;
-  padding: 0 0.5rem;
-  /* border-right: 1.5px solid var(--blue-0); */
   color: rgb(208, 208, 208);
+  transition: 400ms;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.quick__links a:hover {
+  background: var(--blue-0);
+  color: var(--blue-1);
+}
+
+.quick__icons a {
+  position: relative;
+  color: rgb(208, 208, 208);
+  transition: 400ms;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.quick__icons a:hover {
+  background: var(--blue-0);
+  color: var(--blue-1);
 }
 </style>
