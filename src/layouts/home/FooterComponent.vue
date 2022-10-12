@@ -13,7 +13,7 @@
               d-flex
               align-items-center
               justify-content-evenly
-              my-2
+              mb-1
             "
           >
             <router-link :to="{}">
@@ -24,6 +24,9 @@
             </router-link>
             <router-link :to="{}">
               <Icon icon="akar-icons:instagram-fill" />
+            </router-link>
+            <router-link :to="{}">
+              <Icon icon="akar-icons:linkedin-box-fill" />
             </router-link>
           </div>
           <div
@@ -75,7 +78,7 @@ const year = new Date().getFullYear();
   position: relative;
   color: rgb(208, 208, 208);
   transition: 400ms;
-  padding: 5px 10px;
+  padding: 3px 10px;
   border-radius: 5px;
 }
 .quick__links a:hover {
@@ -87,7 +90,7 @@ const year = new Date().getFullYear();
   position: relative;
   color: rgb(208, 208, 208);
   transition: 400ms;
-  padding: 5px 10px;
+  padding: 3px 10px;
   border-radius: 5px;
 }
 .quick__icons a:hover {
