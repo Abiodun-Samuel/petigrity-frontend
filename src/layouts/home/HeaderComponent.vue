@@ -18,8 +18,9 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <Icon icon="fe:app-menu" height="30" width="30" color="#193bb5" />
       </button>
+
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav m-auto">
           <li class="nav-item mx-lg-3 my-lg-1">
@@ -59,6 +60,7 @@
 </template>
 
 <script setup>
+import { Icon } from "@iconify/vue";
 </script>
 
 <style lang="css">
