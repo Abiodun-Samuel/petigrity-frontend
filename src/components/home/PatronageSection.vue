@@ -127,6 +127,66 @@
             </div>
           </div>
         </div>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          class="
+            col-lg-3 col-md-4 col-sm-6
+            mb-4
+            mt-1
+            d-flex
+            align-items-stretch
+          "
+        >
+          <div class="patronage_box shadow rounded p-2 text-center">
+            <div>
+              <h3>4</h3>
+              <img
+                loading="lazy"
+                src="../../assets/images/icons/svg/research_two.svg"
+                alt="patronage image"
+                class="bg-white shadow"
+                width="120"
+                height="120"
+              />
+              <p class="mt-1">
+                We have a pool of experts and consultants with advanced
+                knowledge in their field. We apply a systematic and analytic
+                approach that works.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          class="
+            col-lg-3 col-md-4 col-sm-6
+            mb-4
+            mt-1
+            d-flex
+            align-items-stretch
+          "
+        >
+          <div class="patronage_box shadow rounded p-2 text-center">
+            <div>
+              <h3>4</h3>
+              <img
+                loading="lazy"
+                src="../../assets/images/icons/svg/research_two.svg"
+                alt="patronage image"
+                class="bg-white shadow"
+                width="120"
+                height="120"
+              />
+              <p class="mt-1">
+                We have a pool of experts and consultants with advanced
+                knowledge in their field. We apply a systematic and analytic
+                approach that works.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- <div id="target"></div> -->
     </div>
@@ -140,7 +200,7 @@ import { onMounted } from "vue";
 import { CountUp } from "countup.js";
 
 onMounted(() => {
-  var countUp = new CountUp("target", 3000, { enableScrollSpy: true });
+  var countUp = new CountUp("target_patronise", 3000, { enableScrollSpy: true });
   countUp.start();
 });
 </script>

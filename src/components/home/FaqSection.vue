@@ -18,7 +18,7 @@
                   aria-expanded="false"
                   aria-controls="collapseOne"
                 >
-                  Questions #1
+                  What are your fees?
                 </button>
               </h2>
               <div
@@ -28,9 +28,9 @@
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Officia ab maxime voluptas autem dicta recusandae maiores
-                  possimus ut ad qui! overflow.
+                  Our services are completely free. As a broker, we receive a
+                  commission from patner HMOs once you successfully subscribe to
+                  a plan.
                 </div>
               </div>
             </div>
@@ -44,7 +44,8 @@
                   aria-expanded="false"
                   aria-controls="collapseTwo"
                 >
-                  Questions #2
+                  What happens if some members of staff resigns after
+                  registration?
                 </button>
               </h2>
               <div
@@ -54,9 +55,8 @@
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Officia ab maxime voluptas autem dicta recusandae maiores
-                  possimus ut ad qui! overflow.
+                  You are only liable to pay for active members when you
+                  subscribe to the monthly payment plan.
                 </div>
               </div>
             </div>
@@ -70,7 +70,7 @@
                   aria-expanded="false"
                   aria-controls="collapseThree"
                 >
-                  Questions #3
+                  How do I decide which HMO fits my need?
                 </button>
               </h2>
               <div
@@ -80,9 +80,33 @@
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Officia ab maxime voluptas autem dicta recusandae maiores
-                  possimus ut ad qui! overflow.
+                  We take into considerations your needs i.e budget, hospital
+                  spread and scope of cover.
+                </div>
+              </div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="200" class="accordion-item">
+              <h2 class="accordion-header fw-bolder" id="headingFour">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  How do I trust your recommendation?
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  We are not loyal to any HMO and would also recommend based
+                  your immediate and Long term need.
                 </div>
               </div>
             </div>
