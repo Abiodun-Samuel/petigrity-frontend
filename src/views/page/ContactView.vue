@@ -5,11 +5,11 @@
         <div class="col-lg-10">
           <div class="contact__details bg-white shadow rounded">
             <div class="row">
-              <div data-aos="fade-up" data-aos-delay="50" class="col-lg-6 my-1">
+              <div data-aos="fade-up" data-aos-delay="50" class="col-lg-6">
                 <!-- <SubHeader data-aos="fade-up">
                   <h2 class="fw-bolder mb-2"><span>Contact</span> Us</h2>
                 </SubHeader> -->
-                <div class="contact__img  my-1 text-center">
+                <div class="contact__img my-1 text-center">
                   <img
                     loading="lazy"
                     src="../../assets/images/img/contact.svg"
@@ -39,11 +39,47 @@
                   />
                   <p class="fw-bolder my-0 py-0">sales@petigrity.com</p>
                 </div>
+                <div
+                  class="d-flex align-items-center justify-content-evenly mb-1"
+                >
+                  <router-link :to="{}">
+                    <Icon
+                      icon="brandico:facebook-rect"
+                      height="20"
+                      width="20"
+                      class="shadow-lg"
+                    />
+                  </router-link>
+                  <router-link :to="{}">
+                    <Icon
+                      icon="fa6-brands:square-twitter"
+                      height="20"
+                      width="20"
+                      class="shadow-lg"
+                    />
+                  </router-link>
+                  <router-link :to="{}">
+                    <Icon
+                      icon="akar-icons:instagram-fill"
+                      height="20"
+                      width="20"
+                      class="shadow-lg"
+                    />
+                  </router-link>
+                  <router-link :to="{}">
+                    <Icon
+                      class="shadow-lg"
+                      icon="akar-icons:linkedin-box-fill"
+                      height="20"
+                      width="20"
+                    />
+                  </router-link>
+                </div>
               </div>
               <div
                 data-aos="fade-up"
                 data-aos-delay="100"
-                class="col-lg-6 my-1"
+                class="col-lg-6 my-2"
               >
                 <div class="contact__form p-2">
                   <h4 class="fw-bold">
@@ -102,11 +138,7 @@
                     <div class="form-row my-2">
                       <button
                         @click="sendMail"
-                        class="
-                          btn btn-outline-primary btn-lg
-                          shadow-lg
-                          rounded-pill
-                        "
+                        class="btn btn-primary rounded w-100"
                       >
                         Send Message
                       </button>
