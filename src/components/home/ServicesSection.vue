@@ -14,13 +14,14 @@
           <div class="service__details text-center p-2 rounded">
             <img
               loading="lazy"
-              src="../../assets/images/icons/svg/advice.svg"
+              src="../../assets/images/icons/svg/insurance.svg"
               width="120"
               alt="service section icon"
               class=""
             />
             <h4 class="fw-bolder text-primary">
-              Professional Impartial Advice
+              <!-- Professional Impartial Advice -->
+              Health Insurance
             </h4>
             <p>
               We make impartial recommendations based on you, or your business’s
@@ -44,15 +45,15 @@
           <div class="service__details text-center p-2 rounded">
             <img
               loading="lazy"
-              src="../../assets/images/icons/svg/support.svg"
+              src="../../assets/images/icons/svg/training.svg"
               width="120"
               alt="service section icon"
               class=""
             />
-            <h4 class="fw-bolder text-primary">Additional Client Support</h4>
+            <h4 class="fw-bolder text-primary">Training</h4>
             <p>
-              Improved customer service and additional customer support, smooth
-              policy buying and transitioning process from one HMO to another.
+              Doloremque laboriosam maiores, harum asperiores eveniet numquam
+              suscipit aspernatur quibusdam? Odit iste fugit possimus.
             </p>
             <div class="">
               <router-link
@@ -71,16 +72,16 @@
           <div class="service__details text-center p-2 rounded">
             <img
               loading="lazy"
-              src="../../assets/images/icons/svg/general.svg"
+              src="../../assets/images/icons/svg/recruitment.svg"
               width="120"
               alt="service section icon"
               class=""
             />
-            <h4 class="fw-bolder text-primary">Complementary Services</h4>
+            <h4 class="fw-bolder text-primary">Recruitment</h4>
             <p class="my-1">
-              We also offer a wide range of additional, complementary services
-              such as claims processing assistance, current plan review,
-              renewal, and many more, all at no additional cost.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea velit
+              enim deserunt, culpa saepe iure nam a vel eos. Pariatur maxime
+              assumenda praesentium obcaecati non?
             </p>
             <div class="">
               <router-link

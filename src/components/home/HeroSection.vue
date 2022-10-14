@@ -34,7 +34,6 @@
         <div class="col-lg-6 my-2">
           <div class="hero__img text-center">
             <img
-              loading="lazy"
               src="../../assets/images/hero-img-one.svg"
               alt="hero-image"
               class="hero_img_one shadow"
@@ -44,7 +43,6 @@
             >
               <div>
                 <img
-                  loading="lazy"
                   src="../../assets/images/ins.svg"
                   alt="hero image"
                   width="60"
@@ -63,7 +61,6 @@
             >
               <div>
                 <img
-                  loading="lazy"
                   src="../../assets/images/Insurance-amic.svg"
                   alt="hero image"
                   width="60"
@@ -77,17 +74,6 @@
                 </p>
               </div>
             </div>
-
-            <!-- <div class="hero_img_three shadow-lg rounded">
-              <img
-                loading="lazy"
-                src="../../assets/images/Insurance-amic.svg"
-                alt="hero image"
-                width="50"
-                height="50"
-                class="rounded-circle shadow"
-              />
-            </div> -->
           </div>
         </div>
       </div>
