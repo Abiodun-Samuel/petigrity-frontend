@@ -6,33 +6,26 @@
       </SubHeader>
 
       <div class="row">
-        <div class="col-lg-12">
-          <div
-            class="
-              brand__box
-              d-flex
-              gap-1
-              justify-content-between
-              align-items-center
-              my-2
-              flex-wrap
-            "
-          >
+        <carousel :breakpoints="breakpoints" ref="myCarousel" snapAlign="start">
+          <slide v-for="(brands, index) in 10" :key="index">
             <div
-              v-for="(value, index) in 5"
-              :key="value"
-              class="rounded"
               data-aos="fade-up"
-              :data-aos-delay="index * 50"
+              class="rounded"
+              :data-aos-delay="(index + 1) * 50"
             >
-              <img loading='lazy'
+              <img
+                loading="lazy"
                 src="../../assets/images/img/doctor.svg"
                 width="100"
                 alt=""
               />
             </div>
-          </div>
-        </div>
+          </slide>
+
+          <template #addons>
+            <pagination />
+          </template>
+        </carousel>
       </div>
     </div>
   </div>
@@ -40,11 +33,31 @@
 
 <script setup>
 import SubHeader from "@/components/home/SubHeader.vue";
+import { Carousel, Slide, Pagination } from "vue3-carousel";
+const breakpoints = {
+  0: {
+    itemsToShow: 2.5,
+    snapAlign: "center",
+  },
+  // 700px and up
+  700: {
+    itemsToShow: 3.5,
+    snapAlign: "center",
+  },
+  // 1024 and up
+  1024: {
+    itemsToShow: 5.5,
+    snapAlign: "start",
+  },
+};
 </script>
 
 <style lang="css" scoped>
 .brands {
   position: relative;
   padding-top: 5rem;
+}
+.brands img {
+  filter: grayscale(100%);
 }
 </style>

@@ -31,7 +31,7 @@
             <div class="">
               <router-link
                 class="btn btn-outline-primary rounded-pill"
-                :to="{ name: 'service' }"
+                :to="{ name: 'service.health' }"
                 >Read More</router-link
               >
             </div>
@@ -58,7 +58,7 @@
             <div class="">
               <router-link
                 class="btn btn-outline-primary rounded-pill"
-                :to="{ name: 'service' }"
+                :to="{ name: 'service.training' }"
                 >Read More</router-link
               >
             </div>
@@ -86,7 +86,7 @@
             <div class="">
               <router-link
                 class="btn btn-outline-primary rounded-pill"
-                :to="{ name: 'service' }"
+                :to="{ name: 'service.recruitment' }"
                 >Read More</router-link
               >
             </div>

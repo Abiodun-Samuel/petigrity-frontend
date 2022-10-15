@@ -37,7 +37,7 @@
             >
           </li>
           <li class="nav-item mx-lg-3 my-lg-1">
-            <router-link class="nav-link" :to="{ name: 'service' }"
+            <router-link class="nav-link" :to="{ name: 'services' }"
               >Services</router-link
             >
           </li>

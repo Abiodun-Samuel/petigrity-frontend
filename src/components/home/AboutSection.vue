@@ -10,6 +10,58 @@
           <div class="about__img">
             <div class="one"></div>
             <div class="two"></div>
+            <div
+              class="
+                counter
+                shadow
+                bg-white
+                rounded
+                d-flex
+                justify-content-evenly
+                align-items-center
+              "
+            >
+              <div class="counter__icon">
+                <Icon
+                  icon="fa-solid:users"
+                  color="#ffcc29"
+                  height="35"
+                  width="35"
+                />
+              </div>
+              <div class="counter__details">
+                <h5 class="my-0 py-0 fw-bolder text-center">
+                  + <span id="counter__text"></span>
+                </h5>
+                <p class="my-0 py-0 text-warning small">Registered Users</p>
+              </div>
+            </div>
+            <div
+              class="
+                counter_two
+                shadow
+                bg-white
+                rounded
+                d-flex
+                justify-content-evenly
+                align-items-center
+              "
+            >
+              <div class="counter__icon">
+                <Icon
+                  icon="carbon:partnership"
+                  color="#ffcc29"
+                  height="35"
+                  width="35"
+                />
+              </div>
+              <div class="counter__details">
+                <h5 class="my-0 py-0 fw-bolder">
+                  + <span id="counter__text_two"></span>
+                </h5>
+                <p class="my-0 py-0 text-warning small">Partners</p>
+              </div>
+            </div>
             <img
               loading="lazy"
               src="../../assets/images/about.svg"
@@ -100,6 +152,17 @@
 <script setup>
 import { Icon } from "@iconify/vue";
 import SubHeader from "@/components/home/SubHeader.vue";
+import { onMounted } from "vue";
+import { CountUp } from "countup.js";
+
+onMounted(() => {
+  var countUp = new CountUp("counter__text", 100, { enableScrollSpy: true });
+  var countUp_two = new CountUp("counter__text_two", 300, {
+    enableScrollSpy: true,
+  });
+  countUp.start();
+  countUp_two.start();
+});
 </script>
 
 <style lang="css" scoped>
@@ -144,18 +207,39 @@ import SubHeader from "@/components/home/SubHeader.vue";
   padding: 1px;
   color: var(--blue-1);
 }
+.counter {
+  position: absolute;
+  top: 10px;
+  right: 100px;
+  width: 175px;
+  padding: 10px;
+}
+.counter__details {
+  margin-left: 5px;
+}
+.counter__icon {
+  /* background: var(--yellow-0); */
+  border-radius: 50%;
+  border: 1.5px solid var(--yellow-0);
+  padding: 2px;
+}
+
+.counter_two {
+  position: absolute;
+  bottom: 10px;
+  right: 100px;
+  width: 170px;
+  padding: 10px;
+}
 @media screen and (max-width: 768px) {
   .about__img img {
     width: 100% !important;
   }
+  .counter {
+    right: 0px;
+  }
+  .counter_two {
+    right: 0px;
+  }
 }
-/* .section__btn {
-  color: var(--blue-1);
-  padding: 0.6rem 1rem;
-  transition: 500ms ease;
-}
-.section__btn:hover {
-  background: var(--blue-1);
-  color: var(--light-0);
-} */
 </style>

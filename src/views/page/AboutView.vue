@@ -1,10 +1,12 @@
 <template>
-  <div>
-    <h2>about view</h2>
+  <div class="mb-5">
+    <PageHeader page_header="About Us" />
   </div>
+  
 </template>
 
 <script setup>
+import PageHeader from "@/components/pages/PageHeader.vue";
 </script>
 
 <style lang="css">

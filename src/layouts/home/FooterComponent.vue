@@ -39,7 +39,7 @@
           >
             <router-link :to="{ name: 'home' }">Home</router-link>
             <router-link :to="{ name: 'about' }">About Us</router-link>
-            <router-link :to="{ name: 'service' }">Services</router-link>
+            <router-link :to="{ name: 'services' }">Services</router-link>
             <router-link :to="{ name: 'contact' }">Contact Us</router-link>
           </div>
         </div>

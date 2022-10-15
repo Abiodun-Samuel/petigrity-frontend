@@ -29,7 +29,12 @@
             Next
           </button>
         </div>
-        <carousel :breakpoints="breakpoints" ref="myCarousel" snapAlign="start">
+        <carousel
+          :breakpoints="breakpoints"
+          ref="myCarousel"
+          snapAlign="start"
+          :autoplay="1"
+        >
           <slide v-for="(testimonial, index) in testimonials" :key="index">
             <!-- {{ slide }} -->
             <div
@@ -108,7 +113,7 @@
 
 <script setup>
 import { Icon } from "@iconify/vue";
-import { onMounted, ref } from "vue";
+import { ref } from "vue";
 import SubHeader from "@/components/home/SubHeader.vue";
 import { Carousel, Slide, Pagination } from "vue3-carousel";
 import "vue3-carousel/dist/carousel.css";

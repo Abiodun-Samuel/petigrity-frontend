@@ -17,10 +17,39 @@ const HomeLayout = () => [
   },
   {
     path: "/service",
-    name: "service",
+    name: "services",
     meta: {},
     component: () =>
-      import(/* webpackChunkName: "About" */ "@/views/page/ServiceView.vue"),
+      import(
+        /* webpackChunkName: "About" */ "@/views/page/ServiceView.vue"
+      ),
+  },
+  {
+    path: "/service/training",
+    name: "service.training",
+    meta: {},
+    component: () =>
+      import(
+        /* webpackChunkName: "About" */ "@/views/page/services/TrainingView.vue"
+      ),
+  },
+  {
+    path: "/service/health-insurance",
+    name: "service.health",
+    meta: {},
+    component: () =>
+      import(
+        /* webpackChunkName: "About" */ "@/views/page/services/HealthInsuranceView.vue"
+      ),
+  },
+  {
+    path: "/service/recruitment",
+    name: "service.recruitment",
+    meta: {},
+    component: () =>
+      import(
+        /* webpackChunkName: "About" */ "@/views/page/services/RecruitmentView.vue"
+      ),
   },
   {
     path: "/contact",

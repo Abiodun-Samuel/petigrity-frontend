@@ -1,14 +1,15 @@
 <template>
+  <div class="mb-5">
+    <PageHeader page_header="Contact Us" />
+  </div>
+
   <div id="contact">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-10">
-          <div class="contact__details bg-white shadow rounded">
+          <div class="contact__details shadow rounded">
             <div class="row">
               <div data-aos="fade-up" data-aos-delay="50" class="col-lg-6">
-                <!-- <SubHeader data-aos="fade-up">
-                  <h2 class="fw-bolder mb-2"><span>Contact</span> Us</h2>
-                </SubHeader> -->
                 <div class="contact__img my-1 text-center">
                   <img
                     loading="lazy"
@@ -155,8 +156,8 @@
 </template>
 
 <script setup>
+import PageHeader from "@/components/pages/PageHeader.vue";
 import { Icon } from "@iconify/vue";
-import SubHeader from "@/components/home/SubHeader.vue";
 import { useStore } from "vuex";
 import { ref } from "vue";
 
@@ -180,12 +181,9 @@ const sendMail = () => {
 
 <style lang="css" scoped>
 #contact {
-  padding: 4rem 0;
   position: relative;
-  background-image: linear-gradient(-45deg, var(--blue-0) 50%, transparent 50%);
-}
-.contact__details {
-  /* background-image: linear-gradient(45deg, var(--blue-0), #ffffff); */
+  background-image: linear-gradient(-180deg, transparent 50%, var(--blue-0) 50%);
+  padding-bottom: 3rem;
 }
 .contact__icon {
   color: var(--blue-1);
