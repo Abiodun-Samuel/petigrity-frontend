@@ -169,7 +169,7 @@ const subject = ref("");
 const message = ref("");
 
 const sendMail = () => {
-  store.dispatch("othersStore/SendMail", {
+  store.dispatch("mailStore/SendMail", {
     name: name.value,
     email: email.value,
     phone: phone.value,
@@ -182,7 +182,11 @@ const sendMail = () => {
 <style lang="css" scoped>
 #contact {
   position: relative;
-  background-image: linear-gradient(-180deg, transparent 50%, var(--blue-0) 50%);
+  background-image: linear-gradient(
+    -180deg,
+    transparent 50%,
+    var(--blue-0) 50%
+  );
   padding-bottom: 3rem;
 }
 .contact__icon {

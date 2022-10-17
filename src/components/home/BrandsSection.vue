@@ -21,10 +21,6 @@
               />
             </div>
           </slide>
-
-          <template #addons>
-            <pagination />
-          </template>
         </carousel>
       </div>
     </div>
@@ -33,7 +29,7 @@
 
 <script setup>
 import SubHeader from "@/components/home/SubHeader.vue";
-import { Carousel, Slide, Pagination } from "vue3-carousel";
+import { Carousel, Slide } from "vue3-carousel";
 const breakpoints = {
   0: {
     itemsToShow: 2.5,

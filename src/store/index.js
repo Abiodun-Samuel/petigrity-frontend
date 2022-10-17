@@ -4,7 +4,7 @@ import SecureLS from "secure-ls";
 
 import authStore from "@/store/modules/auth";
 import userStore from "@/store/modules/user";
-import othersStore from "@/store/modules/others";
+import mailStore from "@/store/modules/mail";
 
 let ls = new SecureLS({
   encodingType: "aes",
@@ -26,7 +26,7 @@ export const store = createStore({
   modules: {
     authStore,
     userStore,
-    othersStore,
+    mailStore,
   },
   plugins: debug ? [createLogger(), dataState] : [dataState],
 });
