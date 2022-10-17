@@ -16,18 +16,21 @@
               mb-1
             "
           >
-            <router-link :to="{}">
+            <a href="" target="_blank">
               <Icon icon="brandico:facebook-rect" />
-            </router-link>
-            <router-link :to="{}">
+            </a>
+            <a href="" target="_blank">
               <Icon icon="fa6-brands:square-twitter" />
-            </router-link>
-            <router-link :to="{}">
+            </a>
+            <a href="https://www.instagram.com/petigrity/" target="_blank">
               <Icon icon="akar-icons:instagram-fill" />
-            </router-link>
-            <router-link :to="{}">
+            </a>
+            <a
+              href="https://www.linkedin.com/company/petigrity/"
+              target="_blank"
+            >
               <Icon icon="akar-icons:linkedin-box-fill" />
-            </router-link>
+            </a>
           </div>
           <div
             class="

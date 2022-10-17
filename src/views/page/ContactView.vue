@@ -43,38 +43,44 @@
                 <div
                   class="d-flex align-items-center justify-content-evenly mb-1"
                 >
-                  <router-link :to="{}">
+                  <a href="" target="_blank">
                     <Icon
                       icon="brandico:facebook-rect"
                       height="20"
                       width="20"
                       class="shadow-lg"
                     />
-                  </router-link>
-                  <router-link :to="{}">
+                  </a>
+                  <a href="" target="_blank">
                     <Icon
                       icon="fa6-brands:square-twitter"
                       height="20"
                       width="20"
                       class="shadow-lg"
                     />
-                  </router-link>
-                  <router-link :to="{}">
+                  </a>
+                  <a
+                    href="https://www.instagram.com/petigrity/"
+                    target="_blank"
+                  >
                     <Icon
                       icon="akar-icons:instagram-fill"
                       height="20"
                       width="20"
                       class="shadow-lg"
                     />
-                  </router-link>
-                  <router-link :to="{}">
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/petigrity/"
+                    target="_blank"
+                  >
                     <Icon
                       class="shadow-lg"
                       icon="akar-icons:linkedin-box-fill"
                       height="20"
                       width="20"
                     />
-                  </router-link>
+                  </a>
                 </div>
               </div>
               <div
