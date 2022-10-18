@@ -66,7 +66,7 @@
               loading="lazy"
               src="../../assets/images/about.svg"
               alt="about us page"
-              class="img-fluid w-75 shadow-sm rounded-bottom"
+              class="img-fluid w-75 rounded shadow"
             />
           </div>
         </div>
@@ -169,6 +169,7 @@ onMounted(() => {
 #about {
   position: relative;
   padding: 4rem 0;
+  background: var(--blue-0);
 }
 .about__img {
   position: relative;
@@ -187,7 +188,7 @@ onMounted(() => {
   height: 80px;
   width: 80px;
   border-radius: 50%;
-  background: var(--blue-0);
+  background: var(--yellow-0);
   z-index: -10;
 }
 .about__img .two {
@@ -202,7 +203,7 @@ onMounted(() => {
 }
 
 .about__pointer {
-  background: var(--blue-0);
+  background: rgb(227, 227, 255);
   border-radius: 50%;
   padding: 1px;
   color: var(--blue-1);

@@ -175,8 +175,8 @@ import SubHeader from "@/components/home/SubHeader.vue";
 }
 .service__details:hover {
   box-shadow: var(--shadow-1);
-  background: radial-gradient(at top left, #fff6fd, transparent),
+  background: radial-gradient(at top left, #fffbfe, transparent),
     radial-gradient(at top right, #edf0ff, transparent),
-    radial-gradient(at bottom left, #ffecec, transparent);
+    radial-gradient(at bottom left, #fff8f8, transparent);
 }
 </style>
