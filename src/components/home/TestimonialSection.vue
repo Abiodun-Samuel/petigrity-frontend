@@ -3,7 +3,7 @@
     <div class="container">
       <div data-aos="fade-up" class="text-center">
         <SubHeader>
-          <h2 class="fw-bolder mb-2"><span>Testimonials</span></h2>
+          <h2 class="fw-bolder mb-3"><span>Testimonials</span></h2>
         </SubHeader>
         <p>What our clients have to say about us</p>
       </div>
@@ -166,8 +166,7 @@ const prev = () => {
 <style lang="css">
 .testimonials {
   position: relative;
-  padding-top: 5rem;
-  /* background-image: linear-gradient(-90deg, var(--blue-1) 50%, transparent 50%); */
+  padding: 4rem 0;
 }
 .testimonial__box,
 .testimonial__box .bottom,

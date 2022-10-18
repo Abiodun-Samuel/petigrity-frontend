@@ -2,7 +2,7 @@
   <div class="brands">
     <div class="container">
       <SubHeader data-aos="fade-up">
-        <h2 class="fw-bolder mb-2">Our <span>Trusted</span> Clients</h2>
+        <h2 class="fw-bolder mb-3">Our <span>Trusted</span> Clients</h2>
       </SubHeader>
 
       <div class="row">
@@ -51,7 +51,7 @@ const breakpoints = {
 <style lang="css" scoped>
 .brands {
   position: relative;
-  padding-top: 5rem;
+  padding: 4rem 0;
 }
 .brands img {
   filter: grayscale(100%);

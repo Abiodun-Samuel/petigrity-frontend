@@ -1,10 +1,6 @@
 <template>
   <div id="contact">
     <div class="container">
-      <!-- <SubHeader data-aos="fade-up">
-        <h2 class="fw-bolder mb-2"><span>Contact</span> Us</h2>
-      </SubHeader> -->
-
       <div class="row d-flex align-items-center justify-content-center">
         <div class="col-lg-12">
           <div
@@ -26,10 +22,12 @@
 
 <script setup>
 import { Icon } from "@iconify/vue";
-// import SubHeader from "@/components/home/SubHeader.vue";
 </script>
 
 <style lang="css" scoped>
+#contact {
+  padding: 3rem 0;
+}
 .contact__box {
   background: url("../../assets/images/bg/contact-bg.jpg") no-repeat;
   background-size: cover;

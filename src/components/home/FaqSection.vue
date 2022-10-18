@@ -2,7 +2,7 @@
   <div class="faq">
     <div class="container">
       <SubHeader data-aos="fade-up">
-        <h2 class="fw-bolder mb-2">F<span>A</span>Qs</h2>
+        <h2 class="fw-bolder mb-3">F<span>A</span>Qs</h2>
       </SubHeader>
 
       <div class="row justify-content-center">
@@ -124,6 +124,6 @@ import SubHeader from "@/components/home/SubHeader.vue";
 <style lang="css">
 .faq {
   position: relative;
-  padding-top: 5rem;
+  padding: 4rem 0;
 }
 </style>

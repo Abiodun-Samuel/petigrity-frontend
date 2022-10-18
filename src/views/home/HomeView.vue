@@ -5,6 +5,7 @@
   <ServicesSection />
   <HowitworksSection />
   <PatronageSection />
+  <OtherServiceSection />
   <ContactSection />
   <FaqSection />
   <TestimonialSection />
@@ -20,4 +21,5 @@ import BrandsSection from "@/components/home/BrandsSection.vue";
 import HowitworksSection from "@/components/home/HowitworksSection.vue";
 import FaqSection from "@/components/home/FaqSection.vue";
 import TestimonialSection from "@/components/home/TestimonialSection.vue";
+import OtherServiceSection from "@/components/home/OtherServiceSection.vue";
 </script>

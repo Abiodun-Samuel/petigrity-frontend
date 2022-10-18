@@ -3,14 +3,7 @@
     <div class="row d-flex justify-content-center">
       <div class="col-lg-7">
         <div class="newsletter rounded shadow p-2 text-center">
-          <img
-            loading="lazy"
-            src="../../assets/images/img/newsletter-img.jpg"
-            alt="newsletter image"
-            class="img-fluid newsletter__img"
-            width="150"
-          />
-          <h3 class="fw-bolder text-primary">Subscribe to our newsletter</h3>
+          <h3 class="fw-bolder text-black">Subscribe to our newsletter</h3>
           <div class="form-row">
             <div class="newsletter__input">
               <input
@@ -91,9 +84,12 @@ const Subscribe = async () => {
 .newsletter {
   margin-top: 4.5rem;
   position: relative;
-  background: white;
   margin-bottom: -4rem;
   z-index: 2;
+  background: url("../../assets/images/img/newsletter-img.jpg"), #fff;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
 }
 .newsletter__input {
   display: flex;

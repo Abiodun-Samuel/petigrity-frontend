@@ -2,7 +2,7 @@
   <div id="about">
     <div class="container">
       <SubHeader data-aos="fade-up">
-        <h2 class="fw-bolder mb-2"><span>About</span> Us</h2>
+        <h2 class="fw-bolder mb-3"><span>About</span> Us</h2>
       </SubHeader>
 
       <div class="row">
@@ -168,7 +168,7 @@ onMounted(() => {
 <style lang="css" scoped>
 #about {
   position: relative;
-  padding-top: 5rem;
+  padding: 4rem 0;
 }
 .about__img {
   position: relative;

@@ -2,7 +2,7 @@
   <div class="how">
     <div class="container">
       <SubHeader data-aos="fade-up">
-        <h2 class="fw-bolder mb-2">How it <span>Works</span></h2>
+        <h2 class="fw-bolder mb-3">How it <span>Works</span></h2>
       </SubHeader>
 
       <div class="row">
@@ -86,7 +86,7 @@ import SubHeader from "@/components/home/SubHeader.vue";
 
 <style lang="css" scoped>
 .how {
-  padding-top: 5rem;
+  padding: 4rem 0;
 }
 .main {
   padding: 2em 0;

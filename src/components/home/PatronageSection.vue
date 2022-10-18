@@ -2,7 +2,7 @@
   <div class="patronage">
     <div class="container">
       <SubHeader data-aos="fade-up">
-        <h2 class="fw-bolder mb-2">Why <span>Choose</span> Us</h2>
+        <h2 class="fw-bolder mb-3">Why <span>Choose</span> Us</h2>
       </SubHeader>
 
       <div class="row mt-5">
@@ -167,7 +167,7 @@ import SubHeader from "@/components/home/SubHeader.vue";
 <style lang="css" scoped>
 .patronage {
   position: relative;
-  padding-top: 5rem;
+  padding: 4rem 0;
 }
 .patronage_box {
   position: relative;
