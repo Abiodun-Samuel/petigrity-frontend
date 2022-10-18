@@ -49,7 +49,12 @@
         </ul>
         <ul class="navbar-nav m-auto">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">
+            <a
+              class="nav-link"
+              target="_blank"
+              aria-current="page"
+              :href="getStarted()"
+            >
               <button class="btn btn-primary rounded-pill">Get Started</button>
             </a>
           </li>
@@ -61,6 +66,7 @@
 
 <script setup>
 import { Icon } from "@iconify/vue";
+import { getStarted } from "@/utils/helper";
 </script>
 
 <style lang="css">

@@ -69,7 +69,9 @@
                     strategy we offer you will be the best fit for your
                     financial situation and requirements.
                   </p>
-                  <button class="btn btn-outline-primary">Get Started</button>
+                  <button @click="how_it_works" class="btn btn-outline-primary">
+                    Get Started
+                  </button>
                 </div>
               </li>
             </ul>
@@ -82,6 +84,11 @@
 
 <script setup>
 import SubHeader from "@/components/home/SubHeader.vue";
+import { getStarted } from "@/utils/helper";
+
+const how_it_works = () => {
+  getStarted();
+};
 </script>
 
 <style lang="css" scoped>

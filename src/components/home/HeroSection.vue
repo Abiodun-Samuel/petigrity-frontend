@@ -2,7 +2,7 @@
   <div class="hero__section">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 my-2">
+        <div class="col-lg-6 my-3">
           <div class="hero__box">
             <div class="hero__text">
               <h1 class="fw-bolder">Get the best <span>health</span> plans</h1>
@@ -23,6 +23,7 @@
                   d-flex
                   align-items-center
                 "
+                @click="get__Started"
               >
                 <Icon icon="codicon:debug-start" class="me-1" />
                 <span>Get Started</span>
@@ -31,7 +32,7 @@
           </div>
         </div>
 
-        <div class="col-lg-6 my-2">
+        <div class="col-lg-6 my-3">
           <div class="hero__img text-center">
             <img
               src="../../assets/images/hero-img-one.svg"
@@ -73,6 +74,11 @@
 
 <script setup>
 import { Icon } from "@iconify/vue";
+import { getStarted } from "@/utils/helper";
+
+const get__Started = () => {
+  getStarted();
+};
 </script>
 
 <style lang="css" scoped>
@@ -165,7 +171,15 @@ import { Icon } from "@iconify/vue";
   padding: 2px;
   border: 2px solid var(--yellow-1);
 }
-
+.hero__button button {
+  box-shadow: 0 8px 25px -8px #003bb3;
+}
+.hero__button button:hover {
+  border-color: var(--blue-1) !important;
+  background: #fff !important;
+  color: var(--blue-1) !important;
+  box-shadow: var(--shadow-1) !important;
+}
 @media screen and (max-width: 768px) {
   .hero__text h1 {
     font-size: 3.7rem;
