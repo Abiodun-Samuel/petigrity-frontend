@@ -7,19 +7,21 @@
 
       <div class="row">
         <div class="col-lg-12">
-          <div class="d-flex justify-content-center flex-wrap gap-1">
+          <div class="d-flex justify-content-center flex-wrap">
             <div
-              class="our__partner_content text-center"
+              class="our__partner_content text-center rounded m-1"
               v-for="partner in 6"
               :key="partner"
             >
-              <img
-                loading="lazy"
-                src="../../assets/images/img/doctor.svg"
-                width="120"
-                alt=""
-              />
-              <p>Lorem, ipsum.</p>
+              <a href="" target="_blank">
+                <img
+                  loading="lazy"
+                  src="../../assets/images/img/doctor.svg"
+                  width="120"
+                  alt=""
+                />
+                <p class="text-secondary">Lorem, ipsum.</p></a
+              >
             </div>
           </div>
         </div>
@@ -37,5 +39,8 @@ import SubHeader from "@/components/home/SubHeader.vue";
   position: relative;
   padding: 4rem 0;
   background: #ffffff;
+}
+.our__partner_content:hover {
+  box-shadow: var(--shadow-1);
 }
 </style>
