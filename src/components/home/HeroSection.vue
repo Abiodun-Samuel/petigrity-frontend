@@ -87,10 +87,10 @@ const get__Started = () => {
   /* background-image: linear-gradient(180deg, #e1efff, #ffffff); */
   /* background-color: #fff; */
   /* background-image: linear-gradient(180deg, #e1efff, transparent); */
-  /* background: radial-gradient(at top left, #f3f0ff, transparent),
-    radial-gradient(at top right, #eff2ff, transparent),
-    radial-gradient(at bottom left, transparent, #f3eaff),
-    radial-gradient(at bottom right, transparent, #fdfcfe); */
+  background: radial-gradient(at top left, #f9f7ff, transparent),
+    radial-gradient(at top right, #f7f8ff, transparent),
+    radial-gradient(at bottom left, transparent, #f8f4fd),
+    radial-gradient(at bottom right, transparent, #fdfcfe);
   /* background: url("../../assets/images/bg/wave-bg.svg"),
     radial-gradient(at top left, #fff6fd, transparent),
     radial-gradient(at top right, #edf0ff, transparent),

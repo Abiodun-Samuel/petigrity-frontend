@@ -93,10 +93,12 @@ const how_it_works = () => {
 
 <style lang="css" scoped>
 .how {
+  position: relative;
   padding: 4rem 0;
+  background: #ffffff
 }
 .main {
-  padding: 2em 0;
+  padding: 1rem 0;
 }
 .main .timeline {
   position: relative;
