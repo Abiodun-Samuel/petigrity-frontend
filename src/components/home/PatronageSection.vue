@@ -1,7 +1,7 @@
 <template>
   <div class="patronage">
     <div class="container">
-      <SubHeader data-aos="fade-up">
+      <SubHeader>
         <h2 class="fw-bolder mb-3">Why <span>Choose</span> Us</h2>
       </SubHeader>
 

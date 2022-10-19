@@ -1,7 +1,7 @@
 <template>
   <div class="how shadow-sm">
     <div class="container">
-      <SubHeader data-aos="fade-up">
+      <SubHeader>
         <h2 class="fw-bolder mb-3">How it <span>Works</span></h2>
       </SubHeader>
 

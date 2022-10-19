@@ -1,7 +1,7 @@
 <template>
   <div class="other__service">
     <div class="container">
-      <SubHeader data-aos="fade-up">
+      <SubHeader>
         <h2 class="fw-bolder mb-3">Other <span>Services</span></h2>
       </SubHeader>
 

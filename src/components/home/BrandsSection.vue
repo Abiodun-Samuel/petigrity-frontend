@@ -1,7 +1,7 @@
 <template>
   <div class="brands">
     <div class="container">
-      <SubHeader data-aos="fade-up">
+      <SubHeader>
         <h2 class="fw-bolder mb-3">Our <span>Trusted</span> Clients</h2>
       </SubHeader>
 

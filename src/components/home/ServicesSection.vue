@@ -1,7 +1,7 @@
 <template>
   <section id="services">
     <div class="container">
-      <SubHeader data-aos="fade-up">
+      <SubHeader>
         <h2 class="fw-bolder mb-3">Our <span>Services</span></h2>
       </SubHeader>
 
@@ -14,14 +14,13 @@
           <div class="service__details text-center p-2 rounded">
             <img
               loading="lazy"
-              src="../../assets/images/icons/svg/insurance.svg"
+              src="../../assets/images/icons/svg/advice.svg"
               width="120"
               alt="service section icon"
               class=""
             />
             <h4 class="fw-bolder text-primary">
               Professional Impartial Advice
-              <!-- Health Insurance -->
             </h4>
             <p>
               We make impartial recommendations based on you, or your business’s
@@ -45,7 +44,7 @@
           <div class="service__details text-center p-2 rounded">
             <img
               loading="lazy"
-              src="../../assets/images/icons/svg/training.svg"
+              src="../../assets/images/icons/svg/support.svg"
               width="120"
               alt="service section icon"
               class=""
@@ -72,14 +71,14 @@
           <div class="service__details text-center p-2 rounded">
             <img
               loading="lazy"
-              src="../../assets/images/icons/svg/training.svg"
+              src="../../assets/images/icons/svg/general.svg"
               width="120"
               alt="service section icon"
               class=""
             />
             <h4 class="fw-bolder text-primary">Complementary Services</h4>
             <p>
-              We also offer a wide range of additional, complementary services
+              We also offer a wide range of complementary services
               such as claims processing assistance, current plan review,
               renewal, and many more, all at no additional cost.
             </p>

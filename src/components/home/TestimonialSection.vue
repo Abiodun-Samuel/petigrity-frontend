@@ -1,7 +1,7 @@
 <template>
   <div class="testimonials">
     <div class="container">
-      <div data-aos="fade-up" class="text-center">
+      <div class="text-center">
         <SubHeader>
           <h2 class="fw-bolder mb-3"><span>Testimonials</span></h2>
         </SubHeader>

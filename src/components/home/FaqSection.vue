@@ -1,7 +1,7 @@
 <template>
   <div class="faq">
     <div class="container">
-      <SubHeader data-aos="fade-up">
+       <SubHeader>
         <h2 class="fw-bolder mb-3">F<span>A</span>Qs</h2>
       </SubHeader>
 
