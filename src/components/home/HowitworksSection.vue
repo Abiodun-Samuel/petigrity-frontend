@@ -1,5 +1,5 @@
 <template>
-  <div class="how">
+  <div class="how shadow-sm">
     <div class="container">
       <SubHeader data-aos="fade-up">
         <h2 class="fw-bolder mb-3">How it <span>Works</span></h2>

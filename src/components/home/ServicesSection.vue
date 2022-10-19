@@ -9,7 +9,7 @@
         <div
           data-aos-delay="50"
           data-aos="fade-up"
-          class="col-lg-6 col-md-6 my-2 d-flex align-items-stretch"
+          class="col-lg-4 col-md-6 my-2 d-flex align-items-stretch"
         >
           <div class="service__details text-center p-2 rounded">
             <img
@@ -40,7 +40,7 @@
         <div
           data-aos-delay="100"
           data-aos="fade-up"
-          class="col-lg-6 col-md-6 my-2 d-flex align-items-stretch"
+          class="col-lg-4 col-md-6 my-2 d-flex align-items-stretch"
         >
           <div class="service__details text-center p-2 rounded">
             <img
@@ -51,6 +51,33 @@
               class=""
             />
             <h4 class="fw-bolder text-primary">Additional Client Support</h4>
+            <p>
+              Improved customer service and additional customer support, smooth
+              policy buying and transitioning process from one HMO to another.
+            </p>
+            <div class="">
+              <router-link
+                class="btn btn-outline-primary rounded-pill"
+                :to="{ name: 'service.training' }"
+                >Read More</router-link
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          data-aos-delay="150"
+          data-aos="fade-up"
+          class="col-lg-4 col-md-6 my-2 d-flex align-items-stretch"
+        >
+          <div class="service__details text-center p-2 rounded">
+            <img
+              loading="lazy"
+              src="../../assets/images/icons/svg/training.svg"
+              width="120"
+              alt="service section icon"
+              class=""
+            />
+            <h4 class="fw-bolder text-primary">Complementary Services</h4>
             <p>
               We also offer a wide range of additional, complementary services
               such as claims processing assistance, current plan review,

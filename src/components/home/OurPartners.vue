@@ -9,7 +9,7 @@
         <div class="col-lg-12">
           <div class="d-flex justify-content-between flex-wrap gap-1">
             <div
-              class="our__partner_content"
+              class="our__partner_content text-center"
               v-for="partner in 6"
               :key="partner"
             >
@@ -19,6 +19,7 @@
                 width="120"
                 alt=""
               />
+              <p>Lorem, ipsum.</p>
             </div>
           </div>
         </div>
