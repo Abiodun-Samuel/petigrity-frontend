@@ -21,9 +21,11 @@
             />
             <h4 class="fw-bolder text-primary">Training</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
-              exercitationem dolor tenetur maiores ut sed odio non quisquam iure
-              in?
+              At Petigrity Konsult, we conduct high-impact training programs
+              which encompasses a broad range of staff requirements and needs –
+              including professional development and industry-relevant subjects
+              – while leveraging expertise in business areas including
+              negotiation, team building, and leadership
             </p>
             <div class="">
               <router-link

@@ -1,7 +1,7 @@
 <template>
   <div id="about">
     <div class="container">
-       <SubHeader>
+      <SubHeader>
         <h2 class="fw-bolder mb-3"><span>About</span> Us</h2>
       </SubHeader>
 
@@ -33,10 +33,10 @@
                 <h5 class="my-0 py-0 fw-bolder text-center">
                   + <span id="counter__text"></span>
                 </h5>
-                <p class="my-0 py-0 text-warning small">Registered Users</p>
+                <h5 class="fw-bolder my-0 py-0 text-warning small">Lives</h5>
               </div>
             </div>
-            <div
+            <!-- <div
               class="
                 counter_two
                 shadow
@@ -61,7 +61,7 @@
                 </h5>
                 <p class="my-0 py-0 text-warning small">Partners</p>
               </div>
-            </div>
+            </div> -->
             <img
               loading="lazy"
               src="../../assets/images/about.svg"
@@ -210,28 +210,27 @@ onMounted(() => {
 }
 .counter {
   position: absolute;
-  top: 10px;
+  top: 42%;
   right: 100px;
   width: 175px;
-  padding: 10px;
+  padding: 15px;
 }
 .counter__details {
   margin-left: 5px;
 }
 .counter__icon {
-  /* background: var(--yellow-0); */
   border-radius: 50%;
   border: 1.5px solid var(--yellow-0);
   padding: 2px;
 }
 
-.counter_two {
+/* .counter_two {
   position: absolute;
   bottom: 10px;
   right: 100px;
   width: 170px;
   padding: 10px;
-}
+} */
 @media screen and (max-width: 768px) {
   .about__img img {
     width: 100% !important;
