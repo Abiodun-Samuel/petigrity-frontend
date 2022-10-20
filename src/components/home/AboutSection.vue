@@ -169,17 +169,10 @@ onMounted(() => {
 #about {
   position: relative;
   padding: 4rem 0;
-  background: var(--blue-0);
+  background: white;
 }
 .about__img {
   position: relative;
-  /* position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  border-radius: 50%;
-  background: var(--blue-0); */
 }
 .about__img .one {
   position: absolute;
@@ -224,13 +217,6 @@ onMounted(() => {
   padding: 2px;
 }
 
-/* .counter_two {
-  position: absolute;
-  bottom: 10px;
-  right: 100px;
-  width: 170px;
-  padding: 10px;
-} */
 @media screen and (max-width: 768px) {
   .about__img img {
     width: 100% !important;

@@ -5,11 +5,14 @@
         <div class="col-lg-12">
           <div
             data-aos="fade-up"
-            class="contact__box text-center p-3 rounded shadow-lg"
+            class="contact__box text-center py-3 px-2 rounded shadow-lg"
           >
-            <h3 class="text-white fw-bolder">Get in Touch</h3>
+            <p class="text-white fw-bold lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
+              perspiciatis.
+            </p>
             <router-link
-              class="btn btn-lg my-2 btn-outline-light rounded"
+              class="btn btn-lg my-1 btn-outline-light rounded"
               :to="{ name: 'contact' }"
               >Contact Us</router-link
             >
