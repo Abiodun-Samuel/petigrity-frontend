@@ -41,12 +41,9 @@ defineProps({
 });
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
 .page__header {
+  position: relative;
   background: var(--blue-0);
-  /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
-    url("../../assets/images/bg/contact-bg.jpg"); */
-  background-size: cover;
-  background-position: center;
 }
 </style>
