@@ -8,8 +8,8 @@
             class="contact__box text-center py-3 px-2 rounded shadow-lg"
           >
             <p class="text-white fw-bold lead">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
-              perspiciatis.
+              Do you wish to make enquiry or contact us for more information
+              about our services? Click the button below.
             </p>
             <router-link
               class="btn btn-lg my-1 btn-outline-light rounded"

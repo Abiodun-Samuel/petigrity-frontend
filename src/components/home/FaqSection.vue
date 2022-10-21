@@ -1,13 +1,13 @@
 <template>
   <div class="faq">
     <div class="container">
-       <SubHeader>
-        <h2 class="fw-bolder mb-3">F<span>A</span>Qs</h2>
+      <SubHeader>
+        <h2 class="fw-bolder mb-3">Frequently <span>Asked</span> Questions</h2>
       </SubHeader>
 
       <div class="row justify-content-center">
         <div class="col-lg-8 col-md-10">
-          <div class="accordion shadow" id="accordionExample">
+          <div class="accordion" id="accordionExample">
             <div data-aos="fade-up" data-aos-delay="50" class="accordion-item">
               <h2 class="accordion-header fw-bolder" id="headingOne">
                 <button

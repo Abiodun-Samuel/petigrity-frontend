@@ -6133,7 +6133,7 @@ fieldset:disabled .btn {
 .accordion-button,
 .breadcrumb {
   display: -ms-flexbox;
-  font-size: 1.1rem;
+  font-size: 1.2rem !important;
   font-weight: bolder;
 }
 
