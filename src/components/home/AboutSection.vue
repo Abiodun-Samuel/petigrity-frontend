@@ -9,34 +9,6 @@
         <div class="row justify-content-between">
           <div data-aos="fade-up" data-aos-delay="50" class="col-lg-5 my-3">
             <div class="about__img__box bg-white">
-              <!-- <Icon class="about__img__icon__one" icon="geo:turf-point-grid" />
-              <Icon class="about__img__icon__two" icon="geo:turf-point-grid" /> -->
-              <div
-                class="
-                  counter
-                  shadow
-                  rounded
-                  d-flex
-                  justify-content-evenly
-                  align-items-center
-                  bg-white
-                "
-              >
-                <div class="counter__icon border-1">
-                  <Icon
-                    icon="fa-solid:users"
-                    color="#ffcc29"
-                    height="35"
-                    width="35"
-                  />
-                </div>
-                <div class="counter__details">
-                  <h4 class="my-0 py-0 fw-bolder text-center">
-                    + <span id="counter__text"></span>
-                  </h4>
-                  <h4 class="fw-bolder my-0 py-0 text-warning">Lives</h4>
-                </div>
-              </div>
               <img
                 src="../../assets/images/img/about.svg"
                 alt="about us image"
@@ -56,12 +28,35 @@
             "
           >
             <div class="about__text">
-              <p class="lead bg-white">
-                At Petigrity Konsult, our responsibility is to provide clients
-                with the most appropriate health insurance policy. Authorized by
-                specific insurance companies to act on their behalf.
-              </p>
-              <Icon class="icon__one" icon="geo:turf-point-grid" />
+              <div class="bg-white p-1 rounded">
+                <Icon class="icon__one" icon="geo:turf-point-grid" />
+                <p class="lead">
+                  At Petigrity Konsult, our responsibility is to provide clients
+                  with the most appropriate health insurance policy. Authorized
+                  by specific insurance companies to act on their behalf.
+                </p>
+              </div>
+
+              <div
+                class="counter d-flex justify-content-center align-items-center"
+              >
+                <div class="counter__details bg-white d-flex p-1">
+                  <div class="counter__icon">
+                    <Icon
+                      icon="fa-solid:users"
+                      color="#ffcc29"
+                      height="30"
+                      width="30"
+                    />
+                  </div>
+                  <div class="counter__text__box">
+                    <h4 class="fw-bolder">
+                      <span id="counter__text"></span> +
+                    </h4>
+                    <h4 class="fw-bolder text-warning">Lives</h4>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -75,13 +70,13 @@
             class="col-lg-6 col-md-6 col-sm-6 my-2 d-flex align-items-stretch"
           >
             <div class="about__section__text bg-light shadow rounded">
-              <div class="about__text p-1">
+              <div class="p-1">
+                <Icon class="icon__one" icon="geo:turf-point-grid" />
                 <p class="lead">
                   As a health insurance broker, we act in the best interest of
                   our clients, helping them to compare and secure coverage based
                   on their needs and budgets.
                 </p>
-                <Icon class="icon__one" icon="geo:turf-point-grid" />
               </div>
             </div>
           </div>
@@ -91,14 +86,14 @@
             class="col-lg-6 col-md-6 col-sm-6 my-2 d-flex align-items-stretch"
           >
             <div class="about__section__text bg-light shadow rounded">
-              <div class="about__text p-1">
+              <div class="p-1">
+                <Icon class="icon__one" icon="geo:turf-point-grid" />
                 <p class="lead">
                   Whatever the size of your business, Petigrity can help you
                   secure a plan which will provide valuable and high quality
                   cover to your employees. This will mean less work days lost to
                   sickness and overall a more productive workforce.
                 </p>
-                <Icon class="icon__one" icon="geo:turf-point-grid" />
               </div>
             </div>
           </div>
@@ -119,12 +114,6 @@
           </div>
         </div>
       </div>
-      <!-- 
-      <Icon
-        class="about__pointer"
-        icon="codicon:debug-breakpoint-log"
-        height="30"
-      /> -->
     </div>
   </div>
 </template>
@@ -159,59 +148,36 @@ onMounted(() => {
   content: "";
   width: 100%;
   height: 100%;
-  top: -15px;
-  left: -15px;
-  border: 1.5px solid var(--blue-0);
+  top: -18px;
+  left: 18px;
+  border: 2px solid var(--blue-0);
   border-radius: 4px;
+  /* box-shadow: var(--shadow-1); */
 }
-/* .about__img__icon__one {
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  top: -25px;
-  left: -25px;
-  color: var(--blue-0);
-} */
-/* .about__img__icon__two {
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  bottom: -25px;
-  right: -25px;
-  color: var(--blue-0);
-} */
+
 .about__text {
   position: relative;
 }
 .about__text p {
   position: relative;
-  z-index: 1;
-  padding: 5px;
 }
 .icon__one {
   color: var(--blue-0);
-  height: 50px;
-  width: 50px;
-  position: absolute;
-  top: -20px;
-  left: -20px;
-}
-
-.counter {
-  position: absolute;
-  top: 42%;
-  right: -100px;
-  width: 175px;
-  padding: 15px;
-  z-index: 10;
-}
-.counter__details {
-  margin-left: 5px;
+  height: 30px;
+  width: 30px;
 }
 .counter__icon {
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
-  border: 1.5px solid var(--yellow-0);
-  padding: 2px;
+  border: 2px solid var(--yellow-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.counter__text__box {
+  margin-left: 15px;
 }
 
 .about__section {

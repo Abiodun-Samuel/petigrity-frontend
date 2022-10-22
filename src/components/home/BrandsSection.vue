@@ -8,16 +8,12 @@
       <div class="row">
         <carousel :breakpoints="breakpoints" ref="myCarousel" snapAlign="start">
           <slide v-for="(brands, index) in 10" :key="index">
-            <div
-              data-aos="fade-up"
-              class="rounded"
-              :data-aos-delay="(index + 1) * 50"
-            >
+            <div class="rounded">
               <img
                 loading="lazy"
                 src="../../assets/images/img/doctor.svg"
                 width="100"
-                alt=""
+                alt="brands"
               />
             </div>
           </slide>
