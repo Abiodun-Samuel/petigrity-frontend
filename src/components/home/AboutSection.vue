@@ -67,7 +67,7 @@
         </div>
       </div>
 
-      <div class="about__section p-3 rounded shadow mt-4">
+      <div class="about__section p-1 rounded shadow mt-4">
         <div class="row">
           <div
             data-aos="fade-up"

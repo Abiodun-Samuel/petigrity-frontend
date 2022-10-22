@@ -2,7 +2,7 @@
   <section id="services">
     <div class="container">
       <SubHeader>
-        <h2 class="fw-bolder mb-3">Our <span>Services</span></h2>
+        <h2 class="fw-bolder mb-3">What <span>We</span> Do</h2>
       </SubHeader>
 
       <div class="row">
