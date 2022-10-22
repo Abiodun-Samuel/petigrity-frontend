@@ -2,142 +2,116 @@
   <div id="about">
     <div class="container">
       <SubHeader>
-        <h2 class="fw-bolder mb-3"><span>About</span> Us</h2>
+        <h2 class="fw-bolder mb-3">Who <span>Are</span> We</h2>
       </SubHeader>
 
       <div class="row">
-        <div class="col-lg-6 my-2" data-aos="fade-up" data-aos-delay="50">
-          <div class="about__img">
-            <div class="one"></div>
-            <div class="two"></div>
-            <div
-              class="
-                counter
-                shadow
-                bg-white
-                rounded
-                d-flex
-                justify-content-evenly
-                align-items-center
-              "
-            >
-              <div class="counter__icon">
-                <Icon
-                  icon="fa-solid:users"
-                  color="#ffcc29"
-                  height="35"
-                  width="35"
-                />
+        <div class="row justify-content-between">
+          <div data-aos="fade-up" data-aos-delay="50" class="col-lg-5 my-3">
+            <div class="about__img__box bg-white">
+              <!-- <Icon class="about__img__icon__one" icon="geo:turf-point-grid" />
+              <Icon class="about__img__icon__two" icon="geo:turf-point-grid" /> -->
+              <div
+                class="
+                  counter
+                  shadow
+                  rounded
+                  d-flex
+                  justify-content-evenly
+                  align-items-center
+                  bg-white
+                "
+              >
+                <div class="counter__icon border-1">
+                  <Icon
+                    icon="fa-solid:users"
+                    color="#ffcc29"
+                    height="35"
+                    width="35"
+                  />
+                </div>
+                <div class="counter__details">
+                  <h4 class="my-0 py-0 fw-bolder text-center">
+                    + <span id="counter__text"></span>
+                  </h4>
+                  <h4 class="fw-bolder my-0 py-0 text-warning">Lives</h4>
+                </div>
               </div>
-              <div class="counter__details">
-                <h5 class="my-0 py-0 fw-bolder text-center">
-                  + <span id="counter__text"></span>
-                </h5>
-                <h5 class="fw-bolder my-0 py-0 text-warning small">Lives</h5>
-              </div>
+              <img
+                src="../../assets/images/img/about.svg"
+                alt="about us image"
+                class="rounded shadow about__img"
+              />
             </div>
-            <!-- <div
-              class="
-                counter_two
-                shadow
-                bg-white
-                rounded
-                d-flex
-                justify-content-evenly
-                align-items-center
-              "
-            >
-              <div class="counter__icon">
-                <Icon
-                  icon="carbon:partnership"
-                  color="#ffcc29"
-                  height="35"
-                  width="35"
-                />
-              </div>
-              <div class="counter__details">
-                <h5 class="my-0 py-0 fw-bolder">
-                  + <span id="counter__text_two"></span>
-                </h5>
-                <p class="my-0 py-0 text-warning small">Partners</p>
-              </div>
-            </div> -->
-            <img
-              loading="lazy"
-              src="../../assets/images/about.svg"
-              alt="about us page"
-              class="img-fluid w-75 rounded shadow"
-            />
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="100"
+            class="
+              col-lg-5
+              my-3
+              d-flex
+              justify-content-center
+              align-items-center
+            "
+          >
+            <div class="about__text">
+              <p class="lead bg-white">
+                At Petigrity Konsult, our responsibility is to provide clients
+                with the most appropriate health insurance policy. Authorized by
+                specific insurance companies to act on their behalf.
+              </p>
+              <Icon class="icon__one" icon="geo:turf-point-grid" />
+            </div>
           </div>
         </div>
+      </div>
 
-        <div class="col-lg-6 my-2">
-          <div class="about__desc">
-            <div
-              data-aos="fade-up"
-              data-aos-delay="100"
-              class="d-flex align-items-baseline gap-1 mb-2 p-1 rounded shadow"
-            >
-              <div>
-                <Icon
-                  class="about__pointer"
-                  icon="codicon:debug-breakpoint-log"
-                  height="30"
-                />
-              </div>
-              <div>
-                <p class="m-0 p-0">
-                  At Petigrity Konsult, our responsibility is to provide clients
-                  with the most appropriate health insurance policy. Authorized
-                  by specific insurance companies to act on their behalf.
-                </p>
-              </div>
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-delay="150"
-              class="d-flex align-items-baseline gap-1 mb-2 p-1 rounded shadow"
-            >
-              <div>
-                <Icon
-                  class="about__pointer"
-                  icon="codicon:debug-breakpoint-log"
-                  height="30"
-                />
-              </div>
-              <div>
-                <p class="m-0 p-0">
+      <div class="about__section p-3 rounded shadow mt-4">
+        <div class="row">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="150"
+            class="col-lg-6 col-md-6 col-sm-6 my-2 d-flex align-items-stretch"
+          >
+            <div class="about__section__text bg-light shadow rounded">
+              <div class="about__text p-1">
+                <p class="lead">
                   As a health insurance broker, we act in the best interest of
                   our clients, helping them to compare and secure coverage based
                   on their needs and budgets.
                 </p>
+                <Icon class="icon__one" icon="geo:turf-point-grid" />
               </div>
             </div>
-            <div
-              data-aos="fade-up"
-              data-aos-delay="200"
-              class="d-flex align-items-baseline gap-1 mb-2 p-1 rounded shadow"
-            >
-              <div>
-                <Icon
-                  class="about__pointer"
-                  icon="codicon:debug-breakpoint-log"
-                  height="30"
-                />
-              </div>
-              <div>
-                <p class="m-0 p-0">
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="200"
+            class="col-lg-6 col-md-6 col-sm-6 my-2 d-flex align-items-stretch"
+          >
+            <div class="about__section__text bg-light shadow rounded">
+              <div class="about__text p-1">
+                <p class="lead">
                   Whatever the size of your business, Petigrity can help you
                   secure a plan which will provide valuable and high quality
                   cover to your employees. This will mean less work days lost to
                   sickness and overall a more productive workforce.
                 </p>
+                <Icon class="icon__one" icon="geo:turf-point-grid" />
               </div>
             </div>
-
-            <div data-aos="fade-up" data-aos-delay="250" class="mt-2">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="200"
+              class="d-flex justify-content-end"
+            >
               <router-link
-                class="btn btn-lg btn-outline-primary rounded-pill shadow"
+                class="btn btn-outline-primary rounded-pill shadow"
                 :to="{ name: 'about' }"
                 >Read More</router-link
               >
@@ -145,6 +119,12 @@
           </div>
         </div>
       </div>
+      <!-- 
+      <Icon
+        class="about__pointer"
+        icon="codicon:debug-breakpoint-log"
+        height="30"
+      /> -->
     </div>
   </div>
 </template>
@@ -171,42 +151,59 @@ onMounted(() => {
   padding: 4rem 0;
   background: white;
 }
-.about__img {
+.about__img__box {
   position: relative;
 }
-.about__img .one {
+.about__img__box::after {
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 80px;
-  width: 80px;
-  border-radius: 50%;
-  background: var(--yellow-0);
-  z-index: -10;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: -15px;
+  left: -15px;
+  border: 1.5px solid var(--blue-0);
+  border-radius: 4px;
 }
-.about__img .two {
+/* .about__img__icon__one {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 80px;
-  width: 80px;
-  border-radius: 50%;
-  background: var(--yellow-0);
-  z-index: -10;
+  width: 60px;
+  height: 60px;
+  top: -25px;
+  left: -25px;
+  color: var(--blue-0);
+} */
+/* .about__img__icon__two {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: -25px;
+  right: -25px;
+  color: var(--blue-0);
+} */
+.about__text {
+  position: relative;
+}
+.about__text p {
+  position: relative;
+  z-index: 1;
+  padding: 5px;
+}
+.icon__one {
+  color: var(--blue-0);
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: -20px;
+  left: -20px;
 }
 
-.about__pointer {
-  background: rgb(227, 227, 255);
-  border-radius: 50%;
-  padding: 1px;
-  color: var(--blue-1);
-}
 .counter {
   position: absolute;
   top: 42%;
-  right: 100px;
+  right: -100px;
   width: 175px;
   padding: 15px;
+  z-index: 10;
 }
 .counter__details {
   margin-left: 5px;
@@ -217,14 +214,14 @@ onMounted(() => {
   padding: 2px;
 }
 
+.about__section {
+  background: url("../../assets/images/bg/about-bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+}
+
 @media screen and (max-width: 768px) {
-  .about__img img {
-    width: 100% !important;
-  }
   .counter {
-    right: 0px;
-  }
-  .counter_two {
     right: 0px;
   }
 }

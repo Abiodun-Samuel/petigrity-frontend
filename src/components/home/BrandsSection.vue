@@ -1,9 +1,9 @@
 <template>
   <div class="brands">
     <div class="container">
-      <SubHeader>
+      <!-- <SubHeader>
         <h2 class="fw-bolder mb-3">Our <span>Trusted</span> Clients</h2>
-      </SubHeader>
+      </SubHeader> -->
 
       <div class="row">
         <carousel :breakpoints="breakpoints" ref="myCarousel" snapAlign="start">
@@ -54,6 +54,6 @@ const breakpoints = {
   padding: 4rem 0;
 }
 .brands img {
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
 }
 </style>
