@@ -35,3 +35,23 @@ export const SubscribeMailAction = ({ commit }, formData) => {
       }
     });
 };
+export const GetStatedAction = ({ commit }, formData) => {
+  commit("SET_GETSTATED_LOADER", true);
+  return Mail.GetStatedApi(formData)
+    .then((res) => {
+      commit("SET_GETSTATED_LOADER", false);
+      toast.success(
+        "Your details have been submitted successfully, we will get back to you shortly."
+      );
+      return true;
+    })
+    .catch((error) => {
+      commit("SET_GETSTATED_LOADER", false);
+      toast.error("Error, something went wrong.");
+      if (error.response.status == 400 || error.response.status == 401) {
+        toast.error(`${error.response.data.message}`);
+        error.response.status;
+      }
+      return false;
+    });
+};

@@ -23,7 +23,7 @@
                   d-flex
                   align-items-center
                 "
-                @click="get__Started"
+                @click="openGetStartedModal = true"
               >
                 <Icon icon="codicon:debug-start" class="me-1" />
                 <span>Get Started</span>
@@ -70,15 +70,29 @@
       </div>
     </div>
   </div>
+  <BaseModal
+    data-aos="zoom-in"
+    :show="openGetStartedModal"
+    :size="'modal-md'"
+    @close="openGetStartedModal = false"
+  >
+    <template #header>
+      <h4 class="modal-title text-primary fw-bolder">Get Started</h4>
+    </template>
+
+    <template #body>
+      <GetStarted @close="openGetStartedModal = false" />
+    </template>
+  </BaseModal>
 </template>
 
 <script setup>
+import { ref } from "vue";
 import { Icon } from "@iconify/vue";
-import { getStarted } from "@/utils/helper";
+import BaseModal from "@/components/Base/BaseModal.vue";
+import GetStarted from "@/components/partials/GetStarted.vue";
 
-const get__Started = () => {
-  getStarted();
-};
+const openGetStartedModal = ref(false);
 </script>
 
 <style lang="css" scoped>

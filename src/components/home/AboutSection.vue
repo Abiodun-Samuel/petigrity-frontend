@@ -126,11 +126,7 @@ import { CountUp } from "countup.js";
 
 onMounted(() => {
   var countUp = new CountUp("counter__text", 100, { enableScrollSpy: true });
-  var countUp_two = new CountUp("counter__text_two", 300, {
-    enableScrollSpy: true,
-  });
   countUp.start();
-  countUp_two.start();
 });
 </script>
 

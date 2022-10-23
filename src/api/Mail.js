@@ -7,4 +7,7 @@ export default {
   SendSubscribeMail(data) {
     return Api.post(`/subscribe`, data);
   },
+  GetStatedApi(data) {
+    return Api.post(`/get-started`, data);
+  },
 };

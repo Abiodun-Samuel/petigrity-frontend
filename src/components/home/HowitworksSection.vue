@@ -69,7 +69,10 @@
                     strategy we offer you will be the best fit for your
                     financial situation and requirements.
                   </p>
-                  <button @click="how_it_works" class="btn btn-outline-primary">
+                  <button
+                    @click="openGetStartedModal = true"
+                    class="btn btn-outline-primary"
+                  >
                     Get Started
                   </button>
                 </div>
@@ -80,22 +83,35 @@
       </div>
     </div>
   </div>
+  <BaseModal
+    data-aos="zoom-in"
+    :show="openGetStartedModal"
+    :size="'modal-md'"
+    @close="openGetStartedModal = false"
+  >
+    <template #header>
+      <h4 class="modal-title text-primary fw-bolder">Get Started</h4>
+    </template>
+
+    <template #body>
+      <GetStarted @close="openGetStartedModal = false" />
+    </template>
+  </BaseModal>
 </template>
 
 <script setup>
 import SubHeader from "@/components/home/SubHeader.vue";
-import { getStarted } from "@/utils/helper";
-
-const how_it_works = () => {
-  getStarted();
-};
+import BaseModal from "@/components/Base/BaseModal.vue";
+import GetStarted from "@/components/partials/GetStarted.vue";
+import { ref } from "vue";
+const openGetStartedModal = ref(false);
 </script>
 
 <style lang="css" scoped>
 .how {
   position: relative;
   padding: 4rem 0;
-  background: #ffffff
+  background: #ffffff;
 }
 .main {
   padding: 1rem 0;
