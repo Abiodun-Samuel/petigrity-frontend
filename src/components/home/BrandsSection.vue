@@ -21,7 +21,7 @@
               :src="getImgUrl(brand.file)"
               width="150"
               alt="brands"
-              class="me-3 bg-white rounded shadow p-1"
+              class="me-1 bg-white rounded shadow p-1"
             />
           </slide>
         </carousel>

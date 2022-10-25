@@ -1,6 +1,6 @@
 export const breakpoints = {
   0: {
-    itemsToShow: 2.5,
+    itemsToShow: 1.8,
     snapAlign: "center",
   },
   // 700px and up

@@ -10,10 +10,10 @@
           <div
             class="
               d-flex
-              justify-content-center
+              justify-content-between
               align-items-center
               flex-wrap
-              gap-2
+              gap-1
             "
           >
             <div
@@ -21,15 +21,15 @@
               :key="partner.file"
               data-aos="fade-up"
               :data-aos-delay="index * 50"
-              class="our__partner_content text-center rounded m-1"
+              class="our__partner_content text-center rounded"
             >
               <a :href="partner.url" target="_blank">
                 <img
                   loading="lazy"
                   :src="getImgUrl(partner.file)"
-                  width="150"
+                  width="100"
                   alt="brands"
-                  class="bg-white rounded shadow p-1"
+                  class="bg-white rounded shadow"
                 />
               </a>
             </div>
@@ -57,12 +57,12 @@ const getImgUrl = (img) => {
   background: var(--blue-0);
 }
 .our__partner_content img {
-  border: 2px solid transparent;
+  border: 1.5px solid transparent;
+  padding: 3px;
 }
 .our__partner_content:hover img {
   transition: 500ms;
   box-shadow: var(--shadow-1);
-  border-radius: 5px;
-  border: 2px solid var(--blue-1);
+  border: 1.5px solid var(--blue-1);
 }
 </style>
