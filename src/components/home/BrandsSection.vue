@@ -1,21 +1,28 @@
 <template>
   <div class="brands">
     <div class="container">
-      <!-- <SubHeader>
+      <SubHeader>
         <h2 class="fw-bolder mb-3">Our <span>Trusted</span> Clients</h2>
-      </SubHeader> -->
+      </SubHeader>
 
       <div class="row">
-        <carousel :breakpoints="breakpoints" ref="myCarousel" snapAlign="start">
-          <slide v-for="(brands, index) in 10" :key="index">
-            <div class="rounded">
-              <img
-                loading="lazy"
-                src="../../assets/images/img/doctor.svg"
-                width="100"
-                alt="brands"
-              />
-            </div>
+        <carousel
+          :breakpoints="breakpoints"
+          ref="myCarousel"
+          snapAlign="start"
+          autoplay="2000"
+          wrapAround="true"
+        >
+          <slide v-for="(brand, index) in brands" :key="index">
+            <img
+              data-aos="fade-up"
+              :data-aos-delay="index * 50"
+              loading="lazy"
+              :src="getImgUrl(brand.file)"
+              width="150"
+              alt="brands"
+              class="me-3 bg-white rounded shadow p-1"
+            />
           </slide>
         </carousel>
       </div>
@@ -26,21 +33,11 @@
 <script setup>
 import SubHeader from "@/components/home/SubHeader.vue";
 import { Carousel, Slide } from "vue3-carousel";
-const breakpoints = {
-  0: {
-    itemsToShow: 2.5,
-    snapAlign: "center",
-  },
-  // 700px and up
-  700: {
-    itemsToShow: 3.5,
-    snapAlign: "center",
-  },
-  // 1024 and up
-  1024: {
-    itemsToShow: 5.5,
-    snapAlign: "start",
-  },
+import { brands, breakpoints } from "@/utils/helper";
+
+const getImgUrl = (img) => {
+  var images = require.context("../../assets/images/clients/", false);
+  return images("./" + img);
 };
 </script>
 
@@ -48,6 +45,7 @@ const breakpoints = {
 .brands {
   position: relative;
   padding: 4rem 0;
+  background: var(--blue-0);
 }
 .brands img {
   /* filter: grayscale(100%); */

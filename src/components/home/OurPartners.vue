@@ -17,77 +17,19 @@
             "
           >
             <div
+              v-for="(partner, index) in partners"
+              :key="partner.file"
               data-aos="fade-up"
-              data-aos-delay="0"
+              :data-aos-delay="index * 50"
               class="our__partner_content text-center rounded m-1"
             >
-              <a href="http://www.axamansard.com" target="_blank">
+              <a :href="partner.url" target="_blank">
                 <img
                   loading="lazy"
-                  src="../../assets/images/partners/axa.png"
-                  width="120"
-                  height="auto"
-                  alt="partner logo"
-                />
-              </a>
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-delay="50"
-              class="our__partner_content text-center rounded m-1"
-            >
-              <a href="https://www.hygeiahmo.com" target="_blank">
-                <img
-                  loading="lazy"
-                  src="../../assets/images/partners/hygeiahmo.png"
-                  width="120"
-                  height="auto"
-                  alt="partner logo"
-                />
-              </a>
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-delay="100"
-              class="our__partner_content text-center rounded m-1"
-            >
-              <a href="https://rothaugehealth.com" target="_blank">
-                <img
-                  loading="lazy"
-                  src="../../assets/images/partners/roth.jpg"
-                  width="120"
-                  height="auto"
-                  alt="partner logo"
-                />
-              </a>
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-delay="150"
-              class="our__partner_content text-center rounded m-1"
-            >
-              <a href="http://reliancehmo.com" target="_blank">
-                <img
-                  loading="lazy"
-                  src="../../assets/images/partners/reliance.png"
-                  width="120"
-                  height="auto"
-                  alt="partner logo"
-                />
-              </a>
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-delay="200"
-              class="our__partner_content text-center rounded m-1"
-            >
-              <a href="https://leadwayhealth.com" target="_blank">
-                <img
-                  loading="lazy"
-                  src="../../assets/images/partners/leadway.jpg"
-                  width="120"
-                  height="auto"
-                  alt="partner logo"
+                  :src="getImgUrl(partner.file)"
+                  width="150"
+                  alt="brands"
+                  class="bg-white rounded shadow p-1"
                 />
               </a>
             </div>
@@ -100,20 +42,27 @@
 
 <script setup>
 import SubHeader from "@/components/home/SubHeader.vue";
+import { partners } from "@/utils/helper";
+
+const getImgUrl = (img) => {
+  var images = require.context("../../assets/images/partners/", false);
+  return images("./" + img);
+};
 </script>
 
 <style lang="css" scoped>
 .our__partners {
   position: relative;
   padding: 4rem 0;
-  background: #ffffff;
+  background: var(--blue-0);
 }
-.our__partner_content {
+.our__partner_content img {
   border: 2px solid transparent;
 }
-.our__partner_content:hover {
+.our__partner_content:hover img {
+  transition: 500ms;
   box-shadow: var(--shadow-1);
   border-radius: 5px;
-  border: 2px solid var(--blue-0);
+  border: 2px solid var(--blue-1);
 }
 </style>
