@@ -5,11 +5,11 @@
   <ServicesSection />
   <HowitworksSection />
   <PatronageSection />
-  <OtherServiceSection />
   <ContactSection />
   <FaqSection />
   <TestimonialSection />
   <OurPartners />
+  <OtherServiceSection />
 </template>
 
 <script setup>

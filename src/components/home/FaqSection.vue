@@ -117,6 +117,32 @@
                 </div>
               </div>
             </div>
+            <div data-aos="fade-up" data-aos-delay="250" class="accordion-item">
+              <h2 class="accordion-header fw-bolder" id="headingFive">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                  aria-expanded="false"
+                  aria-controls="collapseFive"
+                >
+                  How do I know if I’m corporate, SME or retail?
+                </button>
+              </h2>
+              <div
+                id="collapseFive"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFive"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Corporate is an organization with up to 20 lives and above.
+                  SME would be an organization with between 5-19 lives Retail is
+                  individuals, from 5 and below.
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
