@@ -137,9 +137,10 @@
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body">
-                  Corporate is an organization with up to 20 lives and above.
-                  SME would be an organization with between 5-19 lives Retail is
-                  individuals, from 5 and below.
+                  Corporate - An organization with up to 20 members of staff.
+                  <br />
+                  SME - An organization with 5-19 members of staff. <br />
+                  Retail - Individuals between 1-5.
                 </div>
               </div>
             </div>
