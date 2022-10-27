@@ -125,6 +125,13 @@
                 subjects – while leveraging expertise in business areas
                 including negotiation, team building, and leadership.
               </p>
+              <div class="mt-1">
+                <router-link
+                  class="btn btn-outline-primary rounded-pill"
+                  :to="{ name: 'service.training' }"
+                  >Read More</router-link
+                >
+              </div>
             </div>
           </div>
           <div data-aos-delay="250" data-aos="fade-up" class="col-lg-4 my-2">
@@ -146,13 +153,20 @@
             <div class="other__services__details">
               <h4 class="fw-bolder text-primary">Recruitment</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-                fugiat ipsam, ea impedit dolorum deleniti eveniet quasi
-                molestiae facilis sequi eum sed, quis veritatis eos
-                reprehenderit sapiente, nihil natus ab nobis fugit perspiciatis
-                deserunt eaque. Itaque exercitationem voluptas consectetur
-                eveniet.
+                At Petigrity, our premium recruitment service includes
+                conducting the full recruitment cycle for you. From writing the
+                job description, all the way to screening, interviewing, and
+                salary negations. We are committed to understanding your needs;
+                the exact requirements of the role you are trying to fill across
+                all levels and finding you the best match for your company.
               </p>
+              <div class="mt-1">
+                <router-link
+                  class="btn btn-outline-primary rounded-pill"
+                  :to="{ name: 'service.recruitment' }"
+                  >Read More</router-link
+                >
+              </div>
             </div>
           </div>
         </div>

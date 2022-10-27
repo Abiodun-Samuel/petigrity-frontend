@@ -10,7 +10,7 @@
           <div
             class="
               d-flex
-              justify-content-between
+              justify-content-lg-between
               align-items-center
               flex-wrap
               gap-1

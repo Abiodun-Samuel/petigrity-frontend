@@ -30,7 +30,7 @@
             <div class="">
               <router-link
                 class="btn btn-outline-primary rounded-pill"
-                :to="{ name: 'service.health' }"
+                :to="{ name: 'service.training' }"
                 >Read More</router-link
               >
             </div>
@@ -51,14 +51,17 @@
             />
             <h4 class="fw-bolder text-primary">Recruitment</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
-              exercitationem dolor tenetur maiores ut sed odio non quisquam iure
-              in?
+              At Petigrity, our premium recruitment service includes conducting
+              the full recruitment cycle for you. From writing the job
+              description, all the way to screening, interviewing, and salary
+              negations. We are committed to understanding your needs; the exact
+              requirements of the role you are trying to fill across all levels
+              and finding you the best match for your company.
             </p>
             <div class="">
               <router-link
                 class="btn btn-outline-primary rounded-pill"
-                :to="{ name: 'service.health' }"
+                :to="{ name: 'service.recruitment' }"
                 >Read More</router-link
               >
             </div>
