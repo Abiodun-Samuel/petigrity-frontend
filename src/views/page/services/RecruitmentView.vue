@@ -14,6 +14,7 @@
           <div class="recruitment__box p-2 shadow rounded text-center">
             <div class="recruitment__icon">
               <img
+                loading="lazy"
                 src="../../../assets/images/icons/recruitment/hire_one.svg"
                 alt="recruitment icon"
                 height="120"
@@ -41,6 +42,7 @@
           <div class="recruitment__box p-2 shadow rounded text-center">
             <div class="recruitment__icon">
               <img
+                loading="lazy"
                 src="../../../assets/images/icons/recruitment/hire_two.svg"
                 alt="recruitment icon"
                 height="120"
@@ -68,6 +70,7 @@
           <div class="recruitment__box p-2 shadow rounded text-center">
             <div class="recruitment__icon">
               <img
+                loading="lazy"
                 src="../../../assets/images/icons/recruitment/hire_three.svg"
                 alt="recruitment icon"
                 height="120"
