@@ -6,7 +6,11 @@
   <div class="recruitments">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 col-md-6 my-2">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="50"
+          class="col-lg-6 col-md-6 my-2"
+        >
           <div class="recruitment__box p-2 shadow rounded text-center">
             <div class="recruitment__icon">
               <img
@@ -29,7 +33,11 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-md-6 my-2">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="100"
+          class="col-lg-6 col-md-6 my-2"
+        >
           <div class="recruitment__box p-2 shadow rounded text-center">
             <div class="recruitment__icon">
               <img
@@ -52,7 +60,11 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-md-6 my-2">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="150"
+          class="col-lg-6 col-md-6 my-2"
+        >
           <div class="recruitment__box p-2 shadow rounded text-center">
             <div class="recruitment__icon">
               <img

@@ -1,10 +1,13 @@
-<template lang="">
-   <div>
-      training
-   </div>
+<template>
+  <div class="mb-5">
+    <PageHeader page_header_one="Services" page_header="Training" />
+  </div>
 </template>
-<script>
-export default {};
+
+<script setup>
+import PageHeader from "@/components/pages/PageHeader.vue";
+import { Icon } from "@iconify/vue";
 </script>
-<style lang="">
+
+<style lang="css">
 </style>
