@@ -5,6 +5,10 @@
 
   <div id="training">
     <div class="container">
+      <SubHeader>
+        <h2 class="fw-bolder mb-3">Petigrity <span>Konsult</span></h2>
+      </SubHeader>
+
       <div class="row my-2">
         <div data-aos="fade-up" class="col-lg-5 my-1 col-md-6">
           <img
@@ -27,9 +31,6 @@
           "
         >
           <div>
-            <h2 class="fw-bolder text-primary mb-2">
-              Petigrity Konsult Training
-            </h2>
             <p class="lead">
               As a seasoned training institution with extensive experience
               developing and delivering dynamic learning materials and
@@ -114,8 +115,13 @@
 
       <div class="row my-2">
         <div data-aos="fade-up" data-aos-delay="250" class="col-lg-12">
-          <div class="training__data p-3 shadow rounded">
-            <h1 class="text-warning fw-bolder mb-1">Data Speaks</h1>
+          <div class="training__data py-3 px-1 shadow rounded text-center">
+            <SubHeader>
+              <h2 class="fw-bolder mb-2 text-light">
+                Data <span>Speaks</span>
+              </h2>
+            </SubHeader>
+
             <p class="text-light lead">
               A recent Impact Analysis survey of clients served over the last 18
               months demonstrates our quality, value and effectiveness.
@@ -127,7 +133,6 @@
                   rounded-pill
                   shadow-lg
                   p-1
-                  bg-white
                   text-center
                 "
                 v-for="(data, index) in training_data"
@@ -148,7 +153,7 @@
 
       <div class="row my-3">
         <SubHeader>
-          <h2 class="fw-bolder my-2"><span>Our</span> Programmes</h2>
+          <h2 class="fw-bolder my-2"><span>Our</span> Courses</h2>
         </SubHeader>
         <p class="lead fw-normal h3">
           Our courses are grouped into 4 programmes; <b>Human Resources</b> and
@@ -159,13 +164,15 @@
 
       <div class="row my-3">
         <div
-          class="col-lg-4 mb-3 d-flex align-items-stretch"
+          class="col-lg-4 mb-3 d-flex align-items-stretch card__box"
           v-for="(data, index) in training_courses"
           :key="data + index"
           data-aos="fade-up"
           :data-aos-delay="index * 50"
         >
-          <article class="card__content bg-white shadow-lg p-1">
+          <article
+            :class="`card__content  card__content-${index} bg-white shadow p-1`"
+          >
             <div class="card__pricing">
               <div class="card__pricing-number">{{ index + 1 }}</div>
               <span class="card__pricing-month">Course</span>
@@ -179,7 +186,7 @@
                 />
               </div>
 
-              <h4 class="fw-bold mt-3 mb-1">{{ data.title }}</h4>
+              <h4 class="fw-bold mt-3 mb-1 text-primary">{{ data.title }}</h4>
             </header>
 
             <div class="card__list">
@@ -207,7 +214,56 @@
         </div>
       </div>
 
-      <ContactSection />
+      <div class="row my-3">
+        <div class="training__participants rounded shadow">
+          <SubHeader>
+            <h2 class="fw-bolder my-2 text-light">
+              Who are these <span>courses</span> for?
+            </h2>
+          </SubHeader>
+          <div class="col-lg-12 d-flex justify-content-center my-2">
+            <div>
+              <div
+                v-for="(participant, index) in training_participants"
+                :key="participant"
+                class="card__list-details d-flex align-items-start"
+                data-aos="fade-up"
+                :data-aos-delay="index * 50"
+              >
+                <div>
+                  <Icon
+                    icon="gg:edit-black-point"
+                    height="15"
+                    width="15"
+                    color="#ffffff"
+                  />
+                </div>
+                <div>
+                  <p class="lead text-light" style="margin-left: 5px">
+                    {{ participant }}
+                  </p>
+                </div>
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-delay="200"
+                class="my-2 p-1 rounded shadow"
+                style="background: #e6ebfd"
+              >
+                <h4 class="text-primary fw-bold lead">
+                  Do you wish to make enquiry or contact us for more information
+                  about our training courses? Click the button below.
+                </h4>
+                <router-link
+                  class="btn btn-primary rounded"
+                  :to="{ name: 'contact' }"
+                  >Contact Us</router-link
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -216,64 +272,60 @@
 import PageHeader from "@/components/pages/PageHeader.vue";
 import SubHeader from "@/components/home/SubHeader.vue";
 import { Icon } from "@iconify/vue";
-import { training_data, training_courses } from "@/utils/helper";
-import ContactSection from "@/components/home/ContactSection.vue";
+import {
+  training_data,
+  training_courses,
+  training_participants,
+} from "@/utils/helper";
 </script>
 
 <style lang="css">
 #training {
   position: relative;
-  padding: 2rem 0;
+  padding: 1rem 0 0 0;
 }
 .training__data {
   background: var(--blue-1);
 }
 .training__data--analytics {
   border: 2px solid var(--blue-0);
+  background: var(--blue-0);
+}
+
+.training__participants {
+  background: url("../../../assets/images/bg/contact-bg.jpg") no-repeat;
+  background-size: cover;
 }
 
 /* plans   */
 :root {
-  --hue-color: 210;
-  --first-color: hsl(var(--hue-color), 96%, 54%);
-  --first-color-light: hsl(var(--hue-color), 96%, 69%);
   --first-color-alt: hsl(var(--hue-color), 96%, 37%);
-  --first-color-lighter: hsl(var(--hue-color), 14%, 96%);
-  --title-color: hsl(var(--hue-color), 12%, 15%);
-  --text-color: hsl(var(--hue-color), 12%, 35%);
-  --text-color-light: hsl(var(--hue-color), 12%, 65%);
-  --white-color: #fff;
-  --body-color: hsl(var(--hue-color), 100%, 99%);
-  --container-color: #fff;
-
-  /*========== Font and typography ==========*/
-  --body-font: "Lato", sans-serif;
-  --pricing-font: "Rubik", sans-serif;
-  --biggest-font-size: 1.75rem;
-  --normal-font-size: 0.938rem;
+  --hue-color: 210;
+  --tiny-font-size: 0.65rem;
   --h2-font-size: 1.25rem;
-  --small-font-size: 0.813rem;
-  --smaller-font-size: 0.75rem;
-  --tiny-font-size: 0.625rem;
-  --mb-0-25: 0.25rem;
-  --mb-0-5: 0.5rem;
-  --mb-1: 1rem;
-  --mb-1-25: 1.25rem;
-  --mb-1-5: 1.5rem;
-  --mb-2: 2rem;
 }
 
 .card__content {
   position: relative;
   border-radius: 1rem;
   transition: 0.4s;
+}
+.card__content-0 {
   border: 1.5px solid var(--blue-1);
+}
+.card__content-1 {
+  border: 1.5px solid rgb(239, 83, 83);
+}
+.card__content-2 {
+  border: 1.5px solid rgb(90, 248, 130);
+}
+.card__content-3 {
+  border: 1.5px solid rgb(245, 226, 55);
 }
 
 .card__content:hover {
-  box-shadow: 0 16px 24px hsla(var(--hue-color), 61%, 16%, 0.15);
-  transform: scale(1.05);
-  border: 1.5px solid var(--blue-1);
+  transform: scale(1.01);
+  border: 1.5px solid grey;
 }
 
 .card__header-img {
@@ -286,7 +338,7 @@ import ContactSection from "@/components/home/ContactSection.vue";
   height: 40px;
   background-color: var(--blue-0);
   border-radius: 50%;
-  margin-bottom: var(--mb-1);
+  margin-bottom: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -305,7 +357,6 @@ import ContactSection from "@/components/home/ContactSection.vue";
 }
 
 .card__pricing-number {
-  font-family: var(--pricing-font);
   font-size: var(--h2-font-size);
 }
 
@@ -316,7 +367,7 @@ import ContactSection from "@/components/home/ContactSection.vue";
 
 .card__pricing-number,
 .card__pricing-month {
-  color: var(--white-color);
+  color: #ffffff;
 }
 
 .card__pricing::after,
@@ -328,7 +379,7 @@ import ContactSection from "@/components/home/ContactSection.vue";
 .card__pricing::after {
   width: 100%;
   height: 14px;
-  background-color: var(--white-color);
+  background-color: #fff;
   left: 0;
   bottom: 0;
   clip-path: polygon(0 100%, 50% 0, 100% 100%);

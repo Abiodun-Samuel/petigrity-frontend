@@ -149,3 +149,12 @@ export const training_courses = [
     ],
   },
 ];
+
+export const training_participants = [
+  "Employees and Managers who wish to become more successful in their everyday communication at work.",
+  "Graduate Trainees.",
+  "Business Analysts.",
+  "Project Managers.",
+  "Persons looking to change career path.",
+  "Persons whose work involves collection and analysis of data.",
+];
