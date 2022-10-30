@@ -190,7 +190,7 @@
 import PageHeader from "@/components/pages/PageHeader.vue";
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
 .about__page {
   position: relative;
 }

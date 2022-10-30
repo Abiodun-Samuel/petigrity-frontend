@@ -70,3 +70,82 @@ export const partners = [
     url: "https://leadwayhealth.com",
   },
 ];
+
+export const training_data = [
+  {
+    per: "62%",
+    text: "Improved Employee Satisfaction",
+  },
+  {
+    per: "37%",
+    text: "Reduced Costs",
+  },
+  {
+    per: "89%",
+    text: "Career Growth",
+  },
+  {
+    per: "76%",
+    text: "Increased Productivity",
+  },
+  {
+    per: "55%",
+    text: "Increased Revenue",
+  },
+];
+
+export const training_courses = [
+  {
+    title: "Human Resources and Leadership",
+    details: [
+      "Talent Management Strategy",
+      "Talent Acquisition and Recruitment Process",
+      "Achieving Organizational Results through Effective Management",
+      "Appraisal Techniques and the Performance Management  Process",
+      "Developing Productive People",
+      "Basic Data Analytics for HR",
+      "Advanced Data Analytics for HR",
+      "Basic + Intermediate Excel and Powerpoint",
+    ],
+  },
+  {
+    title: "Sales",
+    details: [
+      "Fundamentals Ad Sales and Marketing",
+      "Implementing Strategic Marketing Plans",
+      "Value Added Marketing",
+      "Customer Focused Marketing",
+      "Client Management Strategies for Retention and Growth",
+      "Effective Communication ",
+      "Video Marketing, Copy writing and Digital Marketing",
+      "Basic + Intermediate Excel and Powerpoint",
+    ],
+  },
+  {
+    title: "Customer Experience",
+    details: [
+      "Customer Relationship Management",
+      "Customer Acquisition and Management",
+      "Key Customer Service Principles",
+      "Principles of Customer Relationship Management",
+      "Service Excellence Processes Front Office and Back Office Staff",
+      "Effective Customer Experience (CX) Strategy",
+      "Basic + Intermediate Excel and Powerpoint",
+      "Basic + Intermediate Data Analytics",
+    ],
+  },
+  {
+    title: "Business Management",
+    details: [
+      "Intermediate Credit and Financial Analysis",
+      "Financial Management: Planning and Budgeting",
+      "Product Management",
+      "Project Management",
+      "Lean Management",
+      "Business Process Management",
+      "Strategy Design and Implementation",
+      "Basic + Intermediate Excel and Powerpoint",
+      "Basic + Intermediate Data Analytics",
+    ],
+  },
+];
