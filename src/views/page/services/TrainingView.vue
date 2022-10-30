@@ -15,7 +15,7 @@
             loading="lazy"
             src="../../../assets/images/icons/svg/training.svg"
             alt="training image"
-            class="img-fluid shadow rounded"
+            class="img-fluid"
           />
         </div>
         <div
@@ -68,7 +68,7 @@
               loading="lazy"
               src="../../../assets/images/icons/svg/training_two.svg"
               alt="about image"
-              class="img-fluid shadow rounded"
+              class="img-fluid"
             />
           </div>
         </div>
@@ -250,10 +250,10 @@
                 class="my-2 p-1 rounded shadow"
                 style="background: #e6ebfd"
               >
-                <h4 class="text-primary fw-bold lead">
+                <p class="text-primary lead">
                   Do you wish to make enquiry or contact us for more information
                   about our training courses? Click the button below.
-                </h4>
+                </p>
                 <router-link
                   class="btn btn-primary rounded"
                   :to="{ name: 'contact' }"
