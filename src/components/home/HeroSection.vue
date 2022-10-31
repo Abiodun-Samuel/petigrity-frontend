@@ -98,6 +98,7 @@ const openGetStartedModal = ref(false);
 <style lang="css" scoped>
 .hero__section {
   position: relative;
+  padding-top: 5rem;
   /* background-image: linear-gradient(180deg, #e1efff, #ffffff); */
   /* background-color: #fff; */
   /* background-image: linear-gradient(180deg, #e1efff, transparent); */

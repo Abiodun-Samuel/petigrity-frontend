@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg bg-white shadow">
+  <nav class="navbar navbar-expand-lg bg-white shadow fixed-top">
     <div class="container">
       <router-link class="navbar-brand" :to="{ name: 'home' }">
         <img
@@ -36,13 +36,12 @@
               >About Us</router-link
             >
           </li>
+
           <li class="nav-item mx-lg-3 my-lg-1">
             <router-link class="nav-link" :to="{ name: 'services' }"
               >Services</router-link
             >
           </li>
-          
-
           <li class="nav-item mx-lg-3 my-lg-1">
             <router-link class="nav-link" :to="{ name: 'contact' }"
               >Contact Us</router-link
@@ -91,4 +90,11 @@ const openGetStartedModal = ref(false);
 </script>
 
 <style lang="css">
+/* ul.dropdown-menu.show {
+  height: 200px !important;
+  background: red;
+}
+a.dropdown-item {
+  height: 23px;
+} */
 </style>

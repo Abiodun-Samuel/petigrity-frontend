@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-5">
+  <div class="my-3 py-2">
     <PageHeader page_header="About Us" />
   </div>
   <div class="about__page">

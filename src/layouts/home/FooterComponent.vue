@@ -17,19 +17,23 @@
             "
           >
             <a href="" target="_blank">
-              <Icon icon="brandico:facebook-rect" />
+              <Icon icon="brandico:facebook-rect" height="15" width="15" />
             </a>
             <a href="" target="_blank">
-              <Icon icon="fa6-brands:square-twitter" />
+              <Icon icon="fa6-brands:square-twitter" height="15" width="15" />
             </a>
             <a href="https://www.instagram.com/petigrity/" target="_blank">
-              <Icon icon="akar-icons:instagram-fill" />
+              <Icon icon="akar-icons:instagram-fill" height="15" width="15" />
             </a>
             <a
               href="https://www.linkedin.com/company/petigrity/"
               target="_blank"
             >
-              <Icon icon="akar-icons:linkedin-box-fill" />
+              <Icon
+                icon="akar-icons:linkedin-box-fill"
+                height="15"
+                width="15"
+              />
             </a>
           </div>
           <div
@@ -100,14 +104,22 @@ const year = new Date().getFullYear();
 
 .quick__icons a {
   position: relative;
-  color: rgb(208, 208, 208);
+  color: var(--blue-1);
   transition: 400ms;
-  padding: 2px 5px;
-  border-radius: 5px;
+  padding: 4px;
+  border-radius: 50%;
+  background: var(--blue-0);
+  height: 25px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1.5px solid var(--blue-1);
 }
 .quick__icons a:hover {
-  background: var(--blue-0);
-  color: var(--blue-1);
+  color: var(--blue-0);
+  background: var(--blue-1);
+  border: 1.5px solid var(--blue-0);
 }
 .footer__bottom small {
   color: #818fc1;
