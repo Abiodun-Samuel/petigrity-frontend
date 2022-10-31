@@ -122,6 +122,22 @@
               </h2>
             </SubHeader>
 
+            <vc-donut
+              background="white"
+              foreground="grey"
+              :size="200"
+              unit="px"
+              :thickness="40"
+              has-legend
+              legend-placement="top"
+              :sections="sections"
+              :total="100"
+              :start-angle="0"
+              :auto-adjust-text-size="true"
+              @section-click="handleSectionClick"
+              >data-speak</vc-donut
+            >
+
             <p class="text-light lead">
               A recent Impact Analysis survey of clients served over the last 18
               months demonstrates our quality, value and effectiveness.
@@ -153,7 +169,7 @@
 
       <div class="row my-3">
         <SubHeader>
-          <h2 class="fw-bolder my-2"><span>Our</span> Courses</h2>
+          <h2 class="fw-bolder my-2"><span>Our</span> Programmes</h2>
         </SubHeader>
         <p class="lead fw-normal h3">
           Our courses are grouped into 4 programmes; <b>Human Resources</b> and
@@ -175,7 +191,7 @@
           >
             <div class="card__pricing">
               <div class="card__pricing-number">{{ index + 1 }}</div>
-              <span class="card__pricing-month">Course</span>
+              <span class="card__pricing-month">Programme</span>
             </div>
 
             <header class="card__header">
@@ -277,6 +293,12 @@ import {
   training_courses,
   training_participants,
 } from "@/utils/helper";
+import { ref } from "vue";
+
+const sections = ref(training_data);
+const handleSectionClick = (section, event) => {
+  console.log(`${section.label} clicked.`);
+};
 </script>
 
 <style lang="css">
@@ -285,7 +307,7 @@ import {
   padding: 1rem 0 0 0;
 }
 .training__data {
-  background: var(--blue-1);
+  /* background: var(--blue-1); */
 }
 .training__data--analytics {
   border: 2px solid var(--blue-0);
@@ -301,7 +323,7 @@ import {
 :root {
   --first-color-alt: hsl(var(--hue-color), 96%, 37%);
   --hue-color: 210;
-  --tiny-font-size: 0.65rem;
+  --tiny-font-size: 0.5rem;
   --h2-font-size: 1.25rem;
 }
 

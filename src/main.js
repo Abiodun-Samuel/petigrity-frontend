@@ -4,8 +4,10 @@ import router from "./router";
 import { store } from "./store";
 import Toast from "vue-toastification";
 import AOS from "aos";
+import Donut from "vue-css-donut-chart";
 
 // import assets
+import "vue-css-donut-chart/dist/vcdonut.css";
 import "vue-toastification/dist/index.css";
 import "./assets/css/nprogress.css";
 import "aos/dist/aos.css";
@@ -16,6 +18,7 @@ AOS.init({ duration: 400, mirror: true });
 
 const app = createApp(App)
   .use(store)
+  .use(Donut)
   .use(router)
   .use(Toast, {
     position: "top-right",

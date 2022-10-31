@@ -70,28 +70,18 @@ export const partners = [
     url: "https://leadwayhealth.com",
   },
 ];
-
+//  { label: 'Red section', value: 25, color: 'red' },
 export const training_data = [
   {
+    color: "blue",
+    value: 20,
     per: "62%",
-    text: "Improved Employee Satisfaction",
+    label: "Improved Employee Satisfaction",
   },
-  {
-    per: "37%",
-    text: "Reduced Costs",
-  },
-  {
-    per: "89%",
-    text: "Career Growth",
-  },
-  {
-    per: "76%",
-    text: "Increased Productivity",
-  },
-  {
-    per: "55%",
-    text: "Increased Revenue",
-  },
+  { color: "pink", value: 20, per: "37%", label: "Reduced Costs" },
+  { color: "grey", value: 20, per: "89%", label: "Career Growth" },
+  { color: "red", value: 20, per: "76%", label: "Increased Productivity" },
+  { color: "green", value: 20, per: "55%", label: "Increased Revenue" },
 ];
 
 export const training_courses = [
