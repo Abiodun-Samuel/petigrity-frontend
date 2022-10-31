@@ -118,7 +118,7 @@
               </div>
             </div>
             <div data-aos="fade-up" data-aos-delay="250" class="accordion-item">
-              <h2 class="accordion-header fw-bolder" id="headingFive">
+              <h2 class="accordion-header fw-bolder text-primary" id="headingFive">
                 <button
                   class="accordion-button collapsed"
                   type="button"
@@ -127,7 +127,7 @@
                   aria-expanded="false"
                   aria-controls="collapseFive"
                 >
-                  How do I know if I’m corporate, SME or retail?
+                  How do I know if I am Corporate, SME or Retail?
                 </button>
               </h2>
               <div
@@ -149,8 +149,6 @@
       </div>
     </div>
   </div>
-
-  
 </template>
 
 <script setup>
