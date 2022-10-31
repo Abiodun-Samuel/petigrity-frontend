@@ -115,50 +115,48 @@
 
       <div class="row my-2">
         <div data-aos="fade-up" data-aos-delay="250" class="col-lg-12">
-          <div class="training__data py-3 px-1 shadow rounded text-center">
+          <div class="training__data p-1 shadow rounded text-center">
             <SubHeader>
-              <h2 class="fw-bolder mb-2 text-light">
-                Data <span>Speaks</span>
-              </h2>
+              <h2 class="fw-bolder mb-4">Data-<span>Speaks</span></h2>
             </SubHeader>
+
+            <p class="lead my-1">
+              A recent Impact Analysis survey of clients served over the last 18
+              months demonstrates our quality, value and effectiveness.
+            </p>
 
             <vc-donut
               background="white"
-              foreground="grey"
-              :size="200"
+              :size="250"
               unit="px"
-              :thickness="40"
+              :thickness="45"
               has-legend
-              legend-placement="top"
+              legend-placement="bottom"
               :sections="sections"
               :total="100"
               :start-angle="0"
               :auto-adjust-text-size="true"
               @section-click="handleSectionClick"
-              >data-speak</vc-donut
-            >
+              @section-mouseenter="handleSectionClick"
+            ></vc-donut>
 
-            <p class="text-light lead">
-              A recent Impact Analysis survey of clients served over the last 18
-              months demonstrates our quality, value and effectiveness.
-            </p>
-            <div class="my-2 d-flex justify-content-center flex-wrap gap-2">
-              <div
-                class="
-                  training__data--analytics
-                  rounded-pill
-                  shadow-lg
-                  p-1
-                  text-center
-                "
-                v-for="(data, index) in training_data"
-                :key="index"
-              >
-                <h2 class="text-primary fw-bolder">{{ data.per }}</h2>
-                <p class="lead">{{ data.text }}</p>
+            <!-- <div class="my-2 d-flex justify-content-center flex-wrap gap-2">
+              <div class="" v-for="(data, index) in training_data" :key="index">
+                <div
+                  class="
+                    training__data--analytics
+                    rounded-circle
+                    shadow
+                    p-1
+                    text-center
+                  "
+                >
+                  <h2 class="text-primary fw-bolder">{{ data.per }}</h2>
+                </div>
+                <p class="lead">{{ data.label }}</p>
               </div>
-            </div>
-            <p class="lead text-light">
+            </div> -->
+            <p class="lead my-1">
               89% of respondents confirmed training received is relevant to
               average daily job tasks, while 8/10 trainees applied what they
               learned within 4 weeks.
@@ -232,14 +230,14 @@
 
       <div class="row my-3">
         <div class="training__participants rounded shadow">
-          <SubHeader>
+          <!-- <SubHeader>
             <h2 class="fw-bolder my-2 text-light">
               Who are these <span>courses</span> for?
             </h2>
-          </SubHeader>
+          </SubHeader> -->
           <div class="col-lg-12 d-flex justify-content-center my-2">
             <div>
-              <div
+              <!-- <div
                 v-for="(participant, index) in training_participants"
                 :key="participant"
                 class="card__list-details d-flex align-items-start"
@@ -259,7 +257,7 @@
                     {{ participant }}
                   </p>
                 </div>
-              </div>
+              </div> -->
               <div
                 data-aos="fade-up"
                 data-aos-delay="200"

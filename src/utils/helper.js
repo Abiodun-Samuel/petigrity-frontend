@@ -74,14 +74,19 @@ export const partners = [
 export const training_data = [
   {
     color: "blue",
-    value: 20,
+    value: 19,
     per: "62%",
-    label: "Improved Employee Satisfaction",
+    label: "62% - Improved Employee Satisfaction",
   },
-  { color: "pink", value: 20, per: "37%", label: "Reduced Costs" },
-  { color: "grey", value: 20, per: "89%", label: "Career Growth" },
-  { color: "red", value: 20, per: "76%", label: "Increased Productivity" },
-  { color: "green", value: 20, per: "55%", label: "Increased Revenue" },
+  { color: "pink", value: 12, per: "37%", label: "37% - Reduced Costs" },
+  { color: "grey", value: 28, per: "89%", label: "89% - Career Growth" },
+  {
+    color: "red",
+    value: 24,
+    per: "76%",
+    label: "76% - Increased Productivity",
+  },
+  { color: "green", value: 17, per: "55%", label: "55% - Increased Revenue" },
 ];
 
 export const training_courses = [
