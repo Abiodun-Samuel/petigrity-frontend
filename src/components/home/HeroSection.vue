@@ -70,6 +70,7 @@
       </div>
     </div>
   </div>
+  
   <BaseModal
     data-aos="zoom-in"
     :show="openGetStartedModal"
