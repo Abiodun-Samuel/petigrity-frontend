@@ -3918,7 +3918,7 @@ textarea.form-control.is-invalid {
 .btn-check:focus + .btn,
 .btn:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(39, 21, 242, 0.25);
+  /* box-shadow: 0 0 0 0.25rem rgba(39, 21, 242, 0.25); */
 }
 
 .btn-check:active + .btn-primary:focus,
@@ -3928,7 +3928,7 @@ textarea.form-control.is-invalid {
 .btn-primary:active:focus,
 .btn-primary:focus,
 .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.25rem rgba(57, 41, 236, 0.5);
+  /* box-shadow: 0 0 0 0.25rem rgba(57, 41, 236, 0.5); */
 }
 
 .btn.disabled,

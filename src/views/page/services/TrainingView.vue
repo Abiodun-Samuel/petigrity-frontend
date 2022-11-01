@@ -1,15 +1,15 @@
 <template>
-  <div class="my-3 py-2">
+  <div class="mt-3 py-2">
     <PageHeader page_header_one="Services" page_header="Training" />
   </div>
 
   <div id="training">
     <div class="container">
-      <SubHeader>
+      <!-- <SubHeader>
         <h2 class="fw-bolder mb-3">Petigrity <span>Konsult</span></h2>
-      </SubHeader>
+      </SubHeader> -->
 
-      <div class="row my-2">
+      <div class="row">
         <div data-aos="fade-up" class="col-lg-5 my-1 col-md-6">
           <img
             loading="lazy"
@@ -117,7 +117,7 @@
         <div data-aos="fade-up" data-aos-delay="250" class="col-lg-12">
           <div class="training__data p-1 shadow rounded text-center">
             <SubHeader>
-              <h2 class="fw-bolder mb-4">Data-<span>Speaks</span></h2>
+              <h2 class="fw-bolder my-2">Data-<span>Speaks</span></h2>
             </SubHeader>
 
             <p class="lead my-1">
@@ -264,7 +264,7 @@
                 class="my-2 p-1 rounded shadow"
                 style="background: #e6ebfd"
               >
-                <p class="text-primary lead">
+                <p class="lead">
                   Do you wish to make enquiry or contact us for more information
                   about our training courses? Click the button below.
                 </p>
