@@ -124,38 +124,25 @@
               A recent Impact Analysis survey of clients served over the last 18
               months demonstrates our quality, value and effectiveness.
             </p>
+            <div class="d-flex justify-content-center gap-2 flex-wrap my-3">
+              <vc-donut
+                v-for="data in training_data"
+                :key="data"
+                background="white"
+                :size="200"
+                unit="px"
+                :thickness="35"
+                has-legend
+                legend-placement="bottom"
+                :sections="[data]"
+                :total="100"
+                :start-angle="0"
+                :auto-adjust-text-size="true"
+                @section-click="handleSectionClick"
+                @section-mouseenter="handleSectionClick"
+              ></vc-donut>
+            </div>
 
-            <vc-donut
-              background="white"
-              :size="250"
-              unit="px"
-              :thickness="45"
-              has-legend
-              legend-placement="bottom"
-              :sections="sections"
-              :total="100"
-              :start-angle="0"
-              :auto-adjust-text-size="true"
-              @section-click="handleSectionClick"
-              @section-mouseenter="handleSectionClick"
-            ></vc-donut>
-
-            <!-- <div class="my-2 d-flex justify-content-center flex-wrap gap-2">
-              <div class="" v-for="(data, index) in training_data" :key="index">
-                <div
-                  class="
-                    training__data--analytics
-                    rounded-circle
-                    shadow
-                    p-1
-                    text-center
-                  "
-                >
-                  <h2 class="text-primary fw-bolder">{{ data.per }}</h2>
-                </div>
-                <p class="lead">{{ data.label }}</p>
-              </div>
-            </div> -->
             <p class="lead my-1">
               89% of respondents confirmed training received is relevant to
               average daily job tasks, while 8/10 trainees applied what they
@@ -293,7 +280,7 @@ import {
 } from "@/utils/helper";
 import { ref } from "vue";
 
-const sections = ref(training_data);
+// const sections = ref(training_data);
 const handleSectionClick = (section, event) => {
   console.log(`${section.label} clicked.`);
 };

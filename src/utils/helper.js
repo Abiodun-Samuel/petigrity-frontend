@@ -70,24 +70,43 @@ export const partners = [
     url: "https://leadwayhealth.com",
   },
 ];
+
 //  { label: 'Red section', value: 25, color: 'red' },
 export const training_data = [
   {
     color: "blue",
-    value: 19,
+    value: 62,
     per: "62%",
     label: "62% - Improved Employee Satisfaction",
   },
-  { color: "pink", value: 12, per: "37%", label: "37% - Reduced Costs" },
-  { color: "grey", value: 28, per: "89%", label: "89% - Career Growth" },
+  { color: "pink", value: 37, per: "37%", label: "37% - Reduced Costs" },
+  { color: "grey", value: 89, per: "89%", label: "89% - Career Growth" },
   {
     color: "red",
-    value: 24,
+    value: 76,
     per: "76%",
     label: "76% - Increased Productivity",
   },
-  { color: "green", value: 17, per: "55%", label: "55% - Increased Revenue" },
+  { color: "green", value: 55, per: "55%", label: "55% - Increased Revenue" },
 ];
+
+// export const training_data_two = [
+//   { color: "pink", value: 37, per: "37%", label: "37% - Reduced Costs" },
+// ];
+// export const training_data_three = [
+//   { color: "grey", value: 89, per: "89%", label: "89% - Career Growth" },
+// ];
+// export const training_data_four = [
+//   {
+//     color: "red",
+//     value: 76,
+//     per: "76%",
+//     label: "76% - Increased Productivity",
+//   },
+// ];
+// export const training_data_five = [
+//   { color: "green", value: 55, per: "55%", label: "55% - Increased Revenue" },
+// ];
 
 export const training_courses = [
   {
