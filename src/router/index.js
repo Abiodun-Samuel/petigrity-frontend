@@ -11,21 +11,21 @@ const HomeLayout = () => [
   {
     path: "/about",
     name: "about",
-    meta: {},
+    meta: { title: "Login | Petigrity" },
     component: () =>
       import(/* webpackChunkName: "About" */ "@/views/page/AboutView.vue"),
   },
   {
     path: "/service",
     name: "services",
-    meta: {},
+    meta: { title: "Login | Petigrity" },
     component: () =>
       import(/* webpackChunkName: "About" */ "@/views/page/ServiceView.vue"),
   },
   {
     path: "/service/training",
     name: "service.training",
-    meta: {},
+    meta: { title: "Login | Petigrity" },
     component: () =>
       import(
         /* webpackChunkName: "About" */ "@/views/page/services/TrainingView.vue"
@@ -34,7 +34,7 @@ const HomeLayout = () => [
   {
     path: "/service/health-insurance",
     name: "service.health",
-    meta: {},
+    meta: { title: "Login | Petigrity" },
     component: () =>
       import(
         /* webpackChunkName: "About" */ "@/views/page/services/HealthInsuranceView.vue"
@@ -43,7 +43,7 @@ const HomeLayout = () => [
   {
     path: "/service/recruitment",
     name: "service.recruitment",
-    meta: {},
+    meta: { title: "Login | Petigrity" },
     component: () =>
       import(
         /* webpackChunkName: "About" */ "@/views/page/services/RecruitmentView.vue"
@@ -52,7 +52,7 @@ const HomeLayout = () => [
   {
     path: "/contact",
     name: "contact",
-    meta: {},
+    meta: { title: "Login | Petigrity" },
     component: () =>
       import(/* webpackChunkName: "About" */ "@/views/page/ContactView.vue"),
   },

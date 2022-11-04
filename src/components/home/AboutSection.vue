@@ -125,7 +125,7 @@ import { onMounted } from "vue";
 import { CountUp } from "countup.js";
 
 onMounted(() => {
-  var countUp = new CountUp("counter__text", 100, { enableScrollSpy: true });
+  var countUp = new CountUp("counter__text", 3254, { enableScrollSpy: true });
   countUp.start();
 });
 </script>

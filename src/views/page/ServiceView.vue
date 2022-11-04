@@ -27,13 +27,6 @@
               health insurance needs, and leverage our strong partnerships with
               insurers to negotiate the best premiums.
             </p>
-            <div class="">
-              <router-link
-                class="btn btn-outline-primary rounded-pill"
-                :to="{ name: 'service.health' }"
-                >Read More</router-link
-              >
-            </div>
           </div>
         </div>
         <div
@@ -54,13 +47,6 @@
               Improved customer service and additional customer support, smooth
               policy buying and transitioning process from one HMO to another.
             </p>
-            <div class="">
-              <router-link
-                class="btn btn-outline-primary rounded-pill"
-                :to="{ name: 'service.training' }"
-                >Read More</router-link
-              >
-            </div>
           </div>
         </div>
         <div
@@ -82,13 +68,6 @@
               claims processing assistance, current plan review, renewal, and
               many more, all at no additional cost.
             </p>
-            <div class="">
-              <router-link
-                class="btn btn-outline-primary rounded-pill"
-                :to="{ name: 'service.training' }"
-                >Read More</router-link
-              >
-            </div>
           </div>
         </div>
       </div>
