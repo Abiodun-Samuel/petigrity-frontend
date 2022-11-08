@@ -71,7 +71,6 @@ export const partners = [
   },
 ];
 
-//  { label: 'Red section', value: 25, color: 'red' },
 export const training_data = [
   {
     color: "blue",
@@ -87,26 +86,9 @@ export const training_data = [
     per: "76%",
     label: "76% - Increased Productivity",
   },
+
   { color: "green", value: 55, per: "55%", label: "55% - Increased Revenue" },
 ];
-
-// export const training_data_two = [
-//   { color: "pink", value: 37, per: "37%", label: "37% - Reduced Costs" },
-// ];
-// export const training_data_three = [
-//   { color: "grey", value: 89, per: "89%", label: "89% - Career Growth" },
-// ];
-// export const training_data_four = [
-//   {
-//     color: "red",
-//     value: 76,
-//     per: "76%",
-//     label: "76% - Increased Productivity",
-//   },
-// ];
-// export const training_data_five = [
-//   { color: "green", value: 55, per: "55%", label: "55% - Increased Revenue" },
-// ];
 
 export const training_courses = [
   {
