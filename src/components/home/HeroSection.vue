@@ -33,11 +33,12 @@
         </div>
 
         <div class="col-lg-6 my-3">
-          <div class="hero__img text-center">
+          <div v-show="show" class="hero__img text-center">
             <img
               src="../../assets/images/hero-img-one.svg"
               alt="hero-image"
               class="hero_img_one shadow"
+              @load="loaded"
             />
             <div
               class="hero_img_two shadow-lg rounded d-flex align-items-center"
@@ -70,7 +71,7 @@
       </div>
     </div>
   </div>
-  
+
   <BaseModal
     data-aos="zoom-in"
     :show="openGetStartedModal"
@@ -94,6 +95,11 @@ import BaseModal from "@/components/Base/BaseModal.vue";
 import GetStarted from "@/components/partials/GetStarted.vue";
 
 const openGetStartedModal = ref(false);
+const show = ref(false);
+
+const loaded = () => {
+  show.value = true;
+};
 </script>
 
 <style lang="css" scoped>
