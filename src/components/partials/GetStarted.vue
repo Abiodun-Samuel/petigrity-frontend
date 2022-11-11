@@ -9,7 +9,18 @@
           type="text"
           class="form-control"
           id="first_name"
+          :style="v$.first_name.$error && 'border:1px solid red'"
+          @blur="v$.first_name.$touch()"
         />
+        <template v-for="error in v$.first_name.$errors" :key="error">
+          <p class="small text-danger">
+            {{
+              error.$message == "Value is required"
+                ? "This field is required"
+                : error.$message
+            }}
+          </p>
+        </template>
       </div>
       <div class="col-6">
         <label for="last_name" class="form-label">Last Name *</label>
@@ -18,7 +29,18 @@
           type="text"
           class="form-control"
           id="last_name"
+          :style="v$.last_name.$error && 'border:1px solid red'"
+          @blur="v$.last_name.$touch()"
         />
+        <template v-for="error in v$.last_name.$errors" :key="error">
+          <p class="small text-danger">
+            {{
+              error.$message == "Value is required"
+                ? "This field is required"
+                : error.$message
+            }}
+          </p>
+        </template>
       </div>
     </div>
     <div class="row my-1">
@@ -29,7 +51,18 @@
           type="email"
           class="form-control"
           id="email"
+          :style="v$.email.$error && 'border:1px solid red'"
+          @blur="v$.email.$touch()"
         />
+        <template v-for="error in v$.email.$errors" :key="error">
+          <p class="small text-danger">
+            {{
+              error.$message == "Value is required"
+                ? "This field is required"
+                : error.$message
+            }}
+          </p>
+        </template>
       </div>
       <div class="col-6">
         <label for="phone" class="form-label">Phone *</label>
@@ -38,7 +71,18 @@
           type="tel"
           class="form-control"
           id="phone"
+          :style="v$.phone.$error && 'border:1px solid red'"
+          @blur="v$.phone.$touch()"
         />
+        <template v-for="error in v$.phone.$errors" :key="error">
+          <p class="small text-danger">
+            {{
+              error.$message == "Value is required"
+                ? "This field is required"
+                : error.$message
+            }}
+          </p>
+        </template>
       </div>
     </div>
     <div class="row my-1">
@@ -75,7 +119,18 @@
           type="number"
           class="form-control"
           id="number"
+          :style="v$.budget.$error && 'border:1px solid red'"
+          @blur="v$.budget.$touch()"
         />
+        <template v-for="error in v$.budget.$errors" :key="error">
+          <p class="small text-danger">
+            {{
+              error.$message == "Value is required"
+                ? "This field is required"
+                : error.$message
+            }}
+          </p>
+        </template>
       </div>
     </div>
     <div class="row my-1">
@@ -86,7 +141,18 @@
           id="company_name"
           type="text"
           class="form-control"
+          :style="v$.company_name.$error && 'border:1px solid red'"
+          @blur="v$.company_name.$touch()"
         />
+        <template v-for="error in v$.company_name.$errors" :key="error">
+          <p class="small text-danger">
+            {{
+              error.$message == "Value is required"
+                ? "This field is required"
+                : error.$message
+            }}
+          </p>
+        </template>
       </div>
       <div class="col-6">
         <label for="company_size" class="form-label">Company Size *</label>
@@ -95,7 +161,18 @@
           id="company_size"
           type="number"
           class="form-control"
+          :style="v$.company_size.$error && 'border:1px solid red'"
+          @blur="v$.company_size.$touch()"
         />
+        <template v-for="error in v$.company_size.$errors" :key="error">
+          <p class="small text-danger">
+            {{
+              error.$message == "Value is required"
+                ? "This field is required"
+                : error.$message
+            }}
+          </p>
+        </template>
       </div>
     </div>
     <div class="row my-1">
@@ -106,14 +183,25 @@
           id="designation"
           type="text"
           class="form-control"
+          :style="v$.designation.$error && 'border:1px solid red'"
+          @blur="v$.designation.$touch()"
         />
+        <template v-for="error in v$.designation.$errors" :key="error">
+          <p class="small text-danger">
+            {{
+              error.$message == "Value is required"
+                ? "This field is required"
+                : error.$message
+            }}
+          </p>
+        </template>
       </div>
     </div>
 
     <div class="row my-1">
       <div class="col-12">
         <button
-          :disabled="get_started_loading"
+          :disabled="v$.email.$invalid || get_started_loading"
           @click="get__started"
           class="btn btn-primary w-100"
         >
@@ -133,6 +221,8 @@
 <script setup>
 import { reactive, computed } from "vue";
 import { useStore } from "vuex";
+import { useVuelidate } from "@vuelidate/core";
+import { required, email, minLength } from "@vuelidate/validators";
 
 const store = useStore();
 
@@ -152,6 +242,20 @@ const data = reactive({
   designation: "",
 });
 
+const rules = {
+  first_name: { required, first_name: minLength(3) },
+  last_name: { required, last_name: minLength(3) },
+  email: { required, email },
+  phone: { required },
+  cover_type: { required },
+  budget: { required },
+  company_name: { required },
+  company_size: { required },
+  designation: { required, designation: minLength(5) },
+};
+
+const v$ = useVuelidate(rules, data);
+
 const csvmaker = function (data) {
   let csvRows = [];
   const headers = Object.keys(data);
@@ -162,30 +266,34 @@ const csvmaker = function (data) {
 };
 
 const get__started = () => {
-  const csvdata = csvmaker(data);
-  const blob = new Blob([csvdata], { type: "text/csv" });
-  var reader = new FileReader();
-  reader.readAsDataURL(blob);
-  reader.onload = function (event) {
-    store
-      .dispatch("mailStore/GetStatedAction", {
-        email: data.email,
-        name: `${data.first_name} ${data.last_name}`,
-        file: event.target.result,
-      })
-      .then((value) => {
-        if (value) {
-          data.first_name = "";
-          data.last_name = "";
-          data.email = "";
-          data.phone = "";
-          data.cover_type = "";
-          data.budget = "";
-          data.company_name = "";
-          data.company_size = "";
-          data.designation = "";
-        }
-      });
-  };
+  v$.value.$touch();
+  if (!v$.value.$invalid) {
+    const csvdata = csvmaker(data);
+    const blob = new Blob([csvdata], { type: "text/csv" });
+    var reader = new FileReader();
+    reader.readAsDataURL(blob);
+    reader.onload = function (event) {
+      store
+        .dispatch("mailStore/GetStatedAction", {
+          email: data.email,
+          name: `${data.first_name} ${data.last_name}`,
+          // file: event.target.result,
+        })
+        .then((value) => {
+          if (value) {
+            v$.value.$reset();
+            data.first_name = "";
+            data.last_name = "";
+            data.email = "";
+            data.phone = "";
+            data.cover_type = "";
+            data.budget = "";
+            data.company_name = "";
+            data.company_size = "";
+            data.designation = "";
+          }
+        });
+    };
+  }
 };
 </script>

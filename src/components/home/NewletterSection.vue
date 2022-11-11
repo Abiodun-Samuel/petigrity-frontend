@@ -10,22 +10,16 @@
                 type="email"
                 placeholder="Enter your email"
                 class="form-control"
+                :style="v$.email.$error && 'border:1px solid red'"
                 v-model="state.email"
                 @blur="v$.email.$touch()"
               />
-              <template v-if="v$.email.$error">
-                <p v-if="!v$.email.required" class="small text-danger">
-                  email is required.
-                </p>
-                <p v-if="!v$.email.email" class="small text-danger">
-                  Please enter a valid email.
-                </p>
-              </template>
+
               <button
                 @click="Subscribe"
                 class="btn btn-primary rounded"
                 type="button"
-                :disabled="subscribe_mail_loading"
+                :disabled="subscribe_mail_loading || v$.email.$invalid"
               >
                 <span
                   v-if="subscribe_mail_loading"
@@ -36,6 +30,11 @@
                 Subscribe
               </button>
             </div>
+            <template v-for="error in v$.email.$errors" :key="error">
+              <p class="small text-danger">
+                {{ error.$message }}
+              </p>
+            </template>
           </div>
         </div>
       </div>
@@ -63,20 +62,19 @@ const subscribe_mail_loading = computed(
 );
 
 const Subscribe = async () => {
-  console.log(v$);
-  // v$.value.$touch();
-  const result = await v$.value.$validate();
-  console.log(result);
+  v$.value.$touch();
   if (!v$.value.$invalid) {
-    console.log("goood");
-  } else {
-    console.log("bad");
+    store
+      .dispatch("mailStore/SubscribeMailAction", {
+        email: state.email,
+      })
+      .then((value) => {
+        if (value) {
+          v$.value.$reset();
+          state.email = "";
+        }
+      });
   }
-  // if()
-  // store.dispatch("mailStore/SubscribeMailAction", {
-  //   email: user_email.value,
-  // });
-  // user_email.value = "";
 };
 </script>
 
@@ -90,6 +88,7 @@ const Subscribe = async () => {
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: contain;
+  height: 150px;
 }
 .newsletter__input {
   display: flex;

@@ -101,8 +101,19 @@
                           type="text"
                           class="form-control"
                           placeholder="Enter your name"
-                          v-model="name"
+                          v-model="state.name"
+                          :style="v$.name.$error && 'border:1px solid red'"
+                          @blur="v$.name.$touch()"
                         />
+                        <template v-for="error in v$.name.$errors" :key="error">
+                          <p class="small text-danger">
+                            {{
+                              error.$message == "Value is required"
+                                ? "This field is required"
+                                : error.$message
+                            }}
+                          </p>
+                        </template>
                       </div>
                       <div class="col-6">
                         <label for="" class="label-control">Email</label>
@@ -110,8 +121,22 @@
                           type="email"
                           class="form-control"
                           placeholder="Enter your email"
-                          v-model="email"
+                          :style="v$.email.$error && 'border:1px solid red'"
+                          @blur="v$.email.$touch()"
+                          v-model="state.email"
                         />
+                        <template
+                          v-for="error in v$.email.$errors"
+                          :key="error"
+                        >
+                          <p class="small text-danger">
+                            {{
+                              error.$message == "Value is required"
+                                ? "This field is required"
+                                : error.$message
+                            }}
+                          </p>
+                        </template>
                       </div>
                     </div>
                     <div class="row my-2">
@@ -121,7 +146,7 @@
                           type="tel"
                           class="form-control"
                           placeholder="Enter your phone number"
-                          v-model="phone"
+                          v-model="state.phone"
                         />
                       </div>
                       <div class="col-6">
@@ -130,7 +155,7 @@
                           type="text"
                           class="form-control"
                           placeholder="Subject"
-                          v-model="subject"
+                          v-model="state.subject"
                         />
                       </div>
                     </div>
@@ -138,16 +163,37 @@
                       <label for="" class="label-control">Message</label>
                       <textarea
                         rows="5"
-                        v-model="message"
+                        v-model="state.message"
+                        :style="v$.message.$error && 'border:1px solid red'"
+                        @blur="v$.message.$touch()"
                         class="form-control"
                       ></textarea>
+                      <template
+                        v-for="error in v$.message.$errors"
+                        :key="error"
+                      >
+                        <p class="small text-danger">
+                          {{
+                            error.$message == "Value is required"
+                              ? "This field is required"
+                              : error.$message
+                          }}
+                        </p>
+                      </template>
                     </div>
                     <div class="form-row my-2">
                       <button
+                        :disabled="v$.email.$invalid || sendmail_loading"
                         @click="sendMail"
                         class="btn btn-primary rounded w-100"
                       >
-                        Send Message
+                        <span
+                          v-if="sendmail_loading"
+                          class="spinner-border spinner-border-sm"
+                          role="status"
+                          aria-hidden="true"
+                        ></span>
+                        Send
                       </button>
                     </div>
                   </div>
@@ -165,23 +211,54 @@
 import PageHeader from "@/components/pages/PageHeader.vue";
 import { Icon } from "@iconify/vue";
 import { useStore } from "vuex";
-import { ref } from "vue";
+import { computed, reactive, ref } from "vue";
+import { useVuelidate } from "@vuelidate/core";
+import { required, email, minLength } from "@vuelidate/validators";
 
 const store = useStore();
-const name = ref("");
-const phone = ref("");
-const email = ref("");
-const subject = ref("");
-const message = ref("");
+
+const sendmail_loading = computed(
+  () => store.getters["mailStore/sendmail_loading"]
+);
+
+const rules = {
+  name: { required, name: minLength(3) },
+  email: { required, email },
+  message: { required, message: minLength(5) },
+};
+
+const state = reactive({
+  name: "",
+  email: "",
+  phone: "",
+  subject: "",
+  message: "",
+});
+
+const v$ = useVuelidate(rules, state);
 
 const sendMail = () => {
-  store.dispatch("mailStore/SendMail", {
-    name: name.value,
-    email: email.value,
-    phone: phone.value,
-    subject: subject.value,
-    message: message.value,
-  });
+  v$.value.$touch();
+  if (!v$.value.$invalid) {
+    store
+      .dispatch("mailStore/SendMail", {
+        name: state.name,
+        email: state.email,
+        phone: state.phone,
+        subject: state.subject,
+        message: state.message,
+      })
+      .then((value) => {
+        v$.value.$reset();
+        if (value) {
+          state.name = "";
+          state.email = "";
+          state.phone = "";
+          state.subject = "";
+          state.message = "";
+        }
+      });
+  }
 };
 </script>
 
