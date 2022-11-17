@@ -277,7 +277,7 @@ const get__started = () => {
         .dispatch("mailStore/GetStatedAction", {
           email: data.email,
           name: `${data.first_name} ${data.last_name}`,
-          file: event.target.result,
+          // file: event.target.result,
         })
         .then((value) => {
           if (value) {
