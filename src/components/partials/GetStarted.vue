@@ -1,7 +1,17 @@
 <template>
-  <p class="small text-danger">Fill the form: * are required</p>
+  <!-- <p class="small text-danger">Fill the form: * are required</p> -->
   <div class="my-1">
-    <div class="row my-1">
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLSetMrkZjcLsGrfP3t9wB0UEMRWG87xbGsBzEwOz_2jZUDLOUQ/viewform?embedded=true"
+      width="100%"
+      height="800px"
+      frameborder="0"
+      marginheight="0"
+      marginwidth="0"
+      >Loading…</iframe
+    >
+
+    <!-- <div class="row my-1">
       <div class="col-6">
         <label for="first_name" class="form-label">First Name *</label>
         <input
@@ -214,7 +224,7 @@
           Submit
         </button>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 

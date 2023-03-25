@@ -19,9 +19,8 @@
               :data-aos-delay="index * 50"
               loading="lazy"
               :src="getImgUrl(brand.file)"
-              width="150"
               alt="brands"
-              class="me-1 bg-white rounded shadow p-1"
+              class="me-1 bg-white rounded shadow"
             />
           </slide>
         </carousel>
@@ -49,5 +48,9 @@ const getImgUrl = (img) => {
 }
 .brands img {
   /* filter: grayscale(100%); */
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  padding: 6px;
 }
 </style>

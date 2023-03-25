@@ -8,13 +8,7 @@
       <div class="row">
         <div class="col-lg-12">
           <div
-            class="
-              d-flex
-              justify-content-lg-between
-              align-items-center
-              flex-wrap
-              gap-1
-            "
+            class="d-flex justify-content-lg-between align-items-center flex-wrap gap-1"
           >
             <div
               v-for="(partner, index) in partners"
@@ -27,7 +21,6 @@
                 <img
                   loading="lazy"
                   :src="getImgUrl(partner.file)"
-                  width="100"
                   alt="brands"
                   class="bg-white rounded shadow"
                 />
@@ -59,6 +52,9 @@ const getImgUrl = (img) => {
 .our__partner_content img {
   border: 1.5px solid transparent;
   padding: 3px;
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
 }
 .our__partner_content:hover img {
   transition: 500ms;

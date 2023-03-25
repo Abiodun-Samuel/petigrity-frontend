@@ -5,45 +5,37 @@ const HomeLayout = () => [
   {
     path: "",
     name: "home",
+    meta: { title: "Home | Petigrity" },
     component: () =>
       import(/* webpackChunkName: "Homepage" */ "@/views/home/HomeView.vue"),
   },
   {
     path: "/about",
     name: "about",
-    meta: { title: "Login | Petigrity" },
+    meta: { title: "About | Petigrity" },
     component: () =>
       import(/* webpackChunkName: "About" */ "@/views/page/AboutView.vue"),
   },
   {
     path: "/service",
     name: "services",
-    meta: { title: "Login | Petigrity" },
+    meta: { title: "Services | Petigrity" },
     component: () =>
       import(/* webpackChunkName: "About" */ "@/views/page/ServiceView.vue"),
   },
   {
     path: "/service/training",
     name: "service.training",
-    meta: { title: "Login | Petigrity" },
+    meta: { title: "Training Service | Petigrity" },
     component: () =>
       import(
         /* webpackChunkName: "About" */ "@/views/page/services/TrainingView.vue"
       ),
   },
   {
-    path: "/service/health-insurance",
-    name: "service.health",
-    meta: { title: "Login | Petigrity" },
-    component: () =>
-      import(
-        /* webpackChunkName: "About" */ "@/views/page/services/HealthInsuranceView.vue"
-      ),
-  },
-  {
     path: "/service/recruitment",
     name: "service.recruitment",
-    meta: { title: "Login | Petigrity" },
+    meta: { title: "Recruitment Service | Petigrity" },
     component: () =>
       import(
         /* webpackChunkName: "About" */ "@/views/page/services/RecruitmentView.vue"
@@ -52,7 +44,7 @@ const HomeLayout = () => [
   {
     path: "/contact",
     name: "contact",
-    meta: { title: "Login | Petigrity" },
+    meta: { title: "Contact | Petigrity" },
     component: () =>
       import(/* webpackChunkName: "About" */ "@/views/page/ContactView.vue"),
   },
@@ -92,23 +84,23 @@ const routes = [
     path: "",
     meta: {
       title: "Home | Petigrity",
-      // metaTags: [
-      //   {
-      //     name: "description",
-      //     content:
-      //       "Supero Agrobase Limited is an indigenous company in Nigeria with deep understanding of the needs and challenges of Nigerian farmers. We deal with  Agro - Input products, claims, research and Promotion, Sales of Agro input Products (AgriCourt Ventures) and Production of Vegetable Crops (HarvestYield Farm)",
-      //   },
-      //   {
-      //     property: "og:description",
-      //     content:
-      //       "Supero Agrobase Limited is an indigenous company in Nigeria with deep understanding of the needs and challenges of Nigerian farmers. We deal with  Agro - Input products, claims, research and Promotion, Sales of Agro input Products (AgriCourt Ventures) and Production of Vegetable Crops (HarvestYield Farm)",
-      //   },
-      //   {
-      //     name: "keywords",
-      //     content:
-      //       "irrigation cultivation husbandry horticulture crop biofuel farm animal husbandry farming cultivate agribusiness food domestication agricultural manure  tillage monoculture forestry livestock harvest agronomy pesticide cotton wheat crop rotation dairy aquaculture sow overcrop education raw material genetically modified organism selective breeding climate plow farmer plant fertilize fiber grow fertile crescent",
-      //   },
-      // ],
+      metaTags: [
+        {
+          name: "description",
+          content:
+            "At Petigrity Konsult, our responsibility is to provide clients with the most appropriate health insurance policy. Authorized by specific insurance companies to act on their behalf.",
+        },
+        {
+          property: "og:description",
+          content:
+            "We are dedicated to helping you find the best health plan for your specific needs, either as an individual, a business or an organization, Petigrity has got you covered",
+        },
+        {
+          name: "keywords",
+          content:
+            "united healthcare, health,  health insurance, home insurance, care , affordable care act, medical insurance, united healthcare online, private health insurance,health insurance companies,cheap health insurance, health insurance plans, health insurance quotes, affordable health insurance, humana health insurance, aetna health insurance, health care plans, universal health care, united healthcare insurance, medical care, compare health insurance, healthcare management, cigna health insurance, ehealthinsurance",
+        },
+      ],
     },
     component: () =>
       import(
@@ -117,34 +109,34 @@ const routes = [
     children: HomeLayout(),
   },
   //Simple layout - dashboard
-  {
-    path: "/auth",
-    meta: {
-      title: "Dashboard | Petigrity",
-      // metaTags: [
-      //   {
-      //     name: "description",
-      //     content:
-      //       "Supero Agrobase Limited is an indigenous company in Nigeria with deep understanding of the needs and challenges of Nigerian farmers. We deal with  Agro - Input products, claims, research and Promotion, Sales of Agro input Products (AgriCourt Ventures) and Production of Vegetable Crops (HarvestYield Farm)",
-      //   },
-      //   {
-      //     property: "og:description",
-      //     content:
-      //       "Supero Agrobase Limited is an indigenous company in Nigeria with deep understanding of the needs and challenges of Nigerian farmers. We deal with  Agro - Input products, claims, research and Promotion, Sales of Agro input Products (AgriCourt Ventures) and Production of Vegetable Crops (HarvestYield Farm)",
-      //   },
-      //   {
-      //     name: "keywords",
-      //     content:
-      //       "irrigation cultivation husbandry horticulture crop biofuel farm animal husbandry farming cultivate agribusiness food domestication agricultural manure  tillage monoculture forestry livestock harvest agronomy pesticide cotton wheat crop rotation dairy aquaculture sow overcrop education raw material genetically modified organism selective breeding climate plow farmer plant fertilize fiber grow fertile crescent",
-      //   },
-      // ],
-    },
-    component: () =>
-      import(
-        /* webpackChunkName: "Simple Layout" */ "@/layouts/SimpleLayout.vue"
-      ),
-    children: SimpleLayout(),
-  },
+  // {
+  //   path: "/auth",
+  //   meta: {
+  //     title: "Dashboard | Petigrity",
+  //     metaTags: [
+  //       {
+  //         name: "description",
+  //         content:
+  //           "Supero Agrobase Limited is an indigenous company in Nigeria with deep understanding of the needs and challenges of Nigerian farmers. We deal with  Agro - Input products, claims, research and Promotion, Sales of Agro input Products (AgriCourt Ventures) and Production of Vegetable Crops (HarvestYield Farm)",
+  //       },
+  //       {
+  //         property: "og:description",
+  //         content:
+  //           "Supero Agrobase Limited is an indigenous company in Nigeria with deep understanding of the needs and challenges of Nigerian farmers. We deal with  Agro - Input products, claims, research and Promotion, Sales of Agro input Products (AgriCourt Ventures) and Production of Vegetable Crops (HarvestYield Farm)",
+  //       },
+  //       {
+  //         name: "keywords",
+  //         content:
+  //           "irrigation cultivation husbandry horticulture crop biofuel farm animal husbandry farming cultivate agribusiness food domestication agricultural manure  tillage monoculture forestry livestock harvest agronomy pesticide cotton wheat crop rotation dairy aquaculture sow overcrop education raw material genetically modified organism selective breeding climate plow farmer plant fertilize fiber grow fertile crescent",
+  //       },
+  //     ],
+  //   },
+  //   component: () =>
+  //     import(
+  //       /* webpackChunkName: "Simple Layout" */ "@/layouts/SimpleLayout.vue"
+  //     ),
+  //   children: SimpleLayout(),
+  // },
 ];
 
 const router = createRouter({

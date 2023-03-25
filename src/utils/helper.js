@@ -35,7 +35,7 @@ export const brands = [
     file: "gmt.png",
   },
   {
-    file: "gpfi.jpg",
+    file: "gpfl-logo.jpeg",
   },
   {
     file: "money.png",

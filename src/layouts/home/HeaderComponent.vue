@@ -68,7 +68,7 @@
                     <p class="text-primary fw-bolder my-1">Health Insurance</p>
                     <router-link
                       @click="show = false"
-                      :to="{}"
+                      :to="{ name: 'services' }"
                       class="dropdown__menu-link"
                     >
                       <div class="dropdown__menu-text">
@@ -78,7 +78,7 @@
                     </router-link>
                     <router-link
                       @click="show = false"
-                      :to="{}"
+                      :to="{ name: 'services' }"
                       class="dropdown__menu-link"
                     >
                       <div class="dropdown__menu-text">
@@ -88,7 +88,7 @@
                     </router-link>
                     <router-link
                       @click="show = false"
-                      :to="{}"
+                      :to="{ name: 'services' }"
                       class="dropdown__menu-link"
                     >
                       <div class="dropdown__menu-text">
